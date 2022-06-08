@@ -70,7 +70,7 @@ ul {
   padding: 0;
 }
 
-ul li {
+ul, ol, li {
   list-style: none;
 }
 
@@ -441,6 +441,15 @@ header {
   margin-right: 0;
 }
 
+.subtitle {
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 28px;
+  color: #3D46EC;
+}
+
 .about {
   background: rgb(247, 247, 247);
   background: -webkit-gradient(linear, left top, right top, color-stop(50%, rgb(247, 247, 247)), color-stop(50%, rgb(255, 255, 255)), to(rgb(255, 255, 255)));
@@ -450,6 +459,7 @@ header {
   max-width: 1020px;
   background-color: #fff;
   padding: 78px 100px 0;
+  position: relative;
 }
 .about h2 {
   font-family: "Futura PT";
@@ -459,117 +469,488 @@ header {
   line-height: 28px;
   color: #3D46EC;
 }
-.about p {
+.about .about__description {
   font-family: "Futura PT";
   font-style: normal;
   font-weight: 300;
   font-size: 25px;
   line-height: 32px;
   color: #231F20;
+  margin-bottom: 50px;
+}
+.about ol {
+  counter-reset: ol-numbers;
+  margin: 0;
+  padding: 0;
+}
+.about ol li {
+  position: relative;
+}
+.about ol li:first-child:before {
+  top: 0;
+}
+.about ol li::before {
+  counter-increment: ol-numbers;
+  content: "0" counter(ol-numbers) ".";
+  position: absolute;
+  top: 20px;
+  left: 0;
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 23px;
+  color: #231F20;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+.about ol li:hover::before {
+  font-weight: bolder;
+}
+.about .about_item {
+  cursor: default;
+  position: relative;
+  width: 55%;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+  padding-top: 20px;
+}
+.about .about_item:first-child {
+  padding-top: 0;
+}
+.about .about_item:first-child::after {
+  height: 0px;
+  width: 0%;
+}
+.about .about_item:after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  display: inline-block;
+  background-color: #F7F7F7;
+  top: 0;
+  left: 0;
+}
+.about .about_item h3 {
+  position: relative;
+  padding: 0 0 0 40px;
+  margin-bottom: 15px;
+  display: inline-block;
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 23px;
+  color: #231F20;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+.about .about_item h3:before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 50px;
+  border: 1px solid #231F20;
+  right: -63px;
+  top: 50%;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  -webkit-transform: translateX(-40%) scaleX(0);
+          transform: translateX(-40%) scaleX(0);
+  visibility: hidden;
+  z-index: 2;
+}
+.about .about_item h3:after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  border: 1px solid #F7F7F7;
+  right: calc(-100% - 63px);
+  top: 50%;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  -webkit-transform: translateX(-80%) scaleX(0);
+          transform: translateX(-80%) scaleX(0);
+  visibility: hidden;
+  z-index: 1;
+}
+.about .about_item:hover h3 {
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  font-weight: bolder;
+}
+.about .about_item:hover h3:before {
+  -webkit-transform: translateX(0) scaleX(1);
+          transform: translateX(0) scaleX(1);
+  opacity: 1;
+  visibility: visible;
+}
+.about .about_item:hover h3:after {
+  -webkit-transform: translateX(0) scaleX(1);
+          transform: translateX(0) scaleX(1);
+  opacity: 1;
+  visibility: visible;
+}
+.about .about_item p {
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 21px;
+  color: #231F20;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+.about .about_item:hover p {
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+  font-size: 25px;
+  line-height: 32px;
+}
+.about .about_item img {
+  position: absolute;
+  width: 80%;
+  right: -50%;
+  top: -10px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  -webkit-transition-delay: 500ms;
+          transition-delay: 500ms;
+}
+.about .about_item:hover img {
+  opacity: 1;
+  right: -100%;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  visibility: visible;
+}
+.about .about_item a {
+  padding: 14px 26px;
+  margin-bottom: 0px;
+  display: inline-block;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFF;
+  background: #3D46EC;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+  -webkit-transition-delay: 300ms;
+          transition-delay: 300ms;
+}
+.about .about_item:hover a {
+  opacity: 1;
+  visibility: visible;
+  margin-bottom: 48px;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
-.accordion {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+main {
+  overflow: hidden;
+}
+
+.why {
+  padding: 215px 0 125px;
+  -webkit-transform: translateX(210px);
+          transform: translateX(210px);
+  background: url("../img/pictures/why.jpg") 0 0/contain no-repeat;
+}
+.why h3 {
+  font-family: "Futura PT";
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 28px;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+.why p {
+  font-family: "Futura PT";
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 32px;
+  color: #FFFFFF;
+  width: 50%;
+}
+
+.reasons {
+  -webkit-transform: translateX(210px);
+          transform: translateX(210px);
+}
+.reasons ol {
+  counter-reset: ol-numbers;
+  margin: 0;
+  padding: 45px 50px;
+  -webkit-transform: translate(-50px, -100px);
+          transform: translate(-50px, -100px);
+  z-index: 2;
+  background: #fff;
+}
+.reasons ol li {
+  padding: 0 0 0 40px;
+  position: relative;
+  cursor: default;
+}
+.reasons ol li:first-child:before {
+  top: 0;
+}
+.reasons ol li::before {
+  counter-increment: ol-numbers;
+  content: "0" counter(ol-numbers) ".";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 23px;
+  color: #231F20;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+.reasons ol li:hover::before {
+  font-weight: bolder;
+}
+.reasons h3 {
+  position: relative;
+  margin-bottom: 15px;
+  display: inline-block;
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 23px;
+  color: #231F20;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+.reasons h3:before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 50px;
+  border: 1px solid #231F20;
+  right: -63px;
+  top: 50%;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  -webkit-transform: translateX(-40%) scaleX(0);
+          transform: translateX(-40%) scaleX(0);
+  visibility: hidden;
+  z-index: 2;
+}
+.reasons h3:after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 60%;
+  border: 1px solid #F7F7F7;
+  right: calc(-60% - 63px);
+  top: 50%;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  -webkit-transform: translateX(-80%) scaleX(0);
+          transform: translateX(-80%) scaleX(0);
+  visibility: hidden;
+  z-index: 1;
+}
+.reasons p {
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 32px;
+  color: #231F20;
+  opacity: 0;
+  position: absolute;
+  display: inline-block;
+  right: 15%;
+  top: 0;
+  width: 40%;
+  -webkit-transform: translateY(-50%) scaleY(0);
+          transform: translateY(-50%) scaleY(0);
+  -webkit-transition-delay: 500ms;
+          transition-delay: 500ms;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+.reasons li:hover h3 {
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  font-weight: bolder;
+}
+.reasons li:hover h3:before {
+  -webkit-transform: translateX(0) scaleX(1);
+          transform: translateX(0) scaleX(1);
+  opacity: 1;
+  visibility: visible;
+}
+.reasons li:hover h3:after {
+  -webkit-transform: translateX(0) scaleX(1);
+          transform: translateX(0) scaleX(1);
+  opacity: 1;
+  visibility: visible;
+}
+.reasons li:hover p {
+  -webkit-transform: translateY(0) scaleY(1);
+          transform: translateY(0) scaleY(1);
+  opacity: 1;
+}
+
+.swiper-wrapper {
+  overflow: hidden;
+}
+
+.swiper-slide {
+  width: 150px;
+  height: 300px;
+  background-color: #3D46EC;
+}
+
+.trusted .container {
+  max-width: 1020px;
+}
+.trusted .subtitle {
+  margin-bottom: 5px;
+}
+.trusted p {
+  max-width: 660px;
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 32px;
+  color: #231F20;
+  margin-bottom: 28px;
+}
+.trusted .trusted__row {
+  max-width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow: hidden;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 90px;
+}
+.trusted .trusted__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+}
+.trusted .trusted__item svg {
   width: 100%;
 }
 
-.accordion-select {
-  cursor: pointer;
-  margin: 0;
-  opacity: 0;
-  z-index: 1;
+.help {
+  background: url("/img/pictures/help-img.jpg") 0 0/cover no-repeat;
+  padding-top: 54px;
 }
-
-.accordion-title {
+.help .container {
+  max-width: 1020px;
+}
+.help .subtitle {
+  margin-bottom: 34px;
+}
+.help .help__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.help .help__item {
+  background: #F7F7F7;
+  padding: 35px 35px 25px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33%;
+          flex: 0 1 33%;
+  margin-right: 2px;
+  min-height: 300px;
   position: relative;
 }
-
-.accordion-title:not(:nth-last-child(2))::after {
-  border: 1px solid transparent;
-  bottom: 0;
+.help .help__item p {
+  max-width: 200px;
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 23px;
+  color: #231F20;
+}
+.help .help__item a {
+  position: absolute;
+  bottom: 25px;
+  right: 40px;
+}
+.help .help__item a::after {
   content: "";
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
+  display: inline-block;
+  height: 10px;
+  width: 50px;
+  background: url("/img/icon/help-arrow.svg") 0 0/contain no-repeat;
+  margin-left: 10px;
 }
 
-.accordion-title span {
-  bottom: 0px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+footer {
+  background: #231F20;
+  color: #fff;
+  padding: 70px 0 43px;
+}
+footer p {
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 32px;
+  margin-bottom: 10px;
+}
+footer .subtitle {
+  font-family: "Futura PT";
+  font-size: 18px;
+  margin-bottom: 8px;
+  font-style: normal;
+  font-weight: bold;
+}
+footer .footer__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 80px;
+}
+footer h3 {
+  font-family: "Futura PT";
+  font-size: 16px;
+  font-weight: bold;
+  margin: 25px 0;
+}
+footer a,
+footer span,
+footer li {
+  font-family: "Futura PT";
+  color: #fff;
   display: block;
-  position: absolute;
-  white-space: nowrap;
-  width: 100%;
+  margin-bottom: 5px;
+  font-weight: 300;
 }
-
-.accordion-content {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  overflow: auto;
-  position: relative;
-  -webkit-transition: margin 0.5s ease 0.1s;
-  transition: margin 0.5s ease 0.1s;
+footer .footer__item:first-child {
+  margin-right: 15%;
 }
-
-.accordion-select:checked + .accordion-title + .accordion-content {
-  margin-bottom: 0;
-  margin-right: 0;
+footer .footer__item:nth-child(2) {
+  margin-right: 5%;
 }
-
-/* Generated styles starts here */
-.accordion {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: auto;
-}
-
-.accordion-title,
-.accordion-select {
-  background-color: #ffffff;
-  color: #7f8787;
-  width: 100%;
-  height: 65px;
-  font-size: 15px;
-}
-
-.accordion-select {
-  margin-bottom: -65px;
-  margin-right: -65px;
-}
-
-.accordion-title:not(:nth-last-child(2))::after {
-  border-right-color: transparent;
-}
-
-.accordion-select:hover + .accordion-title,
-.accordion-select:checked + .accordion-title {
-  background-color: #ffffff;
-}
-
-.accordion-title span {
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
-  -ms-writing-mode: lr-tb;
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
-  padding-left: 33px;
-  padding-right: 33px;
-  line-height: 65px;
-}
-
-.accordion-content {
-  color: #7f8787;
-  height: 280px;
-  margin-bottom: -280px;
-  margin-right: 0;
-  padding: 30px;
-  width: 100%;
+footer .copirate {
+  display: inline-block;
+  font-weight: bold;
 }

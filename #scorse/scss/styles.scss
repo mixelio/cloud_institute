@@ -1,14 +1,15 @@
 @import "nullstyle.scss";
 
+
 // подключение шрифтов
 
 @font-face {
   font-family: 'Futura PT';
   src: url('/fonts/FuturaPT-Heavy.eot');
   src: local('Futura PT Heavy'), local('FuturaPT-Heavy'),
-      url('/fonts/FuturaPT-Heavy.eot?#iefix') format('embedded-opentype'),
-      url('/fonts/FuturaPT-Heavy.woff') format('woff'),
-      url('/fonts/FuturaPT-Heavy.ttf') format('truetype');
+    url('/fonts/FuturaPT-Heavy.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/FuturaPT-Heavy.woff') format('woff'),
+    url('/fonts/FuturaPT-Heavy.ttf') format('truetype');
   font-weight: 900;
   font-style: normal;
 }
@@ -17,9 +18,9 @@
   font-family: 'Futura PT';
   src: url('/fonts/FuturaPT-Medium.eot');
   src: local('Futura PT Medium'), local('FuturaPT-Medium'),
-      url('/fonts/FuturaPT-Medium.eot?#iefix') format('embedded-opentype'),
-      url('/fonts/FuturaPT-Medium.woff') format('woff'),
-      url('/fonts/§FuturaPT-Medium.ttf') format('truetype');
+    url('/fonts/FuturaPT-Medium.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/FuturaPT-Medium.woff') format('woff'),
+    url('/fonts/§FuturaPT-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
@@ -28,9 +29,9 @@
   font-family: 'Futura PT';
   src: url('/fonts/FuturaPT-MediumObl.eot');
   src: local('Futura PT Medium Oblique'), local('FuturaPT-MediumObl'),
-      url('/fonts/FuturaPT-MediumObl.eot?#iefix') format('embedded-opentype'),
-      url('/fonts/FuturaPT-MediumObl.woff') format('woff'),
-      url('/fonts/FuturaPT-MediumObl.ttf') format('truetype');
+    url('/fonts/FuturaPT-MediumObl.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/FuturaPT-MediumObl.woff') format('woff'),
+    url('/fonts/FuturaPT-MediumObl.ttf') format('truetype');
   font-weight: 500;
   font-style: italic;
 }
@@ -39,9 +40,9 @@
   font-family: 'Futura PT Cond';
   src: url('/fonts/FuturaPTCond-Medium.eot');
   src: local('Futura PT Cond Medium'), local('FuturaPTCond-Medium'),
-      url('/fonts/FuturaPTCond-Medium.eot?#iefix') format('embedded-opentype'),
-      url('/fonts/FuturaPTCond-Medium.woff') format('woff'),
-      url('/fonts/FuturaPTCond-Medium.ttf') format('truetype');
+    url('/fonts/FuturaPTCond-Medium.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/FuturaPTCond-Medium.woff') format('woff'),
+    url('/fonts/FuturaPTCond-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
@@ -50,9 +51,9 @@
   font-family: 'Futura PT';
   src: url('/fonts/FuturaPT-LightObl.eot');
   src: local('Futura PT Light Oblique'), local('FuturaPT-LightObl'),
-      url('/fonts/FuturaPT-LightObl.eot?#iefix') format('embedded-opentype'),
-      url('/fonts/FuturaPT-LightObl.woff') format('woff'),
-      url('/fonts/FuturaPT-LightObl.ttf') format('truetype');
+    url('/fonts/FuturaPT-LightObl.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/FuturaPT-LightObl.woff') format('woff'),
+    url('/fonts/FuturaPT-LightObl.ttf') format('truetype');
   font-weight: 300;
   font-style: italic;
 }
@@ -61,9 +62,9 @@
   font-family: 'Futura PT Book';
   src: url('/fonts/FuturaPT-Book.eot');
   src: local('Futura PT Book'), local('FuturaPT-Book'),
-      url('/fonts/FuturaPT-Book.eot?#iefix') format('embedded-opentype'),
-      url('/fonts/FuturaPT-Book.woff') format('woff'),
-      url('/fonts/FuturaPT-Book.ttf') format('truetype');
+    url('/fonts/FuturaPT-Book.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/FuturaPT-Book.woff') format('woff'),
+    url('/fonts/FuturaPT-Book.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -72,9 +73,9 @@
   font-family: 'Futura PT Cond';
   src: url('/fonts/FuturaPTCond-Bold.eot');
   src: local('Futura PT Cond Bold'), local('FuturaPTCond-Bold'),
-      url('/fonts/FuturaPTCond-Bold.eot?#iefix') format('embedded-opentype'),
-      url('/fonts/FuturaPTCond-Bold.woff') format('woff'),
-      url('/fonts/FuturaPTCond-Bold.ttf') format('truetype');
+    url('/fonts/FuturaPTCond-Bold.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/FuturaPTCond-Bold.woff') format('woff'),
+    url('/fonts/FuturaPTCond-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
@@ -83,9 +84,9 @@
   font-family: 'Futura PT Book';
   src: url('/fonts/FuturaPT-BookObl.eot');
   src: local('Futura PT Book Oblique'), local('FuturaPT-BookObl'),
-      url('/fonts/FuturaPT-BookObl.eot?#iefix') format('embedded-opentype'),
-      url('/fonts/FuturaPT-BookObl.woff') format('woff'),
-      url('/fonts/FuturaPT-BookObl.ttf') format('truetype');
+    url('/fonts/FuturaPT-BookObl.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/FuturaPT-BookObl.woff') format('woff'),
+    url('/fonts/FuturaPT-BookObl.ttf') format('truetype');
   font-weight: normal;
   font-style: italic;
 }
@@ -94,9 +95,9 @@
   font-family: 'Futura PT Cond Extra';
   src: url('/fonts/FuturaPTCond-ExtraBoldObl.eot');
   src: local('Futura PT Cond Extra Bold Oblique'), local('FuturaPTCond-ExtraBoldObl'),
-      url('/fonts/FuturaPTCond-ExtraBoldObl.eot?#iefix') format('embedded-opentype'),
-      url('/fonts/FuturaPTCond-ExtraBoldObl.woff') format('woff'),
-      url('/fonts/FuturaPTCond-ExtraBoldObl.ttf') format('truetype');
+    url('/fonts/FuturaPTCond-ExtraBoldObl.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/FuturaPTCond-ExtraBoldObl.woff') format('woff'),
+    url('/fonts/FuturaPTCond-ExtraBoldObl.ttf') format('truetype');
   font-weight: 800;
   font-style: italic;
 }
@@ -105,9 +106,9 @@
   font-family: 'Futura PT';
   src: url('/fonts/FuturaPT-Light.eot');
   src: local('Futura PT Light'), local('FuturaPT-Light'),
-      url('/fonts/FuturaPT-Light.eot?#iefix') format('embedded-opentype'),
-      url('/fonts/FuturaPT-Light.woff') format('woff'),
-      url('/fonts/FuturaPT-Light.ttf') format('truetype');
+    url('/fonts/FuturaPT-Light.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/FuturaPT-Light.woff') format('woff'),
+    url('/fonts/FuturaPT-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
@@ -116,9 +117,9 @@
   font-family: 'Futura PT';
   src: url('/fonts/FuturaPT-BoldObl.eot');
   src: local('Futura PT Bold Oblique'), local('FuturaPT-BoldObl'),
-      url('/fonts/FuturaPT-BoldObl.eot?#iefix') format('embedded-opentype'),
-      url('/fonts/FuturaPT-BoldObl.woff') format('woff'),
-      url('/fonts/FuturaPT-BoldObl.ttf') format('truetype');
+    url('/fonts/FuturaPT-BoldObl.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/FuturaPT-BoldObl.woff') format('woff'),
+    url('/fonts/FuturaPT-BoldObl.ttf') format('truetype');
   font-weight: bold;
   font-style: italic;
 }
@@ -127,9 +128,9 @@
   font-family: 'Futura PT Demi';
   src: url('/fonts/FuturaPT-DemiObl.eot');
   src: local('Futura PT Demi Oblique'), local('FuturaPT-DemiObl'),
-      url('/fonts/FuturaPT-DemiObl.eot?#iefix') format('embedded-opentype'),
-      url('/fonts/FuturaPT-DemiObl.woff') format('woff'),
-      url('/fonts/FuturaPT-DemiObl.ttf') format('truetype');
+    url('/fonts/FuturaPT-DemiObl.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/FuturaPT-DemiObl.woff') format('woff'),
+    url('/fonts/FuturaPT-DemiObl.ttf') format('truetype');
   font-weight: 600;
   font-style: italic;
 }
@@ -138,9 +139,9 @@
   font-family: 'Futura PT Cond Extra';
   src: url('/fonts/FuturaPTCond-ExtraBold.eot');
   src: local('Futura PT Cond Extra Bold'), local('FuturaPTCond-ExtraBold'),
-      url('/fonts/FuturaPTCond-ExtraBold.eot?#iefix') format('embedded-opentype'),
-      url('/fonts/FuturaPTCond-ExtraBold.woff') format('woff'),
-      url('/fonts/FuturaPTCond-ExtraBold.ttf') format('truetype');
+    url('/fonts/FuturaPTCond-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/FuturaPTCond-ExtraBold.woff') format('woff'),
+    url('/fonts/FuturaPTCond-ExtraBold.ttf') format('truetype');
   font-weight: 800;
   font-style: normal;
 }
@@ -149,9 +150,9 @@
   font-family: 'Futura PT Demi';
   src: url('/fonts/FuturaPT-Demi.eot');
   src: local('Futura PT Demi'), local('FuturaPT-Demi'),
-      url('/fonts/FuturaPT-Demi.eot?#iefix') format('embedded-opentype'),
-      url('/fonts/FuturaPT-Demi.woff') format('woff'),
-      url('/fonts/FuturaPT-Demi.ttf') format('truetype');
+    url('/fonts/FuturaPT-Demi.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/FuturaPT-Demi.woff') format('woff'),
+    url('/fonts/FuturaPT-Demi.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
 }
@@ -160,9 +161,9 @@
   font-family: 'Futura PT';
   src: url('/fonts/FuturaPT-HeavyObl.eot');
   src: local('Futura PT Heavy Oblique'), local('FuturaPT-HeavyObl'),
-      url('/fonts/FuturaPT-HeavyObl.eot?#iefix') format('embedded-opentype'),
-      url('/fonts/FuturaPT-HeavyObl.woff') format('woff'),
-      url('/fonts/FuturaPT-HeavyObl.ttf') format('truetype');
+    url('/fonts/FuturaPT-HeavyObl.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/FuturaPT-HeavyObl.woff') format('woff'),
+    url('/fonts/FuturaPT-HeavyObl.ttf') format('truetype');
   font-weight: 900;
   font-style: italic;
 }
@@ -171,9 +172,9 @@
   font-family: 'Futura PT Extra';
   src: url('/fonts/FuturaPT-ExtraBoldObl.eot');
   src: local('Futura PT Extra Bold Oblique'), local('FuturaPT-ExtraBoldObl'),
-      url('/fonts/FuturaPT-ExtraBoldObl.eot?#iefix') format('embedded-opentype'),
-      url('/fonts/FuturaPT-ExtraBoldObl.woff') format('woff'),
-      url('/fonts/FuturaPT-ExtraBoldObl.ttf') format('truetype');
+    url('/fonts/FuturaPT-ExtraBoldObl.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/FuturaPT-ExtraBoldObl.woff') format('woff'),
+    url('/fonts/FuturaPT-ExtraBoldObl.ttf') format('truetype');
   font-weight: 800;
   font-style: italic;
 }
@@ -182,9 +183,9 @@
   font-family: 'Futura PT Cond Book';
   src: url('/fonts/FuturaPTCond-Book.eot');
   src: local('Futura PT Cond Book'), local('FuturaPTCond-Book'),
-      url('/fonts/FuturaPTCond-Book.eot?#iefix') format('embedded-opentype'),
-      url('/fonts/FuturaPTCond-Book.woff') format('woff'),
-      url('/fonts/FuturaPTCond-Book.ttf') format('truetype');
+    url('/fonts/FuturaPTCond-Book.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/FuturaPTCond-Book.woff') format('woff'),
+    url('/fonts/FuturaPTCond-Book.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -193,9 +194,9 @@
   font-family: 'Futura PT';
   src: url('/fonts/FuturaPT-Bold.eot');
   src: local('Futura PT Bold'), local('FuturaPT-Bold'),
-      url('/fonts/FuturaPT-Bold.eot?#iefix') format('embedded-opentype'),
-      url('/fonts/FuturaPT-Bold.woff') format('woff'),
-      url('/fonts/FuturaPT-Bold.ttf') format('truetype');
+    url('/fonts/FuturaPT-Bold.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/FuturaPT-Bold.woff') format('woff'),
+    url('/fonts/FuturaPT-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
@@ -204,9 +205,9 @@
   font-family: 'Futura PT Extra';
   src: url('/fonts/FuturaPT-ExtraBold.eot');
   src: local('Futura PT Extra Bold'), local('FuturaPT-ExtraBold'),
-      url('/fonts/FuturaPT-ExtraBold.eot?#iefix') format('embedded-opentype'),
-      url('/fonts/FuturaPT-ExtraBold.woff') format('woff'),
-      url('/fonts/FuturaPT-ExtraBold.ttf') format('truetype');
+    url('/fonts/FuturaPT-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/FuturaPT-ExtraBold.woff') format('woff'),
+    url('/fonts/FuturaPT-ExtraBold.ttf') format('truetype');
   font-weight: 800;
   font-style: normal;
 }
@@ -215,9 +216,9 @@
   font-family: 'Futura PT Cond';
   src: url('/fonts/FuturaPTCond-BoldObl.eot');
   src: local('Futura PT Cond Bold Oblique'), local('FuturaPTCond-BoldObl'),
-      url('/fonts/FuturaPTCond-BoldObl.eot?#iefix') format('embedded-opentype'),
-      url('/fonts/FuturaPTCond-BoldObl.woff') format('woff'),
-      url('/fonts/FuturaPTCond-BoldObl.ttf') format('truetype');
+    url('/fonts/FuturaPTCond-BoldObl.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/FuturaPTCond-BoldObl.woff') format('woff'),
+    url('/fonts/FuturaPTCond-BoldObl.ttf') format('truetype');
   font-weight: bold;
   font-style: italic;
 }
@@ -226,9 +227,9 @@
   font-family: 'Futura PT Cond';
   src: url('/fonts/FuturaPTCond-MediumObl.eot');
   src: local('Futura PT Cond Medium Oblique'), local('FuturaPTCond-MediumObl'),
-      url('/fonts/FuturaPTCond-MediumObl.eot?#iefix') format('embedded-opentype'),
-      url('/fonts/FuturaPTCond-MediumObl.woff') format('woff'),
-      url('/fonts/FuturaPTCond-MediumObl.ttf') format('truetype');
+    url('/fonts/FuturaPTCond-MediumObl.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/FuturaPTCond-MediumObl.woff') format('woff'),
+    url('/fonts/FuturaPTCond-MediumObl.ttf') format('truetype');
   font-weight: 500;
   font-style: italic;
 }
@@ -237,9 +238,9 @@
   font-family: 'Futura PT Cond Book';
   src: url('/fonts/FuturaPTCond-BookObl.eot');
   src: local('Futura PT Cond Book Oblique'), local('FuturaPTCond-BookObl'),
-      url('/fonts/FuturaPTCond-BookObl.eot?#iefix') format('embedded-opentype'),
-      url('/fonts/FuturaPTCond-BookObl.woff') format('woff'),
-      url('/fonts/FuturaPTCond-BookObl.ttf') format('truetype');
+    url('/fonts/FuturaPTCond-BookObl.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/FuturaPTCond-BookObl.woff') format('woff'),
+    url('/fonts/FuturaPTCond-BookObl.ttf') format('truetype');
   font-weight: normal;
   font-style: italic;
 }
@@ -248,6 +249,7 @@
 
 body {
   font-family: "Futura PT book";
+
 }
 
 header {
@@ -259,25 +261,28 @@ header {
   margin: 0 auto;
   padding: 0 10px;
 }
+
 .header__row {
   padding-top: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .header__item {
   &:first-child {
     margin: 0 70px 0 0;
   }
+
   &:nth-child(2) {
     flex: 1 1 auto;
   }
+
   &:last-child {
     display: flex;
   }
 }
-.header__logo {
-}
+
 .menu__list {
   font-family: 'Futura PT book';
   font-style: normal;
@@ -285,18 +290,22 @@ header {
   font-size: 18px;
   line-height: 23px;
   color: #231F20;
+
   ul {
     display: flex;
   }
+
   li {
     margin: 0 30px 0 0;
+
     &:first-child {
       margin: 0 15px 0 0;
       padding: 0 15px 0 0;
       position: relative;
+
       a {
-      &::after {
-          content:'';
+        &::after {
+          content: '';
           position: absolute;
           top: 50%;
           right: 0;
@@ -314,19 +323,22 @@ header {
     }
   }
 }
+
 .subitem {
-  
+
   border-right: 1px solid #CCCCCC;
   margin-right: 10px;
   padding-right: 10px;
+
   &:last-child {
     border: none;
     margin-right: 0px;
     padding-right: 0px;
   }
 }
+
 .search {
- position: relative;
+  position: relative;
 
   input {
     &:first-child {
@@ -336,6 +348,7 @@ header {
     }
 
   }
+
   input {
 
     &:nth-child(2) {
@@ -352,179 +365,602 @@ header {
   }
 }
 
-.basket {
-}
-
 .first_screen {
   background-color: #F3F4F5;
-  .container {
-    max-width: 1020px;
-  }
   position: relative;
   height: 100vh;
   padding: 137px;
+
+  .container {
+    max-width: 1020px;
+  }
+
   img {
     position: absolute;
     height: 100%;
     right: 10%;
     bottom: 0;
   }
+
   h1 {
     font-style: normal;
-font-weight: 450;
-font-size: 60px;
-line-height: 77px;
-color: #231F20;
-max-width: 50%;
-margin-bottom: 12px;
+    font-weight: 450;
+    font-size: 60px;
+    line-height: 77px;
+    color: #231F20;
+    max-width: 50%;
+    margin-bottom: 12px;
   }
+
   p {
     font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 21px;
-color: #333333;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #333333;
     max-width: 45%;
     margin-bottom: 50px;
   }
+
   a {
     margin-right: 10px;
     border: 2px solid #3D46EC;
     padding: 13px 22px;
     font-weight: 700;
-font-size: 14px;
-line-height: 18px;
-color: #3D46EC;
+    font-size: 14px;
+    line-height: 18px;
+    color: #3D46EC;
+
     &:last-child {
       margin-right: 0;
     }
   }
 }
 
+.subtitle {
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 28px;
+  color: #3D46EC;
+}
+
 .about {
-  background: rgb(247,247,247);
-background: linear-gradient(90deg, rgba(247,247,247,1) 50%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
+  background: rgb(247, 247, 247);
+  background: linear-gradient(90deg, rgba(247, 247, 247, 1) 50%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 100%);
+
   .container {
     max-width: 1020px;
     background-color: #fff;
     padding: 78px 100px 0;
+    position: relative;
   }
+
   h2 {
     font-family: "Futura PT";
     font-style: normal;
-font-weight: 500;
-font-size: 22px;
-line-height: 28px;
-color: #3D46EC;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;
+    color: #3D46EC;
   }
-  p {
+
+  .about__description {
     font-family: "Futura PT";
     font-style: normal;
-font-weight: 300;
-font-size: 25px;
-line-height: 32px;
-color: #231F20;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 32px;
+    color: #231F20;
+    margin-bottom: 50px;
+  }
+
+  ol {
+    counter-reset: ol-numbers;
+    margin: 0;
+    padding: 0;
+  }
+
+  ol li {
+    position: relative;
+
+    &:first-child {
+      &:before {
+        top: 0;
+      }
+    }
+  }
+
+  ol li::before {
+    counter-increment: ol-numbers;
+    content: "0" counter(ol-numbers) ".";
+    position: absolute;
+    top: 20px;
+    left: 0;
+    font-family: "Futura PT";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 23px;
+    color: #231F20;
+    transition-duration: 300ms;
+
+  }
+
+  ol li:hover::before {
+    font-weight: bolder;
+
+  }
+
+  .about_item {
+    cursor: default;
+    position: relative;
+    width: 55%;
+    transition-duration: 300ms;
+    padding-top: 20px;
+
+    &:first-child {
+      padding-top: 0;
+
+      &::after {
+        height: 0px;
+        width: 0%;
+      }
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      display: inline-block;
+      background-color: #F7F7F7;
+      top: 0;
+      left: 0;
+    }
+
+    h3 {
+      position: relative;
+      padding: 0 0 0 40px;
+      margin-bottom: 15px;
+      display: inline-block;
+      font-family: "Futura PT";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 23px;
+      color: #231F20;
+      transition-duration: 500ms;
+
+      &:before {
+        content: '';
+        position: absolute;
+        display: inline-block;
+        width: 50px;
+        border: 1px solid #231F20;
+        right: -63px;
+        top: 50%;
+        transition-duration: 500ms;
+        transform: translateX(-40%) scaleX(0);
+        visibility: hidden;
+        z-index: 2;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        display: inline-block;
+        width: 100%;
+        border: 1px solid #F7F7F7;
+        right: calc(-100% - 63px);
+        top: 50%;
+        transition-duration: 500ms;
+        transform: translateX(-80%) scaleX(0);
+        visibility: hidden;
+        z-index: 1;
+      }
+    }
+
+    &:hover h3 {
+      transition-duration: 500ms;
+      font-weight: bolder;
+
+      &:before {
+        transform: translateX(0) scaleX(1);
+        opacity: 1;
+        visibility: visible;
+      }
+
+      &:after {
+        transform: translateX(0) scaleX(1);
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+    p {
+      margin-bottom: 20px;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 21px;
+      color: #231F20;
+      transition-duration: 300ms;
+    }
+
+    &:hover p {
+      transition-duration: 300ms;
+      font-size: 25px;
+      line-height: 32px;
+      // margin-bottom: 60px;
+    }
+
+    img {
+      position: absolute;
+      width: 80%;
+      right: -50%;
+      top: -10px;
+      opacity: 0;
+      visibility: hidden;
+      transform: scale(0);
+      transition-duration: 500ms;
+      transition-delay: 500ms;
+    }
+
+    &:hover img {
+      opacity: 1;
+      right: -100%;
+      transform: scale(1);
+      visibility: visible;
+    }
+
+    a {
+      padding: 14px 26px;
+      margin-bottom: 0px;
+      display: inline-block;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 18px;
+      color: #FFF;
+      background: #3D46EC;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-50%);
+      transition-duration: 300ms;
+      transition-delay: 300ms;
+    }
+
+    &:hover a {
+      opacity: 1;
+      visibility: visible;
+      margin-bottom: 48px;
+      transform: translateY(0);
+    }
   }
 }
 
-// accordeon
-.accordion {
-  box-sizing: border-box;
-  display: flex;
+main {
   overflow: hidden;
-  width: 100%;
 }
 
-.accordion-select {
-  cursor: pointer;
-  margin: 0;
-  opacity: 0;
-  z-index: 1;
+.why {
+  padding: 215px 0 125px;
+  transform: translateX(210px);
+  background: url('../img/pictures/why.jpg') 0 0/ contain no-repeat;
+
+  h3 {
+    font-family: "Futura PT";
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-family: "Futura PT";
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 32px;
+    color: #FFFFFF;
+    width: 50%;
+  }
 }
 
-.accordion-title {
-  position: relative;
+.reasons {
+
+  transform: translateX(210px);
+
+  ol {
+    counter-reset: ol-numbers;
+    margin: 0;
+    padding: 45px 50px;
+    transform: translate(-50px, -100px);
+    z-index: 2;
+    background: #fff;
+
+    li {
+      padding: 0 0 0 40px;
+      position: relative;
+      cursor: default;
+
+      &:first-child {
+        &:before {
+          top: 0;
+        }
+      }
+    }
+  }
+
+  ol li::before {
+    counter-increment: ol-numbers;
+    content: "0" counter(ol-numbers) ".";
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: "Futura PT";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 23px;
+    color: #231F20;
+    transition-duration: 300ms;
+
+  }
+
+  ol li:hover::before {
+    font-weight: bolder;
+  }
+
+  h3 {
+    position: relative;
+    margin-bottom: 15px;
+    display: inline-block;
+    font-family: "Futura PT";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 23px;
+    color: #231F20;
+    transition-duration: 500ms;
+
+    &:before {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      width: 50px;
+      border: 1px solid #231F20;
+      right: -63px;
+      top: 50%;
+      transition-duration: 500ms;
+      transform: translateX(-40%) scaleX(0);
+      visibility: hidden;
+      z-index: 2;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      width: 60%;
+      border: 1px solid #F7F7F7;
+      right: calc(-60% - 63px);
+      top: 50%;
+      transition-duration: 500ms;
+      transform: translateX(-80%) scaleX(0);
+      visibility: hidden;
+      z-index: 1;
+    }
+  }
+
+  p {
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 32px;
+    color: #231F20;
+    opacity: 0;
+    position: absolute;
+    display: inline-block;
+    right: 15%;
+    top: 0;
+    width: 40%;
+    transform: translateY(-50%) scaleY(0);
+    transition-delay: 500ms;
+    transition-duration: 300ms;
+  }
+
+  li:hover h3 {
+    transition-duration: 500ms;
+    font-weight: bolder;
+
+    &:before {
+      transform: translateX(0) scaleX(1);
+      opacity: 1;
+      visibility: visible;
+    }
+
+    &:after {
+      transform: translateX(0) scaleX(1);
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  li:hover p {
+    transform: translateY(0) scaleY(1);
+    opacity: 1;
+  }
 }
 
-.accordion-title:not(:nth-last-child(2))::after {
-  border: 1px solid transparent;
-  bottom: 0;
-  content: '';
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
+.sertified {}
+
+.container {}
+
+.subtitle {}
+
+.swiper {}
+
+.swiper_sertified {}
+
+.swiper-wrapper {
+  overflow: hidden;
 }
 
-.accordion-title span {
-  bottom: 0px;
-  box-sizing: border-box;
-  display: block;
-  position: absolute;
-  white-space: nowrap;
-  width: 100%;
+.swiper-slide {
+  width: 150px;
+  height: 300px;
+  background-color: #3D46EC;
 }
 
-.accordion-content {
-  box-sizing: border-box;
-  overflow: auto;
-  position: relative;
-  transition: margin 0.5s ease 0.1s;
+.trusted {
+  .container {
+    max-width: 1020px;
+  }
+
+  .subtitle {
+    margin-bottom: 5px;
+  }
+
+  p {
+    max-width: 660px;
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 32px;
+    color: #231F20;
+    margin-bottom: 28px;
+  }
+
+  .trusted__row {
+    max-width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 90px;
+  }
+
+  .trusted__item {
+    flex: 0 0 30%;
+
+    svg {
+      width: 100%;
+    }
+  }
 }
 
-.accordion-select:checked + .accordion-title + .accordion-content {
-  margin-bottom: 0;
-  margin-right: 0;
+
+.help {
+  background: url("/img/pictures/help-img.jpg") 0 0 / cover no-repeat;
+  padding-top: 54px;
+
+  .container {
+    max-width: 1020px;
+  }
+
+  .subtitle {
+    margin-bottom: 34px;
+  }
+
+  .help__row {
+    display: flex;
+  }
+
+  .help__item {
+    background: #F7F7F7;
+    padding: 35px 35px 25px;
+    flex: 0 1 33%;
+    margin-right: 2px;
+    min-height: 300px;
+    position: relative;
+
+    p {
+      max-width: 200px;
+      font-family: 'Futura PT';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 23px;
+      color: #231F20;
+    }
+
+    a {
+      position: absolute;
+      bottom: 25px;
+      right: 40px;
+
+      &::after {
+        content: '';
+        display: inline-block;
+        height: 10px;
+        width: 50px;
+        background: url('/img/icon/help-arrow.svg') 0 0 / contain no-repeat;
+        margin-left: 10px;
+      }
+    }
+  }
 }
 
-/* Generated styles starts here */
+footer {
+  background: #231F20;
+  color: #fff;
+  padding: 70px 0 43px;
 
-.accordion {
+  p {
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 32px;
+    margin-bottom: 10px;
+  }
 
-  flex-direction: column;
-  height: auto;
-} 
+  .subtitle {
+    font-family: 'Futura PT';
+    font-size: 18px;
+    margin-bottom: 8px;
+    font-style: normal;
+    font-weight: bold;
+  }
 
-.accordion-title,
-.accordion-select  {
-  background-color: #ffffff;
-  color: #7f8787;
-  width: 100%;
-  height: 65px;
-  font-size: 15px;
+  .footer__row {
+    display: flex;
+    margin-bottom: 80px;
+  }
+
+  h3 {
+    font-family: 'Futura PT';
+    font-size: 16px;
+    font-weight: bold;
+    margin: 25px 0;
+  }
+
+  a,
+  span,
+  li {
+    font-family: 'Futura PT';
+    color: #fff;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 300;
+  }
+
+  .footer__item {
+    &:first-child {
+      margin-right: 15%;
+    }
+
+    &:nth-child(2) {
+      margin-right: 5%;
+    }
+  }
+
+  .copirate {
+    display: inline-block;
+    font-weight: bold;
+  }
 }
-
-.accordion-select {
-  margin-bottom: -65px;
-  margin-right: -65px;
-}
-
-.accordion-title:not(:nth-last-child(2))::after {
-  //border-bottom-color: rgb(234, 234, 234);
-  border-right-color: transparent;
-} 
-
-.accordion-select:hover + .accordion-title,
-.accordion-select:checked + .accordion-title {
-  background-color: #ffffff;
-} 
-
-.accordion-title span  {	
-  transform: rotate(0deg);
-  -ms-writing-mode: lr-tb;
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
-  padding-left: 33px;
-  padding-right: 33px;
-  line-height: 65px;
-} 
-
-.accordion-content {
-  //background-color: #f7f7f7;
-  color: #7f8787;
-  height: 280px;
-  margin-bottom: -280px;
-  margin-right: 0;
-  padding: 30px;
-  width: 100%;
-} 
-// accordeon
