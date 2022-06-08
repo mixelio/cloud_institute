@@ -809,14 +809,44 @@ main {
   opacity: 1;
 }
 
-.swiper-wrapper {
-  overflow: hidden;
+.sertified .container {
+  max-width: 1020px;
 }
-
-.swiper-slide {
-  width: 150px;
-  height: 300px;
-  background-color: #3D46EC;
+.sertified p {
+  max-width: 550px;
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 32px;
+  color: #231F20;
+  margin-bottom: 50px;
+}
+.sertified .swiper {
+  background: #E9EAEE;
+}
+.sertified .swiper h4 {
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 450;
+  font-size: 25px;
+  line-height: 32px;
+  color: #231F20;
+}
+.sertified .swiper-slide {
+  z-index: 3;
+  max-width: 320px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: #F7F7F7;
+  padding: 30px 20px;
+}
+.sertified .swiper-slide ul {
+  padding: 0 30px;
+}
+.sertified .swiper-slide ul li {
+  margin-bottom: 15px;
 }
 
 .trusted .container {
