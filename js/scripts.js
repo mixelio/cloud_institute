@@ -7,4 +7,5 @@ const swiper = new Swiper('.swiper', {
   centerInsufficientSlides: true,
   centeredSlides: true,
   initialSlide: 1,
+  scroll: EventTarget,
 });
