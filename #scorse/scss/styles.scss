@@ -252,8 +252,22 @@ body {
 
 }
 
-header {
+.fixed_logo {
+  position: fixed;
+  left: calc(50%);
+}
+
+.header {
   background-color: #F3F4F5;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  transition-duration: 500ms;
+
+  &._close {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
 
   a {
     transition-duration: 500ms;
@@ -381,20 +395,45 @@ header {
 }
 
 .first_screen {
+  margin-top: 9vh;
   background-color: #F3F4F5;
   position: relative;
-  height: 100vh;
+  height: 200vh;
   padding: 137px;
 
   .container {
     max-width: 1020px;
+
+  }
+
+  .fixed_container {
+    position: fixed;
+    width: 100vw;
+    transition-duration: 500ms;
+
+    &._unfixed {
+      transform: translateY(-50%);
+      opacity: 0;
+    }
   }
 
   img {
-    position: absolute;
-    height: 100%;
-    right: 10%;
+    position: fixed;
+    height: 90vh;
+    right: 30%;
     bottom: 0;
+    top: 10vh;
+    transition-duration: 500ms;
+
+    &._active {
+      right: 10%;
+    }
+
+    &._position {
+      position: absolute;
+      height: 90vh;
+      top: auto;
+    }
   }
 
   h1 {
@@ -403,8 +442,17 @@ header {
     font-size: 60px;
     line-height: 77px;
     color: #231F20;
-    max-width: 50%;
+    max-width: 530px;
     margin-bottom: 12px;
+    transition-duration: 500ms;
+    //
+    transform: translateX(60%);
+    opacity: 0;
+
+    &._active {
+      transform: translateX(0%);
+      opacity: 1;
+    }
   }
 
   p {
@@ -413,8 +461,17 @@ header {
     font-size: 16px;
     line-height: 21px;
     color: #333333;
-    max-width: 45%;
+    max-width: 500px;
     margin-bottom: 50px;
+    //
+    transition-duration: 500ms;
+    transform: translateX(60%);
+    opacity: 0;
+
+    &._active {
+      transform: translateX(0%);
+      opacity: 1;
+    }
   }
 
   a {
@@ -426,6 +483,14 @@ header {
     line-height: 18px;
     color: #3D46EC;
     transition-duration: 500ms;
+    transition-duration: 500ms;
+    transform: translateX(60%);
+    opacity: 0;
+
+    &._active {
+      transform: translateX(0%);
+      opacity: 1;
+    }
 
     &:hover {
       color: #FFF;

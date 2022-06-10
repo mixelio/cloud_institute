@@ -292,14 +292,29 @@ body {
   font-family: "Futura PT book";
 }
 
-header {
-  background-color: #F3F4F5;
+.fixed_logo {
+  position: fixed;
+  left: 50%;
 }
-header a {
+
+.header {
+  background-color: #F3F4F5;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
   -webkit-transition-duration: 500ms;
           transition-duration: 500ms;
 }
-header a:hover {
+.header._close {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  opacity: 0;
+}
+.header a {
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+.header a:hover {
   color: #3D46EC;
 }
 
@@ -404,19 +419,42 @@ header a:hover {
 }
 
 .first_screen {
+  margin-top: 9vh;
   background-color: #F3F4F5;
   position: relative;
-  height: 100vh;
+  height: 200vh;
   padding: 137px;
 }
 .first_screen .container {
   max-width: 1020px;
 }
+.first_screen .fixed_container {
+  position: fixed;
+  width: 100vw;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+.first_screen .fixed_container._unfixed {
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  opacity: 0;
+}
 .first_screen img {
-  position: absolute;
-  height: 100%;
-  right: 10%;
+  position: fixed;
+  height: 90vh;
+  right: 30%;
   bottom: 0;
+  top: 10vh;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+.first_screen img._active {
+  right: 10%;
+}
+.first_screen img._position {
+  position: absolute;
+  height: 90vh;
+  top: auto;
 }
 .first_screen h1 {
   font-style: normal;
@@ -424,8 +462,18 @@ header a:hover {
   font-size: 60px;
   line-height: 77px;
   color: #231F20;
-  max-width: 50%;
+  max-width: 530px;
   margin-bottom: 12px;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  -webkit-transform: translateX(60%);
+          transform: translateX(60%);
+  opacity: 0;
+}
+.first_screen h1._active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  opacity: 1;
 }
 .first_screen p {
   font-style: normal;
@@ -433,8 +481,18 @@ header a:hover {
   font-size: 16px;
   line-height: 21px;
   color: #333333;
-  max-width: 45%;
+  max-width: 500px;
   margin-bottom: 50px;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  -webkit-transform: translateX(60%);
+          transform: translateX(60%);
+  opacity: 0;
+}
+.first_screen p._active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  opacity: 1;
 }
 .first_screen a {
   margin-right: 10px;
@@ -446,6 +504,15 @@ header a:hover {
   color: #3D46EC;
   -webkit-transition-duration: 500ms;
           transition-duration: 500ms;
+  transition-duration: 500ms;
+  -webkit-transform: translateX(60%);
+          transform: translateX(60%);
+  opacity: 0;
+}
+.first_screen a._active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  opacity: 1;
 }
 .first_screen a:hover {
   color: #FFF;
