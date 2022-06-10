@@ -295,6 +295,13 @@ body {
 header {
   background-color: #F3F4F5;
 }
+header a {
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+header a:hover {
+  color: #3D46EC;
+}
 
 .container {
   max-width: 1220px;
@@ -383,6 +390,7 @@ header {
   padding-left: 32px;
   border: none;
   width: inherit;
+  background-color: #F3F4F5;
 }
 .search input:nth-child(2) {
   position: absolute;
@@ -436,6 +444,12 @@ header {
   font-size: 14px;
   line-height: 18px;
   color: #3D46EC;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+.first_screen a:hover {
+  color: #FFF;
+  background: #3D46EC;
 }
 .first_screen a:last-child {
   margin-right: 0;
@@ -663,9 +677,12 @@ main {
 
 .why {
   padding: 215px 0 125px;
-  -webkit-transform: translateX(210px);
-          transform: translateX(210px);
-  background: url("../img/pictures/why.jpg") 0 0/contain no-repeat;
+  background: url("../img/pictures/why.jpg") 0 0/cover no-repeat;
+}
+.why .container {
+  max-width: 1020px;
+  -webkit-transform: translateX(110px);
+          transform: translateX(110px);
 }
 .why h3 {
   font-family: "Futura PT";
@@ -826,8 +843,26 @@ main {
   color: #231F20;
   margin-bottom: 185px;
 }
+.sertified a {
+  text-align: right;
+  position: relative;
+  padding-right: 70px;
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 450;
+  font-size: 20px;
+  line-height: 26px;
+  color: #231F20;
+}
+.sertified a span {
+  cursor: pointer;
+}
+.sertified a svg {
+  margin-left: 10px;
+}
 .sertified .swiper {
   background: #E9EAEE;
+  margin-bottom: 62px;
 }
 .sertified .swiper h4 {
   padding: 0 0 0 52px;
@@ -845,6 +880,44 @@ main {
   top: 0;
   left: 0;
 }
+.sertified .sertified__price {
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+.sertified .sertified__price span {
+  position: relative;
+  font-family: "Futura PT book";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #231F20;
+  padding-left: 25px;
+}
+.sertified .sertified__price span svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+.sertified .sertified__price span:before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+}
+.sertified .sertified__price span .old_price {
+  color: #848484;
+  padding: 0;
+  margin: 0 10px;
+}
+.sertified .sertified__price span .old_price:before {
+  background: #000000;
+  width: 110%;
+  height: 1px;
+  top: 50%;
+  left: -5%;
+}
 .sertified .swiper-wrapper {
   overflow: visible;
 }
@@ -853,8 +926,57 @@ main {
           transform: translateY(-131px);
   max-width: 320px;
   height: auto;
-  background: #F7F7F7;
+  overflow: hidden;
+  background: rgb(247, 247, 247);
   padding: 30px 20px;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+.sertified .swiper-slide:hover {
+  color: #fff;
+}
+.sertified .swiper-slide:hover li,
+.sertified .swiper-slide:hover h4,
+.sertified .swiper-slide:hover a,
+.sertified .swiper-slide:hover span {
+  color: inherit;
+}
+.sertified .swiper-slide:hover ul {
+  border-bottom: 1px solid #fff;
+}
+.sertified .swiper-slide:hover .hover_backghound {
+  opacity: 1;
+}
+.sertified .swiper-slide:hover .old_price {
+  color: #848484;
+}
+.sertified .swiper-slide:hover .old_price:before {
+  background: #fff;
+}
+.sertified .swiper-slide:hover svg path {
+  fill: #fff;
+}
+.sertified .swiper-slide:hover .title__container svg path {
+  fill: none;
+  stroke: #fff;
+}
+.sertified .swiper-slide:hover .slide__item_3 svg path {
+  fill: none;
+  stroke: #fff;
+}
+.sertified .swiper-slide:hover .sertified__price svg path {
+  fill: none;
+  stroke: #fff;
+}
+.sertified .swiper-slide .hover_backghound {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
 }
 .sertified .swiper-slide .title__container {
   position: relative;
@@ -877,11 +999,9 @@ main {
           flex-direction: column;
 }
 .sertified .swiper-slide ul {
-  padding: 0 30px 23px;
+  padding: 0 30px 20px;
   border-bottom: 1px solid #E9EAEE;
-}
-.sertified .swiper-slide ul .slide__item_1:before {
-  background: url("../img/icon/grow-icon.svg") 0 0/contain no-repeat;
+  z-index: 2;
 }
 .sertified .swiper-slide ul li {
   margin-bottom: 15px;
@@ -894,6 +1014,14 @@ main {
   padding-left: 26px;
   position: relative;
 }
+.sertified .swiper-slide ul li:last-child {
+  margin-bottom: 0;
+}
+.sertified .swiper-slide ul li svg {
+  height: 100%;
+  top: 0;
+  left: 0;
+}
 .sertified .swiper-slide ul li:before {
   content: "";
   position: absolute;
@@ -902,25 +1030,14 @@ main {
   height: 23px;
   width: 20px;
 }
-.sertified .swiper-slide ul li.slide__item_1:before {
-  background: url("../img/icon/grow-icon.svg") 50% 50%/contain no-repeat;
-}
-.sertified .swiper-slide ul li.slide__item_2:before {
-  background: url("../img/icon/user-icon.svg") 50% 50%/contain no-repeat;
-}
-.sertified .swiper-slide ul li.slide__item_3:before {
-  background: url("../img/icon/hour-icon.svg") 50% 50%/contain no-repeat;
-}
-.sertified .swiper-slide ul li.slide__item_4:before {
-  background: url("../img/icon/star-icon.svg") 50% 50%/contain no-repeat;
-}
-.sertified .trusted .container {
+
+.trusted .container {
   max-width: 1020px;
 }
-.sertified .trusted .subtitle {
+.trusted .subtitle {
   margin-bottom: 5px;
 }
-.sertified .trusted p {
+.trusted p {
   max-width: 660px;
   font-family: "Futura PT";
   font-style: normal;
@@ -930,7 +1047,7 @@ main {
   color: #231F20;
   margin-bottom: 28px;
 }
-.sertified .trusted .trusted__row {
+.trusted .trusted__row {
   max-width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -941,30 +1058,31 @@ main {
       justify-content: space-around;
   margin-bottom: 90px;
 }
-.sertified .trusted .trusted__item {
+.trusted .trusted__item {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 30%;
           flex: 0 0 30%;
 }
-.sertified .trusted .trusted__item svg {
+.trusted .trusted__item svg {
   width: 100%;
 }
-.sertified .help {
-  background: url("/img/pictures/help-img.jpg") 0 0/cover no-repeat;
+
+.help {
+  background: url("../img/pictures/help-img.jpg") 0 0/cover no-repeat;
   padding-top: 54px;
 }
-.sertified .help .container {
+.help .container {
   max-width: 1020px;
 }
-.sertified .help .subtitle {
+.help .subtitle {
   margin-bottom: 34px;
 }
-.sertified .help .help__row {
+.help .help__row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.sertified .help .help__item {
+.help .help__item {
   background: #F7F7F7;
   padding: 35px 35px 25px;
   -webkit-box-flex: 0;
@@ -974,7 +1092,7 @@ main {
   min-height: 300px;
   position: relative;
 }
-.sertified .help .help__item p {
+.help .help__item p {
   max-width: 200px;
   font-family: "Futura PT";
   font-style: normal;
@@ -983,12 +1101,12 @@ main {
   line-height: 23px;
   color: #231F20;
 }
-.sertified .help .help__item a {
+.help .help__item a {
   position: absolute;
   bottom: 25px;
   right: 40px;
 }
-.sertified .help .help__item a::after {
+.help .help__item a::after {
   content: "";
   display: inline-block;
   height: 10px;
@@ -996,12 +1114,13 @@ main {
   background: url("../img/icon/help-arrow.svg") 0 0/contain no-repeat;
   margin-left: 10px;
 }
-.sertified footer {
+
+footer {
   background: #231F20;
   color: #fff;
   padding: 70px 0 43px;
 }
-.sertified footer p {
+footer p {
   font-family: "Futura PT";
   font-style: normal;
   font-weight: 300;
@@ -1009,41 +1128,41 @@ main {
   line-height: 32px;
   margin-bottom: 10px;
 }
-.sertified footer .subtitle {
+footer .subtitle {
   font-family: "Futura PT";
   font-size: 18px;
   margin-bottom: 8px;
   font-style: normal;
   font-weight: bold;
 }
-.sertified footer .footer__row {
+footer .footer__row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 80px;
 }
-.sertified footer h3 {
+footer h3 {
   font-family: "Futura PT";
   font-size: 16px;
   font-weight: bold;
   margin: 25px 0;
 }
-.sertified footer a,
-.sertified footer span,
-.sertified footer li {
+footer a,
+footer span,
+footer li {
   font-family: "Futura PT";
   color: #fff;
   display: block;
   margin-bottom: 5px;
   font-weight: 300;
 }
-.sertified footer .footer__item:first-child {
+footer .footer__item:first-child {
   margin-right: 15%;
 }
-.sertified footer .footer__item:nth-child(2) {
+footer .footer__item:nth-child(2) {
   margin-right: 5%;
 }
-.sertified footer .copirate {
+footer .copirate {
   display: inline-block;
   font-weight: bold;
 }

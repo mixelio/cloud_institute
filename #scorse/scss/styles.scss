@@ -254,6 +254,14 @@ body {
 
 header {
   background-color: #F3F4F5;
+
+  a {
+    transition-duration: 500ms;
+
+    &:hover {
+      color: #3D46EC;
+    }
+  }
 }
 
 .container {
@@ -298,12 +306,16 @@ header {
   li {
     margin: 0 30px 0 0;
 
+
+
     &:first-child {
       margin: 0 15px 0 0;
       padding: 0 15px 0 0;
       position: relative;
 
       a {
+
+
         &::after {
           content: '';
           position: absolute;
@@ -315,6 +327,8 @@ header {
           border-width: 5px 4.5px 0 4.5px;
           border-color: #000000 transparent transparent transparent;
         }
+
+
       }
     }
 
@@ -345,6 +359,7 @@ header {
       padding-left: 32px;
       border: none;
       width: inherit;
+      background-color: #F3F4F5;
     }
 
   }
@@ -410,6 +425,12 @@ header {
     font-size: 14px;
     line-height: 18px;
     color: #3D46EC;
+    transition-duration: 500ms;
+
+    &:hover {
+      color: #FFF;
+      background: #3D46EC;
+    }
 
     &:last-child {
       margin-right: 0;
@@ -647,8 +668,12 @@ main {
 
 .why {
   padding: 215px 0 125px;
-  transform: translateX(210px);
-  background: url('../img/pictures/why.jpg') 0 0/ contain no-repeat;
+  background: url('../img/pictures/why.jpg') 0 0/ cover no-repeat;
+
+  .container {
+    max-width: 1020px;
+    transform: translateX(110px);
+  }
 
   h3 {
     font-family: "Futura PT";
@@ -816,8 +841,29 @@ main {
     margin-bottom: 185px;
   }
 
+  a {
+    text-align: right;
+    position: relative;
+    padding-right: 70px;
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 450;
+    font-size: 20px;
+    line-height: 26px;
+    color: #231F20;
+
+    span {
+      cursor: pointer;
+    }
+
+    svg {
+      margin-left: 10px;
+    }
+  }
+
   .swiper {
     background: #E9EAEE;
+    margin-bottom: 62px;
 
     h4 {
       padding: 0 0 0 52px;
@@ -827,7 +873,6 @@ main {
       font-size: 25px;
       line-height: 32px;
       color: #231F20;
-
       position: relative;
 
       &:before {
@@ -839,7 +884,54 @@ main {
     }
   }
 
-  // .swiper_sertified {}
+  .sertified__price {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+
+
+
+    span {
+      position: relative;
+      font-family: 'Futura PT book';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 23px;
+      color: #231F20;
+      padding-left: 25px;
+
+      svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        display: inline-block;
+
+      }
+
+      .old_price {
+        color: #848484;
+        padding: 0;
+        margin: 0 10px;
+
+        &:before {
+          background: #000000;
+          width: 110%;
+          height: 1px;
+          top: 50%;
+          left: -5%;
+
+        }
+      }
+    }
+
+  }
 
   .swiper-wrapper {
     overflow: visible;
@@ -849,8 +941,84 @@ main {
     transform: translateY(-131px);
     max-width: 320px;
     height: auto;
-    background: #F7F7F7;
+    overflow: hidden;
+    background: rgba(247, 247, 247, 1);
     padding: 30px 20px;
+    transition-duration: 500ms;
+
+    &:hover {
+      color: #fff;
+
+      li,
+      h4,
+      a,
+      span {
+        color: inherit;
+      }
+
+      ul {
+        border-bottom: 1px solid #fff;
+      }
+
+      .hover_backghound {
+        opacity: 1;
+      }
+
+      .old_price {
+        color: #848484;
+
+        &:before {
+          background: #fff;
+        }
+      }
+
+      svg {
+
+        path {
+          fill: #fff;
+
+        }
+      }
+
+      .title__container {
+        svg {
+          path {
+            fill: none;
+            stroke: #fff;
+          }
+        }
+      }
+
+      .slide__item_3 {
+        svg {
+          path {
+            fill: none;
+            stroke: #fff;
+          }
+        }
+      }
+
+
+
+      .sertified__price {
+        svg {
+          path {
+            fill: none;
+            stroke: #fff;
+          }
+        }
+      }
+    }
+
+    .hover_backghound {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: auto;
+      opacity: 0;
+      transition-duration: 500ms;
+    }
 
     .title__container {
       position: relative;
@@ -866,17 +1034,13 @@ main {
       height: 100%;
       display: flex;
       flex-direction: column;
+
     }
 
     ul {
-      padding: 0 30px 23px;
+      padding: 0 30px 20px;
       border-bottom: 1px solid #E9EAEE;
-
-      .slide__item_1 {
-        &:before {
-          background: url('../img/icon/grow-icon.svg') 0 0 / contain no-repeat;
-        }
-      }
+      z-index: 2;
 
       li {
         margin-bottom: 15px;
@@ -889,6 +1053,16 @@ main {
         padding-left: 26px;
         position: relative;
 
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        svg {
+          height: 100%;
+          top: 0;
+          left: 0;
+        }
+
         &:before {
           content: '';
           position: absolute;
@@ -897,182 +1071,157 @@ main {
           height: 23px;
           width: 20px;
         }
-
-        &.slide__item_1 {
-          &:before {
-            background: url('../img/icon/grow-icon.svg') 50% 50% / contain no-repeat;
-          }
-        }
-
-        &.slide__item_2 {
-          &:before {
-            background: url('../img/icon/user-icon.svg') 50% 50% / contain no-repeat;
-          }
-        }
-
-        &.slide__item_3 {
-          &:before {
-            background: url('../img/icon/hour-icon.svg') 50% 50% / contain no-repeat;
-          }
-        }
-
-        &.slide__item_4 {
-          &:before {
-            background: url('../img/icon/star-icon.svg') 50% 50% / contain no-repeat;
-          }
-        }
       }
     }
   }
 
+}
 
+.trusted {
+  .container {
+    max-width: 1020px;
+  }
 
-  .trusted {
-    .container {
-      max-width: 1020px;
+  .subtitle {
+    margin-bottom: 5px;
+  }
+
+  p {
+    max-width: 660px;
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 32px;
+    color: #231F20;
+    margin-bottom: 28px;
+  }
+
+  .trusted__row {
+    max-width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 90px;
+  }
+
+  .trusted__item {
+    flex: 0 0 30%;
+
+    svg {
+      width: 100%;
     }
+  }
+}
 
-    .subtitle {
-      margin-bottom: 5px;
-    }
+
+.help {
+  background: url("../img/pictures/help-img.jpg") 0 0 / cover no-repeat;
+  padding-top: 54px;
+
+  .container {
+    max-width: 1020px;
+  }
+
+  .subtitle {
+    margin-bottom: 34px;
+  }
+
+  .help__row {
+    display: flex;
+  }
+
+  .help__item {
+    background: #F7F7F7;
+    padding: 35px 35px 25px;
+    flex: 0 1 33%;
+    margin-right: 2px;
+    min-height: 300px;
+    position: relative;
 
     p {
-      max-width: 660px;
+      max-width: 200px;
       font-family: 'Futura PT';
       font-style: normal;
       font-weight: 300;
-      font-size: 25px;
-      line-height: 32px;
-      color: #231F20;
-      margin-bottom: 28px;
-    }
-
-    .trusted__row {
-      max-width: 60%;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      margin-bottom: 90px;
-    }
-
-    .trusted__item {
-      flex: 0 0 30%;
-
-      svg {
-        width: 100%;
-      }
-    }
-  }
-
-
-  .help {
-    background: url("/img/pictures/help-img.jpg") 0 0 / cover no-repeat;
-    padding-top: 54px;
-
-    .container {
-      max-width: 1020px;
-    }
-
-    .subtitle {
-      margin-bottom: 34px;
-    }
-
-    .help__row {
-      display: flex;
-    }
-
-    .help__item {
-      background: #F7F7F7;
-      padding: 35px 35px 25px;
-      flex: 0 1 33%;
-      margin-right: 2px;
-      min-height: 300px;
-      position: relative;
-
-      p {
-        max-width: 200px;
-        font-family: 'Futura PT';
-        font-style: normal;
-        font-weight: 300;
-        font-size: 18px;
-        line-height: 23px;
-        color: #231F20;
-      }
-
-      a {
-        position: absolute;
-        bottom: 25px;
-        right: 40px;
-
-        &::after {
-          content: '';
-          display: inline-block;
-          height: 10px;
-          width: 50px;
-          background: url('../img/icon/help-arrow.svg') 0 0 / contain no-repeat;
-          margin-left: 10px;
-        }
-      }
-    }
-  }
-
-  footer {
-    background: #231F20;
-    color: #fff;
-    padding: 70px 0 43px;
-
-    p {
-      font-family: 'Futura PT';
-      font-style: normal;
-      font-weight: 300;
-      font-size: 25px;
-      line-height: 32px;
-      margin-bottom: 10px;
-    }
-
-    .subtitle {
-      font-family: 'Futura PT';
       font-size: 18px;
-      margin-bottom: 8px;
-      font-style: normal;
-      font-weight: bold;
+      line-height: 23px;
+      color: #231F20;
     }
 
-    .footer__row {
-      display: flex;
-      margin-bottom: 80px;
-    }
+    a {
+      position: absolute;
+      bottom: 25px;
+      right: 40px;
 
-    h3 {
-      font-family: 'Futura PT';
-      font-size: 16px;
-      font-weight: bold;
-      margin: 25px 0;
-    }
-
-    a,
-    span,
-    li {
-      font-family: 'Futura PT';
-      color: #fff;
-      display: block;
-      margin-bottom: 5px;
-      font-weight: 300;
-    }
-
-    .footer__item {
-      &:first-child {
-        margin-right: 15%;
-      }
-
-      &:nth-child(2) {
-        margin-right: 5%;
+      &::after {
+        content: '';
+        display: inline-block;
+        height: 10px;
+        width: 50px;
+        background: url('../img/icon/help-arrow.svg') 0 0 / contain no-repeat;
+        margin-left: 10px;
       }
     }
+  }
+}
 
-    .copirate {
-      display: inline-block;
-      font-weight: bold;
+footer {
+  background: #231F20;
+  color: #fff;
+  padding: 70px 0 43px;
+
+  p {
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 32px;
+    margin-bottom: 10px;
+  }
+
+  .subtitle {
+    font-family: 'Futura PT';
+    font-size: 18px;
+    margin-bottom: 8px;
+    font-style: normal;
+    font-weight: bold;
+  }
+
+  .footer__row {
+    display: flex;
+    margin-bottom: 80px;
+  }
+
+  h3 {
+    font-family: 'Futura PT';
+    font-size: 16px;
+    font-weight: bold;
+    margin: 25px 0;
+  }
+
+  a,
+  span,
+  li {
+    font-family: 'Futura PT';
+    color: #fff;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 300;
+  }
+
+  .footer__item {
+    &:first-child {
+      margin-right: 15%;
     }
+
+    &:nth-child(2) {
+      margin-right: 5%;
+    }
+  }
+
+  .copirate {
+    display: inline-block;
+    font-weight: bold;
   }
 }
