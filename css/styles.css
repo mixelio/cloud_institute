@@ -1128,6 +1128,13 @@ footer p {
   line-height: 32px;
   margin-bottom: 10px;
 }
+footer a {
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+footer a:hover {
+  color: #3D46EC;
+}
 footer .subtitle {
   font-family: "Futura PT";
   font-size: 18px;

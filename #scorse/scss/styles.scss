@@ -1139,6 +1139,10 @@ main {
     min-height: 300px;
     position: relative;
 
+    &:hover {
+      a {}
+    }
+
     p {
       max-width: 200px;
       font-family: 'Futura PT';
@@ -1178,6 +1182,14 @@ footer {
     font-size: 25px;
     line-height: 32px;
     margin-bottom: 10px;
+  }
+
+  a {
+    transition-duration: 500ms;
+
+    &:hover {
+      color: #3D46EC;
+    }
   }
 
   .subtitle {
