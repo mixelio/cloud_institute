@@ -719,6 +719,7 @@ main {
   width: 80%;
   right: -50%;
   top: -10px;
+  border-radius: 20px;
   opacity: 0;
   visibility: hidden;
   -webkit-transform: scale(0);
@@ -728,7 +729,7 @@ main {
 }
 .about .about_item:hover img {
   opacity: 1;
-  right: -100%;
+  right: -85%;
   -webkit-transform: scale(1);
           transform: scale(1);
   visibility: visible;

@@ -724,6 +724,7 @@ main {
       width: 80%;
       right: -50%;
       top: -10px;
+      border-radius: 20px;
       opacity: 0;
       visibility: hidden;
       transform: scale(0);
@@ -732,7 +733,7 @@ main {
 
     &:hover img {
       opacity: 1;
-      right: -100%;
+      right: -85%;
       transform: scale(1);
       visibility: visible;
     }
