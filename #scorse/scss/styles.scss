@@ -246,16 +246,68 @@
 }
 
 // подключение шрифтов
-
+// Повторяющиеся, общие модули
 body {
   font-family: "Futura PT book";
+  background-color: #F3F4F5;
+}
 
+main {
+  overflow: hidden;
+}
+
+.subtitle {
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 28px;
+  color: #3D46EC;
+}
+
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.wrapper {
+  min-height: 100vh;
+  margin-top: 100vh;
+  padding-left: 40px;
+  position: relative;
+  background: #fff;
+
+  &:before {
+    content: "";
+    width: calc((100vw - 200px)/ 4 * .75);
+    max-width: 150px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background: #f7f7f7;
+    z-index: 3;
+  }
 }
 
 .fixed_logo {
-  position: fixed;
-  left: calc(50%);
+  position: absolute;
+  top: 50px;
+  z-index: 4;
+  // animation
+  transition-duration: 300ms;
+  transform: translate(0, -150%);
+  opacity: 0;
+
+  &._active {
+    transform: translate(0, 0);
+    opacity: 1;
+    position: fixed;
+  }
 }
+
+//Секции веб страницы           
 
 .header {
   background-color: #F3F4F5;
@@ -263,6 +315,31 @@ body {
   z-index: 10;
   width: 100%;
   transition-duration: 500ms;
+
+  .container {
+    margin: 0 auto;
+  }
+
+  .header__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header__item {
+    &:first-child {
+      margin: 0 70px 0 0;
+    }
+
+    &:nth-child(2) {
+      flex: 1 1 auto;
+    }
+
+    &:last-child {
+      display: flex;
+    }
+  }
+
 
   &._close {
     transform: translateY(-100%);
@@ -276,153 +353,118 @@ body {
       color: #3D46EC;
     }
   }
-}
 
-.container {
-  max-width: 1220px;
-  margin: 0 auto;
-  padding: 0 10px;
-}
+  .menu__list {
+    font-family: 'Futura PT book';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    color: #231F20;
 
-.header__row {
-  padding-top: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+    ul {
+      display: flex;
+    }
 
-.header__item {
-  &:first-child {
-    margin: 0 70px 0 0;
-  }
-
-  &:nth-child(2) {
-    flex: 1 1 auto;
-  }
-
-  &:last-child {
-    display: flex;
-  }
-}
-
-.menu__list {
-  font-family: 'Futura PT book';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 23px;
-  color: #231F20;
-
-  ul {
-    display: flex;
-  }
-
-  li {
-    margin: 0 30px 0 0;
+    li {
+      margin: 0 30px 0 0;
 
 
 
-    &:first-child {
-      margin: 0 15px 0 0;
-      padding: 0 15px 0 0;
-      position: relative;
+      &:first-child {
+        margin: 0 15px 0 0;
+        padding: 0 15px 0 0;
+        position: relative;
 
-      a {
+        a {
 
 
-        &::after {
-          content: '';
-          position: absolute;
-          top: 50%;
-          right: 0;
-          width: 0;
-          height: 0;
-          border-style: solid;
-          border-width: 5px 4.5px 0 4.5px;
-          border-color: #000000 transparent transparent transparent;
+          &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: 0;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 5px 4.5px 0 4.5px;
+            border-color: #000000 transparent transparent transparent;
+          }
+
+
         }
+      }
 
-
+      &:last-child {
+        margin: 0;
       }
     }
+  }
+
+  .subitem {
+
+    border-right: 1px solid #CCCCCC;
+    margin-right: 10px;
+    padding-right: 10px;
 
     &:last-child {
-      margin: 0;
-    }
-  }
-}
-
-.subitem {
-
-  border-right: 1px solid #CCCCCC;
-  margin-right: 10px;
-  padding-right: 10px;
-
-  &:last-child {
-    border: none;
-    margin-right: 0px;
-    padding-right: 0px;
-  }
-}
-
-.search {
-  position: relative;
-
-  input {
-    &:first-child {
-      padding-left: 32px;
       border: none;
-      width: inherit;
-      background-color: #F3F4F5;
+      margin-right: 0px;
+      padding-right: 0px;
     }
-
   }
 
-  input {
+  .search {
+    position: relative;
 
-    &:nth-child(2) {
-      position: absolute;
-      display: inline-block;
-      left: 0;
-      top: calc(50% - 7.5px);
-      width: 15px;
-      height: 15px;
-      background: url('../img/icon/header-search.svg') 0 0/ contain no-repeat;
-      cursor: pointer;
+    input {
+      &:first-child {
+        padding-left: 32px;
+        border: none;
+        width: inherit;
+        background-color: #F3F4F5;
+      }
+
     }
 
+    input {
+
+      &:nth-child(2) {
+        position: absolute;
+        display: inline-block;
+        left: 0;
+        top: calc(50% - 7.5px);
+        width: 15px;
+        height: 15px;
+        background: url('../img/icon/header-search.svg') 0 0/ contain no-repeat;
+        cursor: pointer;
+      }
+
+    }
   }
 }
 
 .first_screen {
-  margin-top: 9vh;
-  background-color: #F3F4F5;
-  position: relative;
-  height: 200vh;
-  padding: 137px;
+  background: #F3F4F5;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  padding-top: 27vh;
 
   .container {
     max-width: 1020px;
-
+    margin: 0 auto;
   }
 
-  .fixed_container {
-    position: fixed;
-    width: 100vw;
-    transition-duration: 500ms;
 
-    &._unfixed {
-      transform: translateY(-50%);
-      opacity: 0;
-    }
-  }
+
 
   img {
-    position: fixed;
+    position: absolute;
     height: 90vh;
     right: 30%;
     bottom: 0;
-    top: 10vh;
+    // top: 10vh;
     transition-duration: 500ms;
 
     &._active {
@@ -503,23 +545,16 @@ body {
   }
 }
 
-.subtitle {
-  font-family: "Futura PT";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 22px;
-  line-height: 28px;
-  color: #3D46EC;
-}
-
 .about {
-  background: rgb(247, 247, 247);
-  background: linear-gradient(90deg, rgba(247, 247, 247, 1) 50%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 100%);
+  background: #fff;
+  margin-top: 100vh;
+  position: relative;
+  padding-bottom: 100px;
 
   .container {
     max-width: 1020px;
     background-color: #fff;
-    padding: 78px 100px 0;
+    padding: 78px 0px 0;
     position: relative;
   }
 
@@ -575,8 +610,7 @@ body {
   }
 
   ol li:hover::before {
-    font-weight: bolder;
-
+    text-shadow: 0 0 1px #000;
   }
 
   .about_item {
@@ -650,7 +684,8 @@ body {
 
     &:hover h3 {
       transition-duration: 500ms;
-      font-weight: bolder;
+      text-shadow: 0 0 1px #000;
+      color: #000;
 
       &:before {
         transform: translateX(0) scaleX(1);
@@ -691,7 +726,6 @@ body {
       visibility: hidden;
       transform: scale(0);
       transition-duration: 500ms;
-      transition-delay: 500ms;
     }
 
     &:hover img {
@@ -715,7 +749,6 @@ body {
       visibility: hidden;
       transform: translateY(-50%);
       transition-duration: 300ms;
-      transition-delay: 300ms;
     }
 
     &:hover a {
@@ -727,17 +760,13 @@ body {
   }
 }
 
-main {
-  overflow: hidden;
-}
-
 .why {
   padding: 215px 0 125px;
   background: url('../img/pictures/why.jpg') 0 0/ cover no-repeat;
 
   .container {
-    max-width: 1020px;
-    transform: translateX(110px);
+    max-width: 970px;
+    // transform: translateX(110px);
   }
 
   h3 {
@@ -760,8 +789,7 @@ main {
 }
 
 .reasons {
-
-  transform: translateX(210px);
+  background-color: #fff;
 
   ol {
     counter-reset: ol-numbers;
@@ -801,7 +829,7 @@ main {
   }
 
   ol li:hover::before {
-    font-weight: bolder;
+    text-shadow: 0 0 1px #000;
   }
 
   h3 {
@@ -815,6 +843,7 @@ main {
     line-height: 23px;
     color: #231F20;
     transition-duration: 500ms;
+    letter-spacing: 1px;
 
     &:before {
       content: '';
@@ -834,9 +863,9 @@ main {
       content: '';
       position: absolute;
       display: inline-block;
-      width: 60%;
+      width: 100px;
       border: 1px solid #F7F7F7;
-      right: calc(-60% - 63px);
+      right: -150px;
       top: 50%;
       transition-duration: 500ms;
       transform: translateX(-80%) scaleX(0);
@@ -865,7 +894,8 @@ main {
 
   li:hover h3 {
     transition-duration: 500ms;
-    font-weight: bolder;
+    text-shadow: 0 0 1px #000;
+    letter-spacing: 2px;
 
     &:before {
       transform: translateX(0) scaleX(1);
@@ -886,11 +916,11 @@ main {
   }
 }
 
-.swiper {
-  overflow: visible;
-}
-
 .sertified {
+  .swiper {
+    overflow: visible;
+  }
+
   .container {
     max-width: 1020px;
   }
@@ -1179,7 +1209,6 @@ main {
   }
 }
 
-
 .help {
   background: url("../img/pictures/help-img.jpg") 0 0 / cover no-repeat;
   padding-top: 54px;
@@ -1239,6 +1268,12 @@ footer {
   background: #231F20;
   color: #fff;
   padding: 70px 0 43px;
+  position: relative;
+  z-index: 5;
+
+  .container {
+    margin: 0 auto;
+  }
 
   p {
     font-family: 'Futura PT';
