@@ -334,7 +334,7 @@ main {
 .fixed_logo {
   position: absolute;
   top: 50px;
-  z-index: 4;
+  z-index: 5;
   -webkit-transition-duration: 300ms;
           transition-duration: 300ms;
   -webkit-transform: translate(0, -150%);
@@ -789,8 +789,8 @@ main {
   counter-reset: ol-numbers;
   margin: 0;
   padding: 45px 50px;
-  -webkit-transform: translate(-50px, -100px);
-          transform: translate(-50px, -100px);
+  -webkit-transform: translate(50px, -100px);
+          transform: translate(50px, -100px);
   z-index: 2;
   background: #fff;
 }
@@ -908,11 +908,8 @@ main {
   opacity: 1;
 }
 
-.sertified .swiper {
-  overflow: visible;
-}
 .sertified .container {
-  max-width: 1020px;
+  max-width: 1070px;
 }
 .sertified p {
   max-width: 550px;
@@ -942,8 +939,14 @@ main {
   margin-left: 10px;
 }
 .sertified .swiper {
+  overflow: visible;
   background: #E9EAEE;
   margin-bottom: 62px;
+  width: 100vw;
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  z-index: 4;
+  padding: 0 50px;
 }
 .sertified .swiper h4 {
   padding: 0 0 0 52px;
@@ -1006,12 +1009,19 @@ main {
   -webkit-transform: translateY(-131px);
           transform: translateY(-131px);
   max-width: 320px;
+  position: relative;
   height: auto;
   overflow: hidden;
   background: rgb(247, 247, 247);
   padding: 30px 20px;
-  -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+.sertified .swiper-slide .sertified__link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
 }
 .sertified .swiper-slide:hover {
   color: #fff;
@@ -1054,10 +1064,10 @@ main {
   top: 0;
   left: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
   opacity: 0;
-  -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
 }
 .sertified .swiper-slide .title__container {
   position: relative;
@@ -1172,6 +1182,28 @@ main {
   margin-right: 2px;
   min-height: 300px;
   position: relative;
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
+}
+.help .help__item .help__link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+.help .help__item .help__link::after {
+  display: none;
+}
+.help .help__item:hover {
+  background: #231F20;
+}
+.help .help__item:hover p,
+.help .help__item:hover a {
+  color: #F7F7F7;
+}
+.help .help__item:hover p svg path,
+.help .help__item:hover a svg path {
+  fill: #F7F7F7;
 }
 .help .help__item p {
   max-width: 200px;
@@ -1181,19 +1213,20 @@ main {
   font-size: 18px;
   line-height: 23px;
   color: #231F20;
+  position: relative;
+  z-index: 3;
 }
 .help .help__item a {
   position: absolute;
   bottom: 25px;
   right: 40px;
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
 }
-.help .help__item a::after {
-  content: "";
-  display: inline-block;
-  height: 10px;
-  width: 50px;
-  background: url("../img/icon/help-arrow.svg") 0 0/contain no-repeat;
+.help .help__item a svg {
   margin-left: 10px;
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
 }
 
 footer {
