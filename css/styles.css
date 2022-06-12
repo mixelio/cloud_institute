@@ -307,21 +307,18 @@ main {
 }
 
 .container {
-  max-width: 1220px;
-  margin: 0 auto;
-  padding: 0 10px;
+  margin-right: auto;
 }
 
 .wrapper {
   min-height: 100vh;
   margin-top: 100vh;
-  padding-left: 40px;
   position: relative;
   background: #fff;
 }
 .wrapper:before {
   content: "";
-  width: calc((100vw - 200px) / 4 * 0.75);
+  width: 150px;
   max-width: 150px;
   top: 0;
   bottom: 0;
@@ -335,6 +332,7 @@ main {
   position: absolute;
   top: 50px;
   z-index: 5;
+  padding-left: 40px;
   -webkit-transition-duration: 300ms;
           transition-duration: 300ms;
   -webkit-transform: translate(0, -150%);
@@ -357,7 +355,9 @@ main {
           transition-duration: 500ms;
 }
 .header .container {
+  max-width: 1220px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 .header .header__row {
   display: -webkit-box;
@@ -470,6 +470,7 @@ main {
 .first_screen .container {
   max-width: 1020px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 .first_screen img {
   position: absolute;
@@ -560,10 +561,10 @@ main {
   padding-bottom: 100px;
 }
 .about .container {
-  max-width: 1020px;
   background-color: #fff;
   padding: 78px 0px 0;
   position: relative;
+  margin-left: 200px;
 }
 .about h2 {
   font-family: "Futura PT";
@@ -630,7 +631,7 @@ main {
   content: "";
   position: absolute;
   height: 1px;
-  width: 100%;
+  width: 60%;
   display: inline-block;
   background-color: #F7F7F7;
   top: 0;
@@ -716,22 +717,22 @@ main {
 }
 .about .about_item img {
   position: absolute;
-  width: 80%;
-  right: -50%;
+  width: 60vh;
+  left: 35%;
   top: -10px;
   border-radius: 20px;
   opacity: 0;
   visibility: hidden;
-  -webkit-transform: scale(0);
-          transform: scale(0);
+  -webkit-transform: translate(0, -50%) scale(0);
+          transform: translate(0, -50%) scale(0);
   -webkit-transition-duration: 500ms;
           transition-duration: 500ms;
 }
 .about .about_item:hover img {
   opacity: 1;
-  right: -85%;
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  left: 75%;
+  -webkit-transform: translate(0, 0) scale(1);
+          transform: translate(0, 0) scale(1);
   visibility: visible;
 }
 .about .about_item a {
@@ -764,7 +765,7 @@ main {
   background: url("../img/pictures/why.jpg") 0 0/cover no-repeat;
 }
 .why .container {
-  max-width: 970px;
+  padding-left: 250px;
 }
 .why h3 {
   font-family: "Futura PT";
@@ -786,12 +787,15 @@ main {
 .reasons {
   background-color: #fff;
 }
+.reasons .container {
+  padding-left: 200px;
+}
 .reasons ol {
   counter-reset: ol-numbers;
   margin: 0;
   padding: 45px 50px;
-  -webkit-transform: translate(50px, -100px);
-          transform: translate(50px, -100px);
+  -webkit-transform: translate(0, -100px);
+          transform: translate(0, -100px);
   z-index: 2;
   background: #fff;
 }
@@ -875,13 +879,11 @@ main {
   opacity: 0;
   position: absolute;
   display: inline-block;
-  right: 15%;
+  left: 45%;
   top: 0;
   width: 40%;
   -webkit-transform: translateY(-50%) scaleY(0);
           transform: translateY(-50%) scaleY(0);
-  -webkit-transition-delay: 500ms;
-          transition-delay: 500ms;
   -webkit-transition-duration: 300ms;
           transition-duration: 300ms;
 }
@@ -910,7 +912,7 @@ main {
 }
 
 .sertified .container {
-  max-width: 1070px;
+  padding-left: 200px;
 }
 .sertified p {
   max-width: 550px;
@@ -944,10 +946,8 @@ main {
   background: #E9EAEE;
   margin-bottom: 62px;
   width: 100vw;
-  -webkit-transform: translateX(-50px);
-          transform: translateX(-50px);
-  z-index: 4;
-  padding: 0 50px;
+  z-index: 2;
+  padding-left: 9px;
 }
 .sertified .swiper h4 {
   padding: 0 0 0 52px;
@@ -1124,7 +1124,7 @@ main {
 }
 
 .trusted .container {
-  max-width: 1020px;
+  padding-left: 200px;
 }
 .trusted .subtitle {
   margin-bottom: 5px;
@@ -1164,7 +1164,7 @@ main {
   padding-top: 54px;
 }
 .help .container {
-  max-width: 1020px;
+  padding-left: 200px;
 }
 .help .subtitle {
   margin-bottom: 34px;
@@ -1177,11 +1177,9 @@ main {
 .help .help__item {
   background: #F7F7F7;
   padding: 35px 35px 25px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 33%;
-          flex: 0 1 33%;
   margin-right: 2px;
-  min-height: 300px;
+  height: 300px;
+  width: 320px;
   position: relative;
   -webkit-transition-duration: 200ms;
           transition-duration: 200ms;
@@ -1238,7 +1236,7 @@ footer {
   z-index: 5;
 }
 footer .container {
-  margin: 0 auto;
+  padding-left: 200px;
 }
 footer p {
   font-family: "Futura PT";

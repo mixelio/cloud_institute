@@ -266,22 +266,21 @@ main {
 }
 
 .container {
-  max-width: 1220px;
-  margin: 0 auto;
-  padding: 0 10px;
+  margin-right: auto;
 }
 
 .wrapper {
   min-height: 100vh;
   margin-top: 100vh;
   //padding-right: 40px;
-  padding-left: 40px;
+  //padding-left: 40px;
   position: relative;
   background: #fff;
 
   &:before {
     content: "";
-    width: calc((100vw - 200px)/ 4 * .75);
+    width: 150px;
+    //width: calc((100vw - 200px)/ 4 * .75);
     max-width: 150px;
     top: 0;
     bottom: 0;
@@ -296,7 +295,7 @@ main {
   position: absolute;
   top: 50px;
   z-index: 5;
-
+  padding-left: 40px;
   // animation
   transition-duration: 300ms;
   transform: translate(0, -150%);
@@ -319,7 +318,9 @@ main {
   transition-duration: 500ms;
 
   .container {
+    max-width: 1220px;
     margin: 0 auto;
+    padding: 0 10px;
   }
 
   .header__row {
@@ -456,6 +457,7 @@ main {
   .container {
     max-width: 1020px;
     margin: 0 auto;
+    padding: 0 10px;
   }
 
 
@@ -554,10 +556,11 @@ main {
   padding-bottom: 100px;
 
   .container {
-    max-width: 1020px;
+    //max-width: 1220px;
     background-color: #fff;
     padding: 78px 0px 0;
     position: relative;
+    margin-left: 200px;
   }
 
   h2 {
@@ -635,7 +638,7 @@ main {
       content: "";
       position: absolute;
       height: 1px;
-      width: 100%;
+      width: 60%;
       display: inline-block;
       background-color: #F7F7F7;
       top: 0;
@@ -721,20 +724,20 @@ main {
 
     img {
       position: absolute;
-      width: 80%;
-      right: -50%;
+      width: 60vh;
+      left: 35%;
       top: -10px;
       border-radius: 20px;
       opacity: 0;
       visibility: hidden;
-      transform: scale(0);
+      transform: translate(0, -50%) scale(0);
       transition-duration: 500ms;
     }
 
     &:hover img {
       opacity: 1;
-      right: -85%;
-      transform: scale(1);
+      left: 75%;
+      transform: translate(0, 0) scale(1);
       visibility: visible;
     }
 
@@ -768,8 +771,7 @@ main {
   background: url('../img/pictures/why.jpg') 0 0/ cover no-repeat;
 
   .container {
-    max-width: 970px;
-    // transform: translateX(110px);
+    padding-left: 250px;
   }
 
   h3 {
@@ -794,11 +796,15 @@ main {
 .reasons {
   background-color: #fff;
 
+  .container {
+    padding-left: 200px;
+  }
+
   ol {
     counter-reset: ol-numbers;
     margin: 0;
     padding: 45px 50px;
-    transform: translate(50px, -100px);
+    transform: translate(0, -100px);
     z-index: 2;
     background: #fff;
 
@@ -887,11 +893,10 @@ main {
     opacity: 0;
     position: absolute;
     display: inline-block;
-    right: 15%;
+    left: 45%;
     top: 0;
     width: 40%;
     transform: translateY(-50%) scaleY(0);
-    transition-delay: 500ms;
     transition-duration: 300ms;
   }
 
@@ -922,7 +927,7 @@ main {
 .sertified {
 
   .container {
-    max-width: 1070px;
+    padding-left: 200px;
   }
 
   p {
@@ -961,9 +966,8 @@ main {
     background: #E9EAEE;
     margin-bottom: 62px;
     width: 100vw;
-    transform: translateX(-50px);
-    z-index: 4;
-    padding: 0 50px;
+    z-index: 2;
+    padding-left: 9px;
 
     h4 {
       padding: 0 0 0 52px;
@@ -1187,7 +1191,7 @@ main {
 
 .trusted {
   .container {
-    max-width: 1020px;
+    padding-left: 200px;
   }
 
   .subtitle {
@@ -1227,7 +1231,7 @@ main {
   padding-top: 54px;
 
   .container {
-    max-width: 1020px;
+    padding-left: 200px;
   }
 
   .subtitle {
@@ -1241,11 +1245,13 @@ main {
   .help__item {
     background: #F7F7F7;
     padding: 35px 35px 25px;
-    flex: 0 1 33%;
+    //flex: 0 1 33%;
     margin-right: 2px;
-    min-height: 300px;
+    height: 300px;
+    width: 320px;
     position: relative;
     transition-duration: 200ms;
+
 
     .help__link {
       position: absolute;
@@ -1307,7 +1313,7 @@ footer {
   z-index: 5;
 
   .container {
-    margin: 0 auto;
+    padding-left: 200px;
   }
 
   p {
