@@ -84,6 +84,14 @@
 
 
 @media (max-width: 950px) {
+  .wrapper::before {
+    width: 100px;
+  }
+
+  .fixed_logo {
+    padding-left: 20px;
+  }
+
   .menu_icon {
     display: block;
   }
@@ -108,6 +116,53 @@
       max-width: 400px;
     }
 
-    im
+    img {
+      &._active {
+        right: 5%;
+      }
+    }
+  }
+
+  .about {
+    padding-bottom: 50px;
+
+    .container {
+      margin-left: 120px;
+    }
+
+    .about_item {
+      &:hover p {
+        transition-duration: 300ms;
+        font-size: 22px;
+        line-height: 30px;
+      }
+
+      img {
+        width: 40vh;
+        left: 35%;
+        top: 10px;
+      }
+
+      &:hover img {
+        opacity: 1;
+        left: 95%;
+        transform: translate(0, 0) scale(1);
+        visibility: visible;
+      }
+    }
+
+
+  }
+
+  .why {
+    padding: 180px 0 125px;
+
+    .container {
+      padding-left: 150px;
+    }
+
+    p {
+      width: 70%;
+    }
   }
 }
