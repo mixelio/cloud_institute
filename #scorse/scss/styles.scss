@@ -250,6 +250,29 @@
 body {
   font-family: "Futura PT book";
   background-color: #F3F4F5;
+  transition-duration: 300ms;
+
+  &:before {
+    transition-duration: 300ms;
+    transform: translateX(-100%);
+  }
+
+  &._lock {
+    transition-duration: 300ms;
+    overflow: hidden;
+
+    &:before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      background: #00000070;
+      display: block;
+      position: absolute;
+      z-index: 11;
+      transform: translateX(0);
+    }
+  }
+
 }
 
 main {
@@ -305,6 +328,196 @@ main {
     transform: translate(0, 0);
     opacity: 1;
     position: fixed;
+  }
+}
+
+.menu_icon {
+  display: none;
+  width: 40px;
+  height: 30px;
+  border: none;
+  background: transparent;
+  position: absolute;
+  z-index: 3;
+  right: 20px;
+  top: 10px;
+  cursor: pointer;
+  z-index: 12;
+
+  &:focus {
+    outline: none;
+  }
+
+  span {
+    cursor: pointer;
+    width: 100%;
+    height: 4px;
+    //border-radius: 100px;
+    position: absolute;
+    display: block;
+    background: #000;
+  }
+
+  &:after,
+  &:before {
+    width: 70%;
+    height: 4px;
+    //border-radius: 100px;
+    position: absolute;
+    display: block;
+    background: #000;
+  }
+
+  &:after,
+  &:before {
+    content: "";
+    transition: 0.3s width 0.5s;
+  }
+
+  &:after {
+    top: 0px;
+    right: 0px;
+    margin-top: 0px;
+  }
+
+  &:before {
+    bottom: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+  }
+
+  span {
+    top: 50%;
+    margin-top: -2px;
+    transition: transform 0.3s;
+
+    &:before {
+      content: "";
+      background: #000;
+      width: 100%;
+      height: 4px;
+      //border-radius: 100px;
+      position: absolute;
+      left: 0px;
+      transition: transform 0.3s;
+    }
+  }
+
+  &._active {
+    &:after {
+      transition: all 0.2s;
+      width: 0%;
+      right: 0px;
+    }
+
+    &:before {
+      transition: all 0.2s;
+      width: 0%;
+      right: 0px;
+    }
+
+    span {
+      transform: rotate(45deg);
+      transition: 0.3s transform 0.4s;
+
+      &:before {
+        transform: rotate(-90deg);
+        transition: 0.3s transform 0.4s;
+      }
+    }
+  }
+}
+
+.burger_menu {
+  padding: 10vh 20px 70px;
+  width: 320px;
+  position: absolute;
+  background: #F3F4F5;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  z-index: 12;
+  //animation
+  transition-duration: 500ms;
+  transform: translateY(-100%);
+  opacity: 0;
+
+  &._active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .search {
+    margin: 0 auto;
+    width: 70%;
+    background: #F3F4F5;
+  }
+
+  .sublist {
+    padding: 0 0 0 21px;
+
+    li {
+      margin-bottom: 8px;
+    }
+  }
+
+  li {
+    margin-bottom: 10px;
+
+    &:first-of-type {
+      margin: 0 15px 8px 0;
+      padding: 0 15px 0 0;
+      position: relative;
+
+      a {
+        &:first-of-type {
+          position: relative;
+          padding-right: 20px;
+
+          &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: 0;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 5px 4.5px 0 4.5px;
+            border-color: #000000 transparent transparent transparent;
+          }
+        }
+      }
+    }
+  }
+
+  .burger_subitem {
+    display: flex;
+    margin-bottom: 60px;
+
+    .subitem {
+      flex: 0 1 auto;
+
+      a {
+        display: flex;
+        align-items: center;
+        height: 100%;
+      }
+    }
+
+    svg {
+      display: inline-block;
+      margin-right: 5px;
+    }
+  }
+
+  .sublist {
+    li {
+      a {
+        &::after {
+          display: none;
+        }
+      }
+    }
   }
 }
 
@@ -967,7 +1180,7 @@ main {
     margin-bottom: 62px;
     width: 100vw;
     z-index: 2;
-    padding-left: 9px;
+    padding-left: 200px;
 
     h4 {
       padding: 0 0 0 52px;
@@ -1378,3 +1591,5 @@ footer {
     font-weight: bold;
   }
 }
+
+@import "adaptiv.scss";

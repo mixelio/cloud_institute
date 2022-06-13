@@ -1,13 +1,24 @@
 "use strict";
 
 const swiper = new Swiper('.swiper', {
+
   direction: 'horizontal',
   slidesPerView: 4,
   spaceBetween: 41,
   centerInsufficientSlides: true,
-  centeredSlides: true,
-  initialSlide: 1,
-  scroll: EventTarget,
+  // centeredSlides: true,
+  initialSlide: 0,
+
+  breakpoints: {
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 21,
+    },
+    950: {
+      slidesPerView: 2,
+      spaceBetween: 21,
+    }
+  },
 });
 
 function intro() {
@@ -38,3 +49,13 @@ window.addEventListener('scroll', () => {
   }
 })
 
+const iconMenu = document.querySelector(".menu_icon");
+const menuBody = document.querySelector(".burger_menu");
+
+if (iconMenu) {
+  iconMenu.addEventListener("click", function (e) {
+    document.body.classList.toggle("_lock");
+    iconMenu.classList.toggle("_active");
+    menuBody.classList.toggle("_active");
+  });
+}
