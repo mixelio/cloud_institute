@@ -247,6 +247,8 @@
 
 // подключение шрифтов
 // Повторяющиеся, общие модули
+
+
 body {
   font-family: "Futura PT book";
   background-color: #F3F4F5;
@@ -973,7 +975,7 @@ main {
 
     img {
       position: absolute;
-      width: 60vh;
+      width: 30vw;
       left: 35%;
       top: -10px;
       border-radius: 20px;
@@ -1552,6 +1554,10 @@ main {
       }
     }
   }
+}
+
+#hellopreloader_preload {
+  min-width: auto !important;
 }
 
 footer {

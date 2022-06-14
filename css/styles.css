@@ -941,7 +941,7 @@ main {
 }
 .about .about_item img {
   position: absolute;
-  width: 60vh;
+  width: 30vw;
   left: 35%;
   top: -10px;
   border-radius: 20px;
@@ -1452,6 +1452,10 @@ main {
           transition-duration: 200ms;
 }
 
+#hellopreloader_preload {
+  min-width: auto !important;
+}
+
 footer {
   background: #231F20;
   color: #fff;
@@ -1578,6 +1582,7 @@ footer .copirate {
   }
 
   .fixed_logo {
+    top: 20px;
     padding-left: 20px;
   }
 
@@ -1616,7 +1621,6 @@ footer .copirate {
     line-height: 30px;
   }
   .about .about_item img {
-    width: 40vh;
     left: 35%;
     top: 10px;
   }
@@ -1636,5 +1640,63 @@ footer .copirate {
   }
   .why p {
     width: 70%;
+  }
+
+  .reasons .container {
+    padding-left: 120px;
+  }
+  .reasons .container h3:after {
+    width: 55px;
+    right: -120px;
+  }
+
+  .sertified .container {
+    padding-left: 120px;
+  }
+  .sertified .swiper {
+    padding-left: 120px;
+  }
+
+  .trusted .container {
+    padding-left: 150px;
+  }
+  .trusted p {
+    max-width: 500px;
+  }
+  .trusted .trusted_item svg {
+    display: inline-block;
+    height: 100px !important;
+  }
+
+  .help .help__item {
+    width: 250px;
+    height: 180px;
+  }
+}
+@media (max-width: 900px) {
+  .first_screen img {
+    opacity: 40%;
+  }
+
+  .reasons p {
+    left: 59%;
+  }
+
+  .about_item:hover p {
+    -webkit-transition-duration: 300ms;
+            transition-duration: 300ms;
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .about_item img {
+    left: 35%;
+    top: 10px;
+  }
+  .about_item:hover img {
+    opacity: 1;
+    left: 95%;
+    -webkit-transform: translate(0, 0) scale(1);
+            transform: translate(0, 0) scale(1);
+    visibility: visible;
   }
 }
