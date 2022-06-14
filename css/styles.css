@@ -1129,11 +1129,6 @@ main {
   opacity: 1;
   visibility: visible;
 }
-.reasons li:hover p {
-  -webkit-transform: translateY(0) scaleY(1);
-          transform: translateY(0) scaleY(1);
-  opacity: 1;
-}
 
 .sertified .container {
   padding-left: 200px;
@@ -1674,10 +1669,6 @@ footer .copirate {
   }
 }
 @media (max-width: 900px) {
-  .first_screen img {
-    opacity: 40%;
-  }
-
   .reasons p {
     left: 59%;
   }
@@ -1701,6 +1692,14 @@ footer .copirate {
   }
 }
 @media (max-width: 800px) {
+  .first_screen img {
+    display: none;
+  }
+  .first_screen a {
+    color: #FFF;
+    background: #3D46EC;
+  }
+
   .about .about_item {
     width: 65%;
   }

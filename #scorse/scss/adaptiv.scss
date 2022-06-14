@@ -211,11 +211,7 @@
 
 @media (max-width: 900px) {
 
-  .first_screen {
-    img {
-      opacity: 40%;
-    }
-  }
+
 
   .reasons p {
 
@@ -248,6 +244,17 @@
 }
 
 @media (max-width: 800px) {
+  .first_screen {
+    img {
+      display: none;
+    }
+
+    a {
+      color: #FFF;
+      background: #3D46EC;
+    }
+  }
+
   .about {
     .about_item {
       width: 65%;
