@@ -246,3 +246,29 @@
   }
 
 }
+
+@media (max-width: 800px) {
+  .about {
+    .about_item {
+      width: 65%;
+    }
+  }
+
+  .reasons {
+    h3 {
+      &::after {
+        display: none;
+      }
+    }
+
+    p {
+      display: block;
+    }
+  }
+
+  footer {
+    .container {
+      padding-left: 110px;
+    }
+  }
+}
