@@ -244,6 +244,8 @@
 }
 
 @media (max-width: 800px) {
+
+
   .first_screen {
     img {
       display: none;
@@ -295,9 +297,22 @@
 }
 
 @media (max-width: 700px) {
+  .wrapper::before {
+    display: none;
+  }
+
   .about {
     .about_item {
       width: 90%;
+
+      h3:before,
+      h3:after {
+        display: none;
+      }
+
+      img {
+        display: none;
+      }
     }
 
     .about_item:hover img {

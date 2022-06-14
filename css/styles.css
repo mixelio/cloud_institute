@@ -302,6 +302,8 @@ body:before {
   z-index: 11;
   -webkit-transition-duration: 500ms;
           transition-duration: 500ms;
+  -webkit-transition-delay: 500ms;
+          transition-delay: 500ms;
   opacity: 0;
   -webkit-transform: translateX(100%) scaleX(0);
           transform: translateX(100%) scaleX(0);
@@ -1729,8 +1731,19 @@ footer .copirate {
   }
 }
 @media (max-width: 700px) {
+  .wrapper::before {
+    display: none;
+  }
+
   .about .about_item {
     width: 90%;
+  }
+  .about .about_item h3:before,
+.about .about_item h3:after {
+    display: none;
+  }
+  .about .about_item img {
+    display: none;
   }
   .about .about_item:hover img {
     left: 60%;

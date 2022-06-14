@@ -263,6 +263,7 @@ body {
     position: fixed;
     z-index: 11;
     transition-duration: 500ms;
+    transition-delay: 500ms;
     opacity: 0;
     transform: translateX(100%) scaleX(0);
   }
