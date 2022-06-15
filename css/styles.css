@@ -299,7 +299,7 @@ body:before {
   background: rgba(0, 0, 0, 0.4392156863);
   display: block;
   position: fixed;
-  z-index: 11;
+  z-index: 5;
   -webkit-transition-duration: 500ms;
           transition-duration: 500ms;
   -webkit-transition-delay: 500ms;
@@ -315,6 +315,16 @@ body._lock:before {
   opacity: 1;
   -webkit-transform: translateX(0) scaleX(1);
           transform: translateX(0) scaleX(1);
+}
+body._lock .header {
+  background: rgba(255, 255, 255, 0);
+  -webkit-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0);
+          box-shadow: 0px 4px 12px rgba(0, 0, 0, 0);
+}
+body._lock .header .container {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  opacity: 0;
 }
 
 main {
@@ -376,10 +386,10 @@ main {
   height: 30px;
   border: none;
   background: transparent;
-  position: fixed;
+  position: absolute;
   z-index: 3;
   right: 20px;
-  top: 20px;
+  top: 33%;
   cursor: pointer;
   z-index: 12;
 }
@@ -479,6 +489,7 @@ main {
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
   opacity: 0;
+  z-index: 10;
 }
 .burger_menu._active {
   -webkit-transform: translateY(0);
@@ -584,6 +595,8 @@ main {
   max-width: 1220px;
   margin: 0 auto;
   padding: 0 10px;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
 }
 .header .header__row {
   display: -webkit-box;
@@ -1458,8 +1471,23 @@ main {
           transition-duration: 200ms;
 }
 
-#hellopreloader_preload {
-  min-width: auto !important;
+.blog_wrapper {
+  margin-top: 0;
+}
+
+.blog__first_screen {
+  padding: 200px 0 109px;
+  position: relative;
+  border: 1px solid red;
+}
+.blog__first_screen .container {
+  max-width: 1142px;
+  margin: 0 auto;
+  padding: 9vh 0;
+}
+.blog__first_screen img {
+  position: absolute;
+  width: 100%;
 }
 
 footer {
@@ -1596,6 +1624,16 @@ footer .copirate {
     display: block;
   }
 
+  .header {
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 15px 0;
+  }
+  .header .container {
+    position: relative;
+    padding: 0 20px;
+  }
   .header .menu__list {
     display: none;
   }

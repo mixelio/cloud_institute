@@ -41,10 +41,11 @@ intro();
 window.addEventListener('scroll', () => {
   let scrollDisatnce = window.scrollY;
   let screenHeight = window.innerHeight;
+  let screenWidth = window.innerWidth;
   let header = document.querySelectorAll('.header');
   let fixedLogo = document.querySelectorAll('.fixed_logo');
 
-  if ((scrollDisatnce / (screenHeight * 2)) >= 0.48) {
+  if (((scrollDisatnce / (screenHeight * 2)) >= 0.48) && screenWidth > 950) {
     header[0].classList.add('_close');
     fixedLogo[0].classList.add('_active');
   } else {

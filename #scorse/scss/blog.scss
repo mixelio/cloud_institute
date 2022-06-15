@@ -1,0 +1,21 @@
+.blog_wrapper {
+  margin-top: 0;
+}
+
+.blog__first_screen {
+  padding: 200px 0 109px;
+  position: relative;
+  border: 1px solid red;
+
+  .container {
+    max-width: 1142px;
+    margin: 0 auto;
+    padding: 9vh 0;
+
+  }
+
+  img {
+    position: absolute;
+    width: 100%;
+  }
+}
