@@ -842,6 +842,7 @@ main {
   cursor: default;
   position: relative;
   width: 55%;
+  max-width: 800px;
   -webkit-transition-duration: 300ms;
           transition-duration: 300ms;
   padding-top: 20px;
@@ -943,7 +944,8 @@ main {
 }
 .about .about_item img {
   position: absolute;
-  width: 30vw;
+  max-width: 30vw;
+  max-height: 200px;
   left: 35%;
   top: -10px;
   border-radius: 20px;
@@ -1029,6 +1031,7 @@ main {
   padding: 0 0 0 40px;
   position: relative;
   cursor: default;
+  max-width: 1200px;
 }
 .reasons ol li:first-child:before {
   top: 0;
@@ -1112,6 +1115,12 @@ main {
           transform: translateY(-50%) scaleY(0);
   -webkit-transition-duration: 300ms;
           transition-duration: 300ms;
+}
+.reasons li:hover p {
+  -webkit-transform: translateY(0) scaleY(1);
+          transform: translateY(0) scaleY(1);
+  opacity: 1;
+  line-height: 32px;
 }
 .reasons li:hover h3 {
   -webkit-transition-duration: 500ms;
@@ -1361,7 +1370,7 @@ main {
   margin-bottom: 28px;
 }
 .trusted .trusted__row {
-  max-width: 60%;
+  max-width: 800px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1735,6 +1744,30 @@ footer .copirate {
     display: none;
   }
 
+  .about .container {
+    margin-left: 90px;
+  }
+
+  .why .container {
+    padding-left: 120px;
+  }
+
+  .reasons .container {
+    padding-left: 90px;
+  }
+
+  .sertified .container {
+    padding-left: 90px;
+  }
+
+  .trusted .container {
+    padding-left: 90px;
+  }
+
+  .help .container {
+    padding-left: 90px;
+  }
+
   .about .about_item {
     width: 90%;
   }
@@ -1776,6 +1809,10 @@ footer .copirate {
   .fixed_logo {
     padding-left: 10px;
   }
+
+  footer .container {
+    padding-left: 50px;
+  }
 }
 @media (max-width: 650px) {
   .why p {
@@ -1784,14 +1821,6 @@ footer .copirate {
 
   .about .about_item img {
     display: none;
-  }
-
-  .trusted .container {
-    padding-left: 110px;
-  }
-
-  .help .container {
-    padding-left: 110px;
   }
 
   .help .help__row {
@@ -1807,16 +1836,8 @@ footer .copirate {
     padding: 20px 10px;
     margin: 0 0 5px;
   }
-
-  footer .container {
-    padding-left: 80px;
-  }
 }
 @media (max-width: 550px) {
-  .about .container {
-    margin-left: 100px;
-  }
-
   footer .footer__row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1827,14 +1848,6 @@ footer .copirate {
 @media (max-width: 500px) {
   .about .about_item {
     width: 100%;
-  }
-
-  .why .container {
-    padding-left: 100px;
-  }
-
-  .reasons .container {
-    padding-left: 100px;
   }
 
   .reasons ol {

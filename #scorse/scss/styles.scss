@@ -874,6 +874,7 @@ main {
     cursor: default;
     position: relative;
     width: 55%;
+    max-width: 800px;
     transition-duration: 300ms;
     padding-top: 20px;
 
@@ -976,7 +977,8 @@ main {
 
     img {
       position: absolute;
-      width: 30vw;
+      max-width: 30vw;
+      max-height: 200px;
       left: 35%;
       top: -10px;
       border-radius: 20px;
@@ -1064,6 +1066,7 @@ main {
       padding: 0 0 0 40px;
       position: relative;
       cursor: default;
+      max-width: 1200px;
 
       &:first-child {
         &:before {
@@ -1150,6 +1153,12 @@ main {
     width: 40%;
     transform: translateY(-50%) scaleY(0);
     transition-duration: 300ms;
+  }
+
+  li:hover p {
+    transform: translateY(0) scaleY(1);
+    opacity: 1;
+    line-height: 32px;
   }
 
   li:hover h3 {
@@ -1457,7 +1466,7 @@ main {
   }
 
   .trusted__row {
-    max-width: 60%;
+    max-width: 800px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;

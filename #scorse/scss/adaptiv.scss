@@ -301,6 +301,30 @@
     display: none;
   }
 
+  .about .container {
+    margin-left: 90px;
+  }
+
+  .why .container {
+    padding-left: 120px;
+  }
+
+  .reasons .container {
+    padding-left: 90px;
+  }
+
+  .sertified .container {
+    padding-left: 90px;
+  }
+
+  .trusted .container {
+    padding-left: 90px;
+  }
+
+  .help .container {
+    padding-left: 90px;
+  }
+
   .about {
     .about_item {
       width: 90%;
@@ -347,6 +371,10 @@
   .fixed_logo {
     padding-left: 10px;
   }
+
+  footer .container {
+    padding-left: 50px;
+  }
 }
 
 @media (max-width: 650px) {
@@ -356,14 +384,6 @@
 
   .about .about_item img {
     display: none;
-  }
-
-  .trusted .container {
-    padding-left: 110px;
-  }
-
-  .help .container {
-    padding-left: 110px;
   }
 
   .help .help__row {
@@ -376,19 +396,11 @@
     padding: 20px 10px;
     margin: 0 0 5px;
   }
-
-  footer .container {
-    padding-left: 80px;
-  }
 }
 
 @media (max-width: 550px) {
-  .about .container {
-    margin-left: 100px;
-  }
 
   footer .footer__row {
-
     flex-direction: column;
   }
 }
@@ -396,14 +408,6 @@
 @media (max-width: 500px) {
   .about .about_item {
     width: 100%;
-  }
-
-  .why .container {
-    padding-left: 100px;
-  }
-
-  .reasons .container {
-    padding-left: 100px;
   }
 
   .reasons ol {
