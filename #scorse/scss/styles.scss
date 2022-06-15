@@ -281,7 +281,7 @@ body {
       box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.0);
 
       .container {
-        transform: translateY(-100%);
+        transform: translateX(-100%) scaleX(0);
         opacity: 0;
       }
     }
@@ -586,7 +586,7 @@ main {
     max-width: 1220px;
     margin: 0 auto;
     padding: 0 10px;
-    transition-duration: 500ms;
+    transition-duration: 300ms;
   }
 
   .header__row {
@@ -986,7 +986,6 @@ main {
       transition-duration: 300ms;
       font-size: 25px;
       line-height: 32px;
-
     }
 
     img {

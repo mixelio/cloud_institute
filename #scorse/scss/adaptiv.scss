@@ -82,11 +82,16 @@
 }
 
 @media (max-width: 950px) {
+  .wrapper {
+    // padding: 0 0 0 20px;
+  }
+
   .wrapper::before {
-    width: 100px;
+    display: none;
   }
 
   .fixed_logo {
+    display: none;
     top: 20px;
     padding-left: 20px;
   }
@@ -119,13 +124,24 @@
     h1 {
       font-size: 45px;
       line-height: 55px;
+      transform: translateX(0%);
+      opacity: 1;
     }
 
     p {
       max-width: 400px;
+      transform: translateX(0%);
+      opacity: 1;
+    }
+
+    a {
+      transform: translateX(0%);
+      opacity: 1;
     }
 
     img {
+      right: 5%;
+
       &._active {
         right: 5%;
       }
@@ -136,38 +152,100 @@
     padding-bottom: 50px;
 
     .container {
-      margin-left: 120px;
+      margin-left: 0;
+      padding-left: 20px;
+    }
+
+    ol li:hover::before {
+      text-shadow: 0 0 0px #000;
     }
 
     .about_item {
+      width: 80%;
+
+      h3 {
+        transition-duration: 500ms;
+        text-shadow: 0 0 0px #000;
+        color: #000;
+
+        &:before {
+          transform: translateX(0) scaleX(1);
+          opacity: 1;
+          visibility: visible;
+        }
+
+        &:after {
+          transform: translateX(0) scaleX(1);
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+
+      &:hover h3 {
+        transition-duration: 500ms;
+        text-shadow: 0 0 0px #000;
+        color: #000;
+
+        &:before {
+          transform: translateX(0) scaleX(1);
+          opacity: 1;
+          visibility: visible;
+        }
+
+        &:after {
+          transform: translateX(0) scaleX(1);
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+
+      p {
+        font-size: 22px;
+        line-height: 30px;
+      }
+
       &:hover p {
         transition-duration: 300ms;
         font-size: 22px;
         line-height: 30px;
       }
 
+      a {
+        opacity: 1;
+        visibility: visible;
+        margin-bottom: 48px;
+        transform: translateY(0);
+      }
+
       img {
-        //width: 40vh;
-        left: 35%;
-        top: 10px;
+        position: relative;
+        display: block;
+        opacity: 1;
+        left: auto;
+        -webkit-transform: translate(0, 0) scale(1);
+        transform: translate(0, 0) scale(1);
+        visibility: visible;
+        right: 0;
+        height: 100%;
       }
 
       &:hover img {
         opacity: 1;
-        left: 95%;
+        left: auto;
+        -webkit-transform: translate(0, 0) scale(1);
         transform: translate(0, 0) scale(1);
         visibility: visible;
+        right: 0;
+        height: 100%;
       }
     }
-
-
   }
 
   .why {
     padding: 180px 0 125px;
 
     .container {
-      padding-left: 150px;
+      padding-left: 20px;
     }
 
     p {
