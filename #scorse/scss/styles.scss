@@ -1141,7 +1141,7 @@ main {
       position: absolute;
       display: inline-block;
       width: 100px;
-      border: 1px solid #F7F7F7;
+      border: 1px solid #fff;
       right: -150px;
       top: 50%;
       transition-duration: 500ms;
@@ -1172,6 +1172,16 @@ main {
     transform: translateY(0) scaleY(1);
     opacity: 1;
     line-height: 32px;
+  }
+
+  .asons_accordioren {
+    & ._active {
+      p {
+        transform: translateY(0) scaleY(1);
+        opacity: 1;
+        line-height: 32px;
+      }
+    }
   }
 
   li:hover h3 {
@@ -1479,6 +1489,7 @@ main {
   }
 
   .trusted__row {
+    width: 65%;
     max-width: 800px;
     display: flex;
     flex-wrap: wrap;
@@ -1487,7 +1498,8 @@ main {
   }
 
   .trusted__item {
-    flex: 0 0 30%;
+    flex: 0 0 25%;
+    margin: 20px;
 
     svg {
       width: 100%;

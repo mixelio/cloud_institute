@@ -64,3 +64,24 @@ if (iconMenu) {
     menuBody.classList.toggle("_active");
   });
 }
+function accordion() {
+  const accordion = document.querySelectorAll('.reasons_accordion');
+  const accord = document.querySelectorAll('.reasons_accordion__item');
+  // const activ = accordion.querySelector('._active');
+  console.log(accordion);
+  if (accord.length > 0) {
+    for (let i = 0; i < accord.length; i++) {
+      accord[i].addEventListener('click', function (e) {
+        for (let j = 0; j < accord.length; j++) {
+          if (accord[j].classList.contains('_active')) {
+            accord[j].classList.remove('_active');
+          }
+        }
+        accord[i].classList.toggle('_active');
+        console.log('click');
+      })
+    }
+  }
+}
+
+accordion();

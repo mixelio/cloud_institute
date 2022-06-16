@@ -1101,7 +1101,7 @@ main {
   position: absolute;
   display: inline-block;
   width: 100px;
-  border: 1px solid #F7F7F7;
+  border: 1px solid #fff;
   right: -150px;
   top: 50%;
   -webkit-transition-duration: 500ms;
@@ -1130,6 +1130,12 @@ main {
           transition-duration: 300ms;
 }
 .reasons li:hover p {
+  -webkit-transform: translateY(0) scaleY(1);
+          transform: translateY(0) scaleY(1);
+  opacity: 1;
+  line-height: 32px;
+}
+.reasons .asons_accordioren ._active p {
   -webkit-transform: translateY(0) scaleY(1);
           transform: translateY(0) scaleY(1);
   opacity: 1;
@@ -1383,6 +1389,7 @@ main {
   margin-bottom: 28px;
 }
 .trusted .trusted__row {
+  width: 65%;
   max-width: 800px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1395,8 +1402,9 @@ main {
 }
 .trusted .trusted__item {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 30%;
-          flex: 0 0 30%;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+  margin: 20px;
 }
 .trusted .trusted__item svg {
   width: 100%;
@@ -1674,17 +1682,30 @@ footer .copirate {
     margin-left: 0;
     padding-left: 20px;
   }
+  .about ol li:before {
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
   .about ol li:hover::before {
     text-shadow: 0 0 0px #000;
   }
   .about .about_item {
-    width: 80%;
+    width: 350px;
+  }
+  .about .about_item br {
+    display: none;
+  }
+  .about .about_item h3:before,
+.about .about_item h3:after {
+    display: none;
   }
   .about .about_item h3 {
     -webkit-transition-duration: 500ms;
             transition-duration: 500ms;
     text-shadow: 0 0 0px #000;
     color: #000;
+    font-weight: 500;
+    letter-spacing: 2px;
   }
   .about .about_item h3:before {
     -webkit-transform: translateX(0) scaleX(1);
@@ -1729,7 +1750,14 @@ footer .copirate {
   .about .about_item a {
     opacity: 1;
     visibility: visible;
-    margin-bottom: 48px;
+    margin-bottom: 31px;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  .about .about_item:hover a {
+    opacity: 1;
+    visibility: visible;
+    margin-bottom: 31px;
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
@@ -1742,7 +1770,9 @@ footer .copirate {
     transform: translate(0, 0) scale(1);
     visibility: visible;
     right: 0;
-    height: 100%;
+    max-width: none;
+    max-height: none;
+    width: 100%;
   }
   .about .about_item:hover img {
     opacity: 1;
@@ -1755,7 +1785,7 @@ footer .copirate {
   }
 
   .why {
-    padding: 180px 0 125px;
+    padding: 180px 0 36px;
   }
   .why .container {
     padding-left: 20px;
@@ -1764,8 +1794,12 @@ footer .copirate {
     width: 70%;
   }
 
+  .reasons {
+    padding-top: 20px;
+  }
+
   .reasons .container {
-    padding-left: 120px;
+    padding-left: 20px;
   }
   .reasons .container h3:after {
     width: 55px;
@@ -1773,14 +1807,14 @@ footer .copirate {
   }
 
   .sertified .container {
-    padding-left: 120px;
+    padding-left: 20px;
   }
   .sertified .swiper {
-    padding-left: 120px;
+    padding-left: 20px;
   }
 
   .trusted .container {
-    padding-left: 150px;
+    padding-left: 20px;
   }
   .trusted p {
     max-width: 500px;
@@ -1794,28 +1828,18 @@ footer .copirate {
     width: 250px;
     height: 180px;
   }
+
+  .help .container {
+    padding-left: 20px;
+  }
+
+  footer .container {
+    padding-left: 20px;
+  }
 }
 @media (max-width: 900px) {
   .reasons p {
     left: 59%;
-  }
-
-  .about_item:hover p {
-    -webkit-transition-duration: 300ms;
-            transition-duration: 300ms;
-    font-size: 22px;
-    line-height: 30px;
-  }
-  .about_item img {
-    left: 35%;
-    top: 10px;
-  }
-  .about_item:hover img {
-    opacity: 1;
-    left: 95%;
-    -webkit-transform: translate(0, 0) scale(1);
-            transform: translate(0, 0) scale(1);
-    visibility: visible;
   }
 }
 @media (max-width: 800px) {
@@ -1856,77 +1880,28 @@ footer .copirate {
   }
 }
 @media (max-width: 700px) {
-  .wrapper::before {
-    display: none;
-  }
-
-  .about .container {
-    margin-left: 90px;
-  }
-
-  .why .container {
-    padding-left: 120px;
-  }
-
-  .reasons .container {
-    padding-left: 90px;
-  }
-
-  .sertified .container {
-    padding-left: 90px;
-  }
-
-  .trusted .container {
-    padding-left: 90px;
-  }
-
-  .help .container {
-    padding-left: 90px;
-  }
-
-  .about .about_item {
-    width: 90%;
-  }
-  .about .about_item h3:before,
-.about .about_item h3:after {
-    display: none;
-  }
-  .about .about_item img {
-    display: none;
-  }
-  .about .about_item:hover img {
-    left: 60%;
-    top: 50%;
-  }
-
-  .why {
+  .about .why {
     padding: 100px 0 125px;
   }
-
-  .trusted .trusted__item {
+  .about .trusted .trusted__item {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 40%;
     flex: 1 0 26%;
     margin: 15px 5px;
   }
-
-  .trusted .trusted__item svg {
+  .about .trusted .trusted__item svg {
     height: auto;
   }
-
-  .trusted .trusted__row {
+  .about .trusted .trusted__row {
     max-width: 80%;
   }
-
-  .wrapper::before {
+  .about .wrapper::before {
     width: 80px;
   }
-
-  .fixed_logo {
+  .about .fixed_logo {
     padding-left: 10px;
   }
-
-  footer .container {
+  .about footer .container {
     padding-left: 50px;
   }
 }
