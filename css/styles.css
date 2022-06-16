@@ -1793,6 +1793,22 @@ footer .copirate {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
   }
+  .reasons ol li:hover::before {
+    text-shadow: 0 0 0px #000;
+  }
+  .reasons ol li:hover p {
+    -webkit-transform: translateY(-50%) scaleY(0);
+            transform: translateY(-50%) scaleY(0);
+    opacity: 0;
+    line-height: 0.2;
+  }
+  .reasons ol li:hover h3 {
+    text-shadow: none;
+    letter-spacing: 2px;
+  }
+  .reasons ol li:hover h3:before {
+    display: none;
+  }
   .reasons .reasons_accordioren ._active {
     -webkit-transition-duration: 300ms;
             transition-duration: 300ms;
@@ -1812,14 +1828,12 @@ footer .copirate {
             transform: translateY(0%) scaleY(1);
     opacity: 1;
   }
-  .reasons .container h3:after {
-    width: 55px;
-    right: -120px;
+  .reasons .container h3 {
+    letter-spacing: 2px;
+    font-weight: 500;
   }
-  .reasons .container li:hover p {
-    -webkit-transform: translateY(-50%) scaleY(0);
-            transform: translateY(-50%) scaleY(0);
-    opacity: 0;
+  .reasons .container h3:after {
+    display: none;
   }
 
   .sertified .container {

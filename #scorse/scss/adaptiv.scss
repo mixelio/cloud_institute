@@ -282,6 +282,27 @@
     ol {
       padding: 45px 20px;
       transform: translate(0, 0);
+
+      li:hover {
+        &::before {
+          text-shadow: 0 0 0px #000;
+        }
+
+        p {
+          transform: translateY(-50%) scaleY(0);
+          opacity: 0;
+          line-height: 0.2;
+        }
+
+        h3 {
+          text-shadow: none;
+          letter-spacing: 2px;
+
+          &:before {
+            display: none;
+          }
+        }
+      }
     }
 
     .reasons_accordioren {
@@ -308,18 +329,16 @@
     }
 
     h3 {
+      letter-spacing: 2px;
+      font-weight: 500;
+
       &:after {
-        width: 55px;
-        right: -120px;
+        display: none;
       }
     }
 
-    li p {}
 
-    li:hover p {
-      transform: translateY(-50%) scaleY(0);
-      opacity: 0;
-    }
+
   }
 
   .sertified {
