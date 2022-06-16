@@ -1,0 +1,88 @@
+.our_mission__spoller_item {
+  position: relative;
+  margin: 0 0 20px;
+  padding: 0 20px 18px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
+  height: auto;
+}
+.our_mission__spoller_item._active {
+  padding: 0 20px 18px;
+}
+
+.spoller__text {
+  overflow: hidden;
+  display: none;
+  padding: 20px 0 0;
+  font-size: 14px;
+  line-height: 17px;
+  color: #333333;
+}
+
+.spoller__title {
+  padding: 18px 70px;
+  width: 100%;
+  text-align: left;
+  background-color: #fff;
+  border-bottom: none;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #eaa124;
+  position: relative;
+}
+.spoller__title:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  top: calc(50% - 20px);
+  left: 0;
+  z-index: 0;
+}
+.spoller__title:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  height: 7px;
+  width: 12px;
+  top: calc(50% - 3px);
+  right: 0;
+  z-index: 0;
+  background: url("../img/spoller-arrow.svg") 0 0/contain no-repeat;
+}
+.spoller__title.active__item {
+  border-bottom: 1px solid #eee;
+}
+.spoller__title.active__item:after {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+
+.spoller__title_1 {
+  background: url("../img/talking-people-1.svg") 0 0/contain no-repeat;
+}
+
+.spoller__title_2 {
+  background: url("../img/talking-people-2.svg") 0 0/contain no-repeat;
+}
+
+.spoller__title_3 {
+  background: url("../img/talking-people-3.svg") 0 0/contain no-repeat;
+}
+
+.spoller__title_4 {
+  background: url("../img/talking-people-4.svg") 0 0/contain no-repeat;
+}
+
+.spoller__title_5 {
+  background: url("../img/talking-people-5.svg") 0 0/contain no-repeat;
+}
+
+.active__item .spoller__title:after {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}

@@ -1,29 +1,22 @@
 "use strict";
 
 const swiper = new Swiper('.swiper', {
-
   direction: 'horizontal',
-  slidesPerView: 4,
-  spaceBetween: 41,
-  centerInsufficientSlides: true,
+  slidesPerView: 3,
+  spaceBetween: 20,
   centeredSlides: true,
-  initialSlide: 0,
-
   breakpoints: {
-    1200: {
-      slidesPerView: 3,
-      spaceBetween: 21,
-    },
     800: {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
       slidesPerView: 2,
-      spaceBetween: 21,
-      centerInsufficientSlides: false,
-      centeredSlides: true,
-      Infinity: true,
+      slidesPerGroup: 1,
+
     },
     320: {
       slidesPerView: 1,
-      spaceBetween: 13,
     }
   },
 });
@@ -67,11 +60,24 @@ if (iconMenu) {
     menuBody.classList.toggle("_active");
   });
 }
+
+
+$(function () {
+  // открываем вкладку по умолчанию
+  $(".active__item .spoller__text").slideDown();
+
+  $("#accordion .spoller__title").on("click", function () {
+    $("#accordion .spoller__text").not($(this).next()).slideUp(299);
+
+    $(".reasons__spoller_item").removeClass("active__item");
+    $(this).next().slideDown(299).parent().addClass("active__item");
+  });
+});
+
+
 function accordion() {
   const accordion = document.querySelectorAll('.reasons_accordion');
   const accord = document.querySelectorAll('.reasons_accordion__item');
-  // const activ = accordion.querySelector('._active');
-  console.log(accordion);
   if (accord.length > 0) {
     for (let i = 0; i < accord.length; i++) {
       accord[i].addEventListener('click', function (e) {
@@ -81,7 +87,6 @@ function accordion() {
           }
         }
         accord[i].classList.toggle('_active');
-        console.log('click');
       })
     }
   }

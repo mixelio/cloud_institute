@@ -1,5 +1,5 @@
 @import "nullstyle.scss";
-
+//@import "acordeon.scss";
 
 // подключение шрифтов
 
@@ -1075,11 +1075,102 @@ main {
     z-index: 2;
     background: #fff;
 
+    ._active {
+      p {
+        display: block;
+      }
+    }
+
     li {
       padding: 0 0 0 40px;
       position: relative;
       cursor: default;
       max-width: 1200px;
+
+      h3 {
+        position: relative;
+        margin-bottom: 0px;
+        display: inline-block;
+        font-family: "Futura PT";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 23px;
+        color: #231F20;
+        transition-duration: 500ms;
+        letter-spacing: 1px;
+
+        &:before {
+          content: '';
+          position: absolute;
+          display: inline-block;
+          width: 50px;
+          border: 1px solid #231F20;
+          right: -63px;
+          top: 50%;
+          transition-duration: 500ms;
+          transform: translateX(-40%) scaleX(0);
+          visibility: hidden;
+          z-index: 2;
+        }
+
+        &:after {
+          content: '';
+          position: absolute;
+          display: inline-block;
+          width: 100px;
+          border: 1px solid #fff;
+          right: -150px;
+          top: 50%;
+          transition-duration: 500ms;
+          transform: translateX(-80%) scaleX(0);
+          visibility: hidden;
+          z-index: 1;
+        }
+      }
+
+      p {
+        font-family: 'Futura PT';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 25px;
+        line-height: 32px;
+        color: #231F20;
+        position: absolute;
+        display: inline-block;
+        left: 45%;
+        top: 0;
+        width: 40%;
+        transform: translateY(-50%) scaleY(0);
+        opacity: 0;
+        transition-duration: 300ms;
+      }
+
+      li:hover p {
+        transform: translateY(0) scaleY(1);
+        opacity: 1;
+        line-height: 32px;
+      }
+
+
+
+      li:hover h3 {
+        transition-duration: 500ms;
+        text-shadow: 0 0 1px #000;
+        letter-spacing: 2px;
+
+        &:before {
+          transform: translateX(0) scaleX(1);
+          opacity: 1;
+          visibility: visible;
+        }
+
+        &:after {
+          transform: translateX(0) scaleX(1);
+          opacity: 1;
+          visibility: visible;
+        }
+      }
 
       &:first-child {
         &:before {
@@ -1109,90 +1200,6 @@ main {
     text-shadow: 0 0 1px #000;
   }
 
-  h3 {
-    position: relative;
-    margin-bottom: 15px;
-    display: inline-block;
-    font-family: "Futura PT";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 23px;
-    color: #231F20;
-    transition-duration: 500ms;
-    letter-spacing: 1px;
-
-    &:before {
-      content: '';
-      position: absolute;
-      display: inline-block;
-      width: 50px;
-      border: 1px solid #231F20;
-      right: -63px;
-      top: 50%;
-      transition-duration: 500ms;
-      transform: translateX(-40%) scaleX(0);
-      visibility: hidden;
-      z-index: 2;
-    }
-
-    &:after {
-      content: '';
-      position: absolute;
-      display: inline-block;
-      width: 100px;
-      border: 1px solid #fff;
-      right: -150px;
-      top: 50%;
-      transition-duration: 500ms;
-      transform: translateX(-80%) scaleX(0);
-      visibility: hidden;
-      z-index: 1;
-    }
-  }
-
-  p {
-    font-family: 'Futura PT';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 25px;
-    line-height: 32px;
-    color: #231F20;
-    position: absolute;
-    display: inline-block;
-    left: 45%;
-    top: 0;
-    width: 40%;
-    transform: translateY(-50%) scaleY(0);
-    opacity: 0;
-    transition-duration: 300ms;
-  }
-
-  li:hover p {
-    transform: translateY(0) scaleY(1);
-    opacity: 1;
-    line-height: 32px;
-  }
-
-
-
-  li:hover h3 {
-    transition-duration: 500ms;
-    text-shadow: 0 0 1px #000;
-    letter-spacing: 2px;
-
-    &:before {
-      transform: translateX(0) scaleX(1);
-      opacity: 1;
-      visibility: visible;
-    }
-
-    &:after {
-      transform: translateX(0) scaleX(1);
-      opacity: 1;
-      visibility: visible;
-    }
-  }
 }
 
 .sertified {
