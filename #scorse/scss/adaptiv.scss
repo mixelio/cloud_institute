@@ -149,11 +149,11 @@
   }
 
   .about {
-    padding-bottom: 50px;
+    padding: 27px 0 50px;
 
     .container {
       margin-left: 0;
-      padding-left: 20px;
+      padding: 0 20px;
     }
 
     ol li:before {
@@ -167,6 +167,10 @@
 
     .about_item {
       width: 350px;
+
+      &::after {
+        display: none;
+      }
 
       br {
         display: none;
@@ -270,7 +274,7 @@
     padding: 180px 0 36px;
 
     .container {
-      padding-left: 20px;
+      padding: 0 20px;
     }
 
     p {
@@ -279,71 +283,54 @@
   }
 
   .reasons {
+    margin-bottom: 35px;
+
+    .container {
+      padding-left: 0;
+    }
+
     ol {
-      padding: 45px 20px;
+      padding: 17px 20px;
       transform: translate(0, 0);
 
-      li:hover {
-        &::before {
-          text-shadow: 0 0 0px #000;
+      li {
+        &:not(:last-child) {
+          margin-bottom: 13px;
         }
 
-        p {
-          transform: translateY(-50%) scaleY(0);
-          opacity: 0;
-          line-height: 0.2;
-        }
+        &._active {
+          transition-duration: 300ms;
+          height: 100%;
 
-        h3 {
-          text-shadow: none;
-          letter-spacing: 2px;
-
-          &:before {
-            display: none;
+          p {
+            transition-duration: 300ms;
           }
         }
       }
     }
 
-    .reasons_accordioren {
-      & ._active {
-        transition-duration: 300ms;
-
-        p {
-          transform: translateY(0) scaleY(1);
-          opacity: 1;
-          line-height: 32px;
-        }
-      }
-    }
-  }
-
-  .reasons .container {
-    padding-left: 0px;
-
-    ol {
-      ._active:hover p {
-        transform: translateY(-0%) scaleY(1);
-        opacity: 1;
-      }
-    }
-
     h3 {
-      letter-spacing: 2px;
-      font-weight: 500;
+      margin-bottom: 13px;
+      display: inline;
 
+      &:before,
       &:after {
         display: none;
       }
     }
 
-
-
+    p {
+      display: block;
+      left: 0;
+      position: relative;
+      height: 0;
+      transition-duration: 300ms;
+    }
   }
 
   .sertified {
     .container {
-      padding-left: 20px;
+      padding: 0 20px;
     }
 
     .swiper {
@@ -353,7 +340,7 @@
 
   .trusted {
     .container {
-      padding-left: 20px;
+      padding: 0 20px;
     }
 
     p {
@@ -375,23 +362,18 @@
 
   .help {
     .container {
-      padding-left: 20px;
+      padding: 0 20px;
     }
   }
 
   footer {
     .container {
-      padding-left: 20px;
+      padding: 0 20px;
     }
   }
 }
 
-@media (max-width: 900px) {
-  .reasons p {
-    left: 59%;
-  }
-
-}
+@media (max-width: 900px) {}
 
 @media (max-width: 800px) {
 
@@ -413,24 +395,9 @@
     }
   }
 
-  .reasons {
-    h3 {
-      &::after {
-        display: none;
-      }
-    }
 
-    li {
-      margin-bottom: 15px;
-    }
-
-    p {
-      display: block;
-      position: relative;
-      width: 100%;
-      left: 0;
-      line-height: 5px;
-    }
+  .trusted .trusted__item {
+    flex: 1 0 23%;
   }
 }
 
@@ -458,19 +425,11 @@
   .fixed_logo {
     padding-left: 10px;
   }
-
-  footer .container {
-    padding-left: 50px;
-  }
 }
 
 @media (max-width: 650px) {
   .why p {
     width: 85%;
-  }
-
-  .about .about_item img {
-    display: none;
   }
 
   .help .help__row {
@@ -479,13 +438,23 @@
 
   .help .help__item {
     width: 270px;
-    height: 160px;
+    height: 300px;
     padding: 20px 10px;
     margin: 0 0 5px;
   }
 }
 
 @media (max-width: 550px) {
+  .trusted {
+    .container {
+      padding: 20px;
+    }
+
+    .trusted__row {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
 
   footer .footer__row {
     flex-direction: column;
@@ -493,11 +462,54 @@
 }
 
 @media (max-width: 500px) {
-  .about .about_item {
-    width: 100%;
+  .first_screen {
+    h1 {
+      font-size: 30px;
+      line-height: 38px;
+    }
+
+    a {
+      display: block;
+      max-width: 170px;
+
+      &:not(:last-child) {
+        margin-bottom: 25px;
+      }
+    }
   }
 
-  .reasons ol {
-    padding: 45px 20px 0;
+  .about {
+    .about_item {
+      a {
+        display: block;
+        max-width: 136px;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      p {
+        margin-bottom: 50px;
+      }
+
+      &:not(:last-of-type) {
+        a {
+          display: none;
+        }
+
+        p {
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    .about_item {
+      width: 100%;
+    }
+  }
+
+  footer {
+    .copirate {
+      font-size: 12px;
+    }
   }
 }

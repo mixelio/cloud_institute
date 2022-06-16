@@ -6,7 +6,7 @@ const swiper = new Swiper('.swiper', {
   slidesPerView: 4,
   spaceBetween: 41,
   centerInsufficientSlides: true,
-  // centeredSlides: true,
+  centeredSlides: true,
   initialSlide: 0,
 
   breakpoints: {
@@ -17,6 +17,9 @@ const swiper = new Swiper('.swiper', {
     800: {
       slidesPerView: 2,
       spaceBetween: 21,
+      centerInsufficientSlides: false,
+      centeredSlides: true,
+      Infinity: true,
     },
     320: {
       slidesPerView: 1,
