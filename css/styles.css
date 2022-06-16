@@ -1118,7 +1118,6 @@ main {
   font-size: 25px;
   line-height: 32px;
   color: #231F20;
-  opacity: 0;
   position: absolute;
   display: inline-block;
   left: 45%;
@@ -1126,16 +1125,11 @@ main {
   width: 40%;
   -webkit-transform: translateY(-50%) scaleY(0);
           transform: translateY(-50%) scaleY(0);
+  opacity: 0;
   -webkit-transition-duration: 300ms;
           transition-duration: 300ms;
 }
 .reasons li:hover p {
-  -webkit-transform: translateY(0) scaleY(1);
-          transform: translateY(0) scaleY(1);
-  opacity: 1;
-  line-height: 32px;
-}
-.reasons .asons_accordioren ._active p {
   -webkit-transform: translateY(0) scaleY(1);
           transform: translateY(0) scaleY(1);
   opacity: 1;
@@ -1794,16 +1788,38 @@ footer .copirate {
     width: 70%;
   }
 
-  .reasons {
-    padding-top: 20px;
+  .reasons ol {
+    padding: 45px 20px;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  .reasons .reasons_accordioren ._active {
+    -webkit-transition-duration: 300ms;
+            transition-duration: 300ms;
+  }
+  .reasons .reasons_accordioren ._active p {
+    -webkit-transform: translateY(0) scaleY(1);
+            transform: translateY(0) scaleY(1);
+    opacity: 1;
+    line-height: 32px;
   }
 
   .reasons .container {
-    padding-left: 20px;
+    padding-left: 0px;
+  }
+  .reasons .container ol ._active:hover p {
+    -webkit-transform: translateY(0%) scaleY(1);
+            transform: translateY(0%) scaleY(1);
+    opacity: 1;
   }
   .reasons .container h3:after {
     width: 55px;
     right: -120px;
+  }
+  .reasons .container li:hover p {
+    -webkit-transform: translateY(-50%) scaleY(0);
+            transform: translateY(-50%) scaleY(0);
+    opacity: 0;
   }
 
   .sertified .container {
@@ -1868,40 +1884,32 @@ footer .copirate {
     left: 0;
     line-height: 5px;
   }
-  .reasons li:hover p {
-    -webkit-transform: translateY(0) scaleY(1);
-            transform: translateY(0) scaleY(1);
-    opacity: 1;
-    line-height: 32px;
-  }
-
-  footer .container {
-    padding-left: 110px;
-  }
 }
 @media (max-width: 700px) {
-  .about .why {
-    padding: 100px 0 125px;
-  }
-  .about .trusted .trusted__item {
+  .trusted .trusted__item {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 40%;
     flex: 1 0 26%;
     margin: 15px 5px;
   }
-  .about .trusted .trusted__item svg {
+
+  .trusted .trusted__item svg {
     height: auto;
   }
-  .about .trusted .trusted__row {
+
+  .trusted .trusted__row {
     max-width: 80%;
   }
-  .about .wrapper::before {
+
+  .wrapper::before {
     width: 80px;
   }
-  .about .fixed_logo {
+
+  .fixed_logo {
     padding-left: 10px;
   }
-  .about footer .container {
+
+  footer .container {
     padding-left: 50px;
   }
 }

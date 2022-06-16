@@ -279,19 +279,46 @@
   }
 
   .reasons {
-    padding-top: 20px;
+    ol {
+      padding: 45px 20px;
+      transform: translate(0, 0);
+    }
+
+    .reasons_accordioren {
+      & ._active {
+        transition-duration: 300ms;
+
+        p {
+          transform: translateY(0) scaleY(1);
+          opacity: 1;
+          line-height: 32px;
+        }
+      }
+    }
   }
 
   .reasons .container {
-    padding-left: 20px;
+    padding-left: 0px;
 
-    ol {}
+    ol {
+      ._active:hover p {
+        transform: translateY(-0%) scaleY(1);
+        opacity: 1;
+      }
+    }
 
     h3 {
       &:after {
         width: 55px;
         right: -120px;
       }
+    }
+
+    li p {}
+
+    li:hover p {
+      transform: translateY(-50%) scaleY(0);
+      opacity: 0;
     }
   }
 
@@ -341,13 +368,8 @@
 }
 
 @media (max-width: 900px) {
-
-
-
   .reasons p {
-
     left: 59%;
-
   }
 
 }
@@ -390,57 +412,36 @@
       left: 0;
       line-height: 5px;
     }
-
-    li:hover p {
-      transform: translateY(0) scaleY(1);
-      opacity: 1;
-      line-height: 32px;
-    }
-  }
-
-  footer {
-    .container {
-      padding-left: 110px;
-    }
   }
 }
 
 @media (max-width: 700px) {
 
+  .trusted .trusted__item {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 40%;
+    flex: 1 0 26%;
+    margin: 15px 5px;
+  }
 
-  .about {
-    .about_item {}
+  .trusted .trusted__item svg {
+    height: auto;
+  }
 
-    .why {
-      padding: 100px 0 125px;
-    }
+  .trusted .trusted__row {
+    max-width: 80%;
+  }
 
-    .trusted .trusted__item {
-      -webkit-box-flex: 0;
-      -ms-flex: 0 0 40%;
-      flex: 1 0 26%;
-      margin: 15px 5px;
-    }
+  .wrapper::before {
+    width: 80px;
+  }
 
-    .trusted .trusted__item svg {
-      height: auto;
-    }
+  .fixed_logo {
+    padding-left: 10px;
+  }
 
-    .trusted .trusted__row {
-      max-width: 80%;
-    }
-
-    .wrapper::before {
-      width: 80px;
-    }
-
-    .fixed_logo {
-      padding-left: 10px;
-    }
-
-    footer .container {
-      padding-left: 50px;
-    }
+  footer .container {
+    padding-left: 50px;
   }
 }
 
