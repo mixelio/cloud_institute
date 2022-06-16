@@ -1676,6 +1676,7 @@ footer .copirate {
     transition-duration: 500ms;
   }
   .reasons .reasons_accordion ._active .spoller__text {
+    padding: 23px;
     display: block;
     height: auto;
     line-height: 32px;
