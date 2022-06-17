@@ -939,6 +939,7 @@ main {
   line-height: 32px;
   color: #FFFFFF;
   width: 50%;
+  max-width: 400px;
 }
 
 .reasons {
@@ -964,6 +965,10 @@ main {
 }
 .reasons .reasons__hover_list li:hover {
   padding-bottom: 70px;
+}
+.reasons .reasons__hover_list li:hover:before {
+  letter-spacing: 1.1px;
+  text-shadow: 0 0 1px #000;
 }
 .reasons .reasons__hover_list li:not(:last-child) {
   margin-bottom: 13px;
@@ -991,6 +996,10 @@ main {
   color: #231F20;
   transition-duration: 300ms;
 }
+.reasons .reasons__hover_list li:hover h3 {
+  letter-spacing: 1.1px;
+  text-shadow: 0 0 1px #000;
+}
 .reasons .reasons__hover_list li p {
   font-family: "Futura PT";
   font-size: 25px;
@@ -999,7 +1008,7 @@ main {
   line-height: 32px;
   color: #231F20;
   position: relative;
-  left: 40%;
+  left: 50%;
   top: 0;
   width: 40vw;
   max-width: 550px;
@@ -1019,7 +1028,6 @@ main {
   padding: 45px 50px;
   counter-reset: num;
   margin: 0;
-  transform: translateY(-100px);
 }
 .reasons .reasons__mobile_list li {
   position: relative;
@@ -1054,6 +1062,14 @@ main {
   color: #231F20;
   transition-duration: 300ms;
 }
+.reasons .reasons__mobile_list li._active:before {
+  letter-spacing: 1.1px;
+  text-shadow: 0 0 1px #000;
+}
+.reasons .reasons__mobile_list li._active h3 {
+  letter-spacing: 1.1px;
+  text-shadow: 0 0 1px #000;
+}
 .reasons .reasons__mobile_list li p {
   font-family: "Futura PT";
   font-size: 25px;
@@ -1073,7 +1089,7 @@ main {
   transition-duration: 300ms;
 }
 .reasons .reasons__mobile_list li._active p {
-  padding: 25px 0 40px;
+  padding: 25px 0 27px;
   opacity: 1;
   height: auto;
   transform: translateY(0) scaleY(1);
