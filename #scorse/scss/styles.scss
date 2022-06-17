@@ -1067,139 +1067,158 @@ main {
     padding-left: 200px;
   }
 
-  ol {
-    counter-reset: ol-numbers;
-    margin: 0;
-    padding: 45px 50px;
-    transform: translate(0, -100px);
-    z-index: 2;
+  .reasons__hover_list {
+    display: block;
     background: #fff;
-
-    ._active {
-      p {
-        display: block;
-      }
-    }
+    padding: 45px 50px;
+    counter-reset: num;
+    margin: 0;
+    transform: translateY(-100px);
 
     li {
-      padding: 0 0 0 40px;
       position: relative;
+      padding: 0 0 0 35px;
+      max-width: 800px;
+      transition-duration: 300ms;
       cursor: default;
-      max-width: 1200px;
 
-      h3 {
-        position: relative;
-        margin-bottom: 0px;
-        display: inline-block;
-        font-family: "Futura PT";
+      &:hover {
+        padding-bottom: 70px;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 13px;
+      }
+
+      &::before {
+        counter-increment: num;
+        content: "0" counter(num)".";
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-family: 'Futura PT';
         font-style: normal;
         font-weight: 300;
         font-size: 18px;
         line-height: 23px;
         color: #231F20;
-        transition-duration: 500ms;
-        letter-spacing: 1px;
-
-        &:before {
-          content: '';
-          position: absolute;
-          display: inline-block;
-          width: 50px;
-          border: 1px solid #231F20;
-          right: -63px;
-          top: 50%;
-          transition-duration: 500ms;
-          transform: translateX(-40%) scaleX(0);
-          visibility: hidden;
-          z-index: 2;
-        }
-
-        &:after {
-          content: '';
-          position: absolute;
-          display: inline-block;
-          width: 100px;
-          border: 1px solid #fff;
-          right: -150px;
-          top: 50%;
-          transition-duration: 500ms;
-          transform: translateX(-80%) scaleX(0);
-          visibility: hidden;
-          z-index: 1;
-        }
-      }
-
-      p {
-        font-family: 'Futura PT';
-        font-style: normal;
-        font-weight: 300;
-        font-size: 25px;
-        line-height: 32px;
-        color: #231F20;
-        position: absolute;
-        display: inline-block;
-        left: 45%;
-        top: 0;
-        width: 40%;
-        transform: translateY(-50%) scaleY(0);
-        opacity: 0;
         transition-duration: 300ms;
       }
 
-      li:hover p {
-        transform: translateY(0) scaleY(1);
-        opacity: 1;
+      h3 {
+        font-family: 'Futura PT';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 23px;
+        color: #231F20;
+        transition-duration: 300ms;
+
+      }
+
+      &:hover h3 {}
+
+      p {
+        font-family: 'Futura PT';
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 300;
         line-height: 32px;
+        color: #231F20;
+        position: relative;
+        left: 40%;
+        top: 0;
+        width: 40vw;
+        max-width: 550px;
+        min-width: 300px;
+        opacity: 0;
+        height: 0;
+        transform: translateY(-50%) scaleY(0);
+        transition-duration: 300ms;
       }
 
-
-
-      li:hover h3 {
-        transition-duration: 500ms;
-        text-shadow: 0 0 1px #000;
-        letter-spacing: 2px;
-
-        &:before {
-          transform: translateX(0) scaleX(1);
-          opacity: 1;
-          visibility: visible;
-        }
-
-        &:after {
-          transform: translateX(0) scaleX(1);
-          opacity: 1;
-          visibility: visible;
-        }
-      }
-
-      &:first-child {
-        &:before {
-          top: 0;
-        }
+      &:hover p {
+        opacity: 1;
+        transform: translateY(-23px) scaleY(1);
       }
     }
   }
 
-  ol li::before {
-    counter-increment: ol-numbers;
-    content: "0" counter(ol-numbers) ".";
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-family: "Futura PT";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 23px;
-    color: #231F20;
-    transition-duration: 300ms;
+  .reasons__mobile_list {
+    display: none;
+    background: #fff;
+    padding: 45px 50px;
+    counter-reset: num;
+    margin: 0;
+    transform: translateY(-100px);
 
+    li {
+      position: relative;
+      padding: 0 0 0 35px;
+      max-width: 800px;
+      transition-duration: 300ms;
+      cursor: default;
+
+      &:not(:last-child) {
+        margin-bottom: 13px;
+      }
+
+      &::before {
+        counter-increment: num;
+        content: "0" counter(num)".";
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-family: 'Futura PT';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 23px;
+        color: #231F20;
+        transition-duration: 300ms;
+      }
+
+      h3 {
+        font-family: 'Futura PT';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 23px;
+        color: #231F20;
+        transition-duration: 300ms;
+
+      }
+
+      p {
+        font-family: 'Futura PT';
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 32px;
+        color: #231F20;
+        position: relative;
+        left: -35px;
+        top: 0;
+        width: 40vw;
+        max-width: 550px;
+        min-width: 300px;
+        opacity: 0;
+        height: 0;
+        transform: translateY(-50%) scaleY(0);
+        transition-duration: 300ms;
+      }
+
+      &._active {
+        p {
+          padding: 25px 0 40px;
+          opacity: 1;
+          height: auto;
+          transform: translateY(0) scaleY(1);
+        }
+
+      }
+    }
   }
-
-  ol li:hover::before {
-    text-shadow: 0 0 1px #000;
-  }
-
 }
 
 .sertified {
@@ -1243,9 +1262,26 @@ main {
     overflow: visible;
     background: #E9EAEE;
     margin-bottom: 62px;
-    width: 100vw;
     z-index: 2;
     padding-left: 200px;
+    position: relative;
+
+    .swiper-button-prev {
+      position: absolute;
+      bottom: 100px;
+      right: calc(50% - 50px);
+    }
+
+    .swiper-button-next {
+      &:after {
+        content: '';
+      }
+
+      position: absolute;
+      top: auto;
+      bottom: 0;
+      right: calc(50% - 50px);
+    }
 
     h4 {
       padding: 0 0 0 52px;
@@ -1317,6 +1353,8 @@ main {
 
   .swiper-wrapper {
     overflow: visible;
+    width: 100%;
+    position: relative;
   }
 
   .swiper-slide {

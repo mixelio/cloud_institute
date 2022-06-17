@@ -2,23 +2,22 @@
 
 const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
-  slidesPerView: 3,
   spaceBetween: 20,
+  slidesPerView: 3,
+  centerInsufficientSlides: true,
   centeredSlides: true,
-  breakpoints: {
-    800: {
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      slidesPerView: 2,
-      slidesPerGroup: 1,
-
-    },
-    320: {
-      slidesPerView: 1,
-    }
+  initialSlide: 1,
+  grabCursor: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
+  breakpoints: {
+    400: {
+      slidesPerView: 1,
+
+    }
+  }
 });
 
 function intro() {
@@ -76,8 +75,8 @@ $(function () {
 
 
 function accordion() {
-  const accordion = document.querySelectorAll('.reasons_accordion');
-  const accord = document.querySelectorAll('.reasons_accordion__item');
+  const accordion = document.querySelectorAll('.reasons__mobile_list');
+  const accord = document.querySelectorAll('.reasons__mobile_item');
   if (accord.length > 0) {
     for (let i = 0; i < accord.length; i++) {
       accord[i].addEventListener('click', function (e) {

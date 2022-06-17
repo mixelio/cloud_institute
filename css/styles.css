@@ -947,104 +947,30 @@ main {
 .reasons .container {
   padding-left: 200px;
 }
-.reasons ol {
-  counter-reset: ol-numbers;
-  margin: 0;
-  padding: 45px 50px;
-  transform: translate(0, -100px);
-  z-index: 2;
-  background: #fff;
-}
-.reasons ol ._active p {
+.reasons .reasons__hover_list {
   display: block;
+  background: #fff;
+  padding: 45px 50px;
+  counter-reset: num;
+  margin: 0;
+  transform: translateY(-100px);
 }
-.reasons ol li {
-  padding: 0 0 0 40px;
+.reasons .reasons__hover_list li {
   position: relative;
-  cursor: default;
-  max-width: 1200px;
-}
-.reasons ol li h3 {
-  position: relative;
-  margin-bottom: 0px;
-  display: inline-block;
-  font-family: "Futura PT";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 23px;
-  color: #231F20;
-  transition-duration: 500ms;
-  letter-spacing: 1px;
-}
-.reasons ol li h3:before {
-  content: "";
-  position: absolute;
-  display: inline-block;
-  width: 50px;
-  border: 1px solid #231F20;
-  right: -63px;
-  top: 50%;
-  transition-duration: 500ms;
-  transform: translateX(-40%) scaleX(0);
-  visibility: hidden;
-  z-index: 2;
-}
-.reasons ol li h3:after {
-  content: "";
-  position: absolute;
-  display: inline-block;
-  width: 100px;
-  border: 1px solid #fff;
-  right: -150px;
-  top: 50%;
-  transition-duration: 500ms;
-  transform: translateX(-80%) scaleX(0);
-  visibility: hidden;
-  z-index: 1;
-}
-.reasons ol li p {
-  font-family: "Futura PT";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 25px;
-  line-height: 32px;
-  color: #231F20;
-  position: absolute;
-  display: inline-block;
-  left: 45%;
-  top: 0;
-  width: 40%;
-  transform: translateY(-50%) scaleY(0);
-  opacity: 0;
+  padding: 0 0 0 35px;
+  max-width: 800px;
   transition-duration: 300ms;
+  cursor: default;
 }
-.reasons ol li li:hover p {
-  transform: translateY(0) scaleY(1);
-  opacity: 1;
-  line-height: 32px;
+.reasons .reasons__hover_list li:hover {
+  padding-bottom: 70px;
 }
-.reasons ol li li:hover h3 {
-  transition-duration: 500ms;
-  text-shadow: 0 0 1px #000;
-  letter-spacing: 2px;
+.reasons .reasons__hover_list li:not(:last-child) {
+  margin-bottom: 13px;
 }
-.reasons ol li li:hover h3:before {
-  transform: translateX(0) scaleX(1);
-  opacity: 1;
-  visibility: visible;
-}
-.reasons ol li li:hover h3:after {
-  transform: translateX(0) scaleX(1);
-  opacity: 1;
-  visibility: visible;
-}
-.reasons ol li:first-child:before {
-  top: 0;
-}
-.reasons ol li::before {
-  counter-increment: ol-numbers;
-  content: "0" counter(ol-numbers) ".";
+.reasons .reasons__hover_list li::before {
+  counter-increment: num;
+  content: "0" counter(num) ".";
   position: absolute;
   top: 0;
   left: 0;
@@ -1056,8 +982,101 @@ main {
   color: #231F20;
   transition-duration: 300ms;
 }
-.reasons ol li:hover::before {
-  text-shadow: 0 0 1px #000;
+.reasons .reasons__hover_list li h3 {
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 23px;
+  color: #231F20;
+  transition-duration: 300ms;
+}
+.reasons .reasons__hover_list li p {
+  font-family: "Futura PT";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+  color: #231F20;
+  position: relative;
+  left: 40%;
+  top: 0;
+  width: 40vw;
+  max-width: 550px;
+  min-width: 300px;
+  opacity: 0;
+  height: 0;
+  transform: translateY(-50%) scaleY(0);
+  transition-duration: 300ms;
+}
+.reasons .reasons__hover_list li:hover p {
+  opacity: 1;
+  transform: translateY(-23px) scaleY(1);
+}
+.reasons .reasons__mobile_list {
+  display: none;
+  background: #fff;
+  padding: 45px 50px;
+  counter-reset: num;
+  margin: 0;
+  transform: translateY(-100px);
+}
+.reasons .reasons__mobile_list li {
+  position: relative;
+  padding: 0 0 0 35px;
+  max-width: 800px;
+  transition-duration: 300ms;
+  cursor: default;
+}
+.reasons .reasons__mobile_list li:not(:last-child) {
+  margin-bottom: 13px;
+}
+.reasons .reasons__mobile_list li::before {
+  counter-increment: num;
+  content: "0" counter(num) ".";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 23px;
+  color: #231F20;
+  transition-duration: 300ms;
+}
+.reasons .reasons__mobile_list li h3 {
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 23px;
+  color: #231F20;
+  transition-duration: 300ms;
+}
+.reasons .reasons__mobile_list li p {
+  font-family: "Futura PT";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+  color: #231F20;
+  position: relative;
+  left: -35px;
+  top: 0;
+  width: 40vw;
+  max-width: 550px;
+  min-width: 300px;
+  opacity: 0;
+  height: 0;
+  transform: translateY(-50%) scaleY(0);
+  transition-duration: 300ms;
+}
+.reasons .reasons__mobile_list li._active p {
+  padding: 25px 0 40px;
+  opacity: 1;
+  height: auto;
+  transform: translateY(0) scaleY(1);
 }
 
 .sertified .container {
@@ -1094,9 +1113,23 @@ main {
   overflow: visible;
   background: #E9EAEE;
   margin-bottom: 62px;
-  width: 100vw;
   z-index: 2;
   padding-left: 200px;
+  position: relative;
+}
+.sertified .swiper .swiper-button-prev {
+  position: absolute;
+  bottom: 100px;
+  right: calc(50% - 50px);
+}
+.sertified .swiper .swiper-button-next {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  right: calc(50% - 50px);
+}
+.sertified .swiper .swiper-button-next:after {
+  content: "";
 }
 .sertified .swiper h4 {
   padding: 0 0 0 52px;
@@ -1154,6 +1187,8 @@ main {
 }
 .sertified .swiper-wrapper {
   overflow: visible;
+  width: 100%;
+  position: relative;
 }
 .sertified .swiper-slide {
   transform: translateY(-131px);
@@ -1666,115 +1701,11 @@ footer .copirate {
   .reasons .container {
     padding-left: 0;
   }
-  .reasons .reasons_accordion .reasons_accordion__item .spollet__text {
-    font-family: "Futura PT";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 25px;
-    line-height: 0;
-    color: #231F20;
-    transition-duration: 500ms;
-  }
-  .reasons .reasons_accordion ._active .spoller__text {
-    padding: 23px;
-    display: block;
-    height: auto;
-    line-height: 32px;
-    height: auto;
-    opacity: 1;
-    transform: translateY(0) scaleY(1);
-  }
-  .reasons .reasons_accordion ._active .spoller__title {
-    font-family: "Futura PT";
-    font-style: normal;
-    font-weight: 450;
-    font-size: 18px;
-    line-height: 23px;
-    color: #231F20;
-  }
-  .reasons .reasons_accordion ._active:before {
-    font-family: "Futura PT";
-    font-style: normal;
-    font-weight: 450;
-    font-size: 18px;
-    line-height: 23px;
-    color: #231F20;
-  }
-  .reasons ol {
-    padding: 17px 20px;
-    transform: translate(0, 0);
-  }
-  .reasons ol ._active p {
-    display: block;
-  }
-  .reasons ol li {
-    margin-bottom: 13px;
-    transition-duration: 500ms;
-  }
-  .reasons ol li h3 {
-    position: relative;
-    margin-bottom: 0;
-    display: inline-block;
-    font-family: "Futura PT";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 23px;
-    color: #231F20;
-    -webkit-transition-duration: 500ms;
-    transition-duration: 500ms;
-    letter-spacing: 1px;
-    text-shadow: none;
-  }
-  .reasons ol li:hover {
-    margin-bottom: 13px;
-  }
-  .reasons ol li:hover h3 {
-    position: relative;
-    margin-bottom: 0;
-    display: inline-block;
-    font-family: "Futura PT";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 23px;
-    color: #231F20;
-    -webkit-transition-duration: 500ms;
-    transition-duration: 500ms;
-    letter-spacing: 1px;
-    text-shadow: none;
-  }
-  .reasons ol li:hover p {
-    font-family: "Futura PT";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 25px;
-    line-height: 32px;
-    color: #231F20;
-    position: absolute;
-    display: inline-block;
-    left: 45%;
-    top: 0;
-    width: 40%;
-    -webkit-transform: translateY(-50%) scaleY(0);
-    transform: translateY(-50%) scaleY(0);
-    opacity: 0;
-    -webkit-transition-duration: 500ms;
-    transition-duration: 500ms;
-  }
-  .reasons ol li h3 {
-    margin-bottom: 0px;
-    display: inline;
-  }
-  .reasons ol li h3:before, .reasons ol li h3:after {
+  .reasons .reasons__hover_list {
     display: none;
   }
-  .reasons ol li p {
+  .reasons .reasons__mobile_list {
     display: block;
-    left: 0;
-    position: relative;
-    height: 0;
-    transition-duration: 300ms;
   }
 
   .sertified .swiper_sertified {
