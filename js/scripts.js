@@ -60,18 +60,35 @@ if (iconMenu) {
   });
 }
 
+function submenu() {
+  const sublist = document.querySelectorAll('.sub_menu');
+  if (sublist.length > 0) {
+    for (let i = 0; i < sublist.length; i++) {
+      sublist[i].addEventListener('click', function (e) {
+        // for (let j = 0; j < sublist.length; j++) {
+        //   if (sublist[j].classList.contains('_active')) {
+        //     sublist[j].classList.remove('_active');
+        //   }
+        // }
+        sublist[i].classList.toggle('_active');
+      })
+    }
+  }
+}
 
-$(function () {
-  // открываем вкладку по умолчанию
-  $(".active__item .spoller__text").slideDown();
+submenu();
 
-  $("#accordion .spoller__title").on("click", function () {
-    $("#accordion .spoller__text").not($(this).next()).slideUp(299);
+// $(function () {
+//   // открываем вкладку по умолчанию
+//   $(".active__item .spoller__text").slideDown();
 
-    $(".reasons__spoller_item").removeClass("active__item");
-    $(this).next().slideDown(299).parent().addClass("active__item");
-  });
-});
+//   $("#accordion .spoller__title").on("click", function () {
+//     $("#accordion .spoller__text").not($(this).next()).slideUp(299);
+
+//     $(".reasons__spoller_item").removeClass("active__item");
+//     $(this).next().slideDown(299).parent().addClass("active__item");
+//   });
+// });
 
 
 function accordion() {
