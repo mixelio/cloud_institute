@@ -309,14 +309,6 @@ body._lock:before {
   opacity: 1;
   transform: translateX(0) scaleX(1);
 }
-body._lock .header {
-  background: rgba(255, 255, 255, 0);
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0);
-}
-body._lock .header .container {
-  transform: translateX(-100%) scaleX(0);
-  opacity: 0;
-}
 
 main {
   overflow: hidden;
@@ -448,7 +440,7 @@ main {
 
 .burger_menu {
   padding: 10vh 20px 70px;
-  width: 320px;
+  width: 100%;
   position: fixed;
   background: #F3F4F5;
   top: 0;
@@ -994,11 +986,47 @@ main {
   font-size: 18px;
   line-height: 23px;
   color: #231F20;
+  position: relative;
+  display: inline;
+  transition-duration: 300ms;
+}
+.reasons .reasons__hover_list li h3:before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  top: 55%;
+  right: -18%;
+  width: 15%;
+  height: 1px;
+  background-color: #231F20;
+  opacity: 0;
+  transform: translateX(-50%) scaleX(0);
+  transition-duration: 300ms;
+}
+.reasons .reasons__hover_list li h3:after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  top: 55%;
+  right: -45%;
+  width: 30%;
+  height: 1px;
+  background-color: #F7F7F7;
+  opacity: 0;
+  transform: translateX(-50%) scaleX(0);
   transition-duration: 300ms;
 }
 .reasons .reasons__hover_list li:hover h3 {
   letter-spacing: 1.1px;
   text-shadow: 0 0 1px #000;
+}
+.reasons .reasons__hover_list li:hover h3::after {
+  opacity: 1;
+  transform: translateX(0) scaleX(1);
+}
+.reasons .reasons__hover_list li:hover h3::before {
+  opacity: 1;
+  transform: translateX(0) scaleX(1);
 }
 .reasons .reasons__hover_list li p {
   font-family: "Futura PT";
