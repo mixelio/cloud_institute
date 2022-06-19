@@ -13,7 +13,10 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
   breakpoints: {
-    400: {
+    700: {
+      slidesPerView: 3,
+    },
+    320: {
       slidesPerView: 1,
 
     }
@@ -37,10 +40,15 @@ window.addEventListener('scroll', () => {
   let scrollDisatnce = window.scrollY;
   let screenHeight = window.innerHeight;
   let screenWidth = window.innerWidth;
+  let firstScreen = document.getElementById('scroll_screen');
   let header = document.querySelectorAll('.header');
   let fixedLogo = document.querySelectorAll('.fixed_logo');
 
-  if (((scrollDisatnce / (screenHeight * 2)) >= 0.48) && screenWidth > 950) {
+  console.log('firstScreen');
+  console.log(scrollDisatnce);
+  console.log(firstScreen.clientHeight);
+
+  if ((((scrollDisatnce / (screenHeight * 2)) >= 0.48) || (firstScreen.clientHeight < scrollDisatnce)) && screenWidth > 950) {
     header[0].classList.add('_close');
     fixedLogo[0].classList.add('_active');
   } else {
@@ -65,11 +73,6 @@ function submenu() {
   if (sublist.length > 0) {
     for (let i = 0; i < sublist.length; i++) {
       sublist[i].addEventListener('click', function (e) {
-        // for (let j = 0; j < sublist.length; j++) {
-        //   if (sublist[j].classList.contains('_active')) {
-        //     sublist[j].classList.remove('_active');
-        //   }
-        // }
         sublist[i].classList.toggle('_active');
       })
     }

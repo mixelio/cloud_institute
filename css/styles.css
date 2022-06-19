@@ -1504,18 +1504,37 @@ main {
 }
 
 .blog__first_screen {
-  padding: 200px 0 109px;
+  padding: 109px 0 109px;
   position: relative;
-  border: 1px solid red;
+  height: auto;
 }
 .blog__first_screen .container {
   max-width: 1142px;
   margin: 0 auto;
   padding: 9vh 0;
 }
+.blog__first_screen h1 {
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 450;
+  font-size: 60px;
+  line-height: 77px;
+  color: #231F20;
+  margin-bottom: 13px;
+}
+.blog__first_screen p {
+  font-family: "Futura PT book";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #333333;
+  max-width: 440px;
+}
 .blog__first_screen img {
   position: absolute;
   width: 100%;
+  right: 0;
 }
 
 footer {
