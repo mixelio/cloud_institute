@@ -767,32 +767,6 @@ main {
     li {
       margin: 0 30px 0 0;
 
-
-
-      // &:first-child {
-      //   margin: 0 15px 0 0;
-      //   padding: 0 15px 0 0;
-      //   position: relative;
-
-      //   a {
-
-
-      //     &::after {
-      //       content: '';
-      //       position: absolute;
-      //       top: 50%;
-      //       right: 0;
-      //       width: 0;
-      //       height: 0;
-      //       border-style: solid;
-      //       border-width: 5px 4.5px 0 4.5px;
-      //       border-color: #000000 transparent transparent transparent;
-      //     }
-
-
-      //   }
-      // }
-
       &:last-child {
         margin: 0;
       }
@@ -1415,9 +1389,63 @@ main {
 }
 
 .sertified {
+  position: relative;
+
+  .swiper-button-prev {
+    opacity: 0;
+
+    &:after {
+      content: '';
+    }
+
+    height: 10px;
+    width: 49px;
+    position: absolute;
+    top: auto;
+    bottom:30px;
+    left: calc(50% - 60px);
+    right: auto;
+    transform: rotate(180deg);
+
+    &:hover {
+      svg {
+        path {
+          fill: #3D46EC;
+        }
+      }
+    }
+  }
+
+  .swiper-button-next {
+    opacity: 0;
+
+    &:after {
+      content: '';
+    }
+
+    height: 10px;
+    width: 49px;
+    position: absolute;
+    top: auto;
+    bottom: 30px;
+    right: calc(50% - 60px);
+
+    &:hover {
+      svg {
+        path {
+          fill: #3D46EC;
+        }
+      }
+    }
+  }
 
   .container {
     padding-left: 200px;
+  }
+
+  .swiper_container {
+    max-width: 1142px;
+    padding-left: 180px;
   }
 
   p {
@@ -1451,30 +1479,16 @@ main {
     }
   }
 
+
   .swiper {
     overflow: visible;
-    background: #E9EAEE;
+
     margin-bottom: 62px;
     z-index: 2;
-    padding-left: 200px;
+    padding-left: 20px;
     position: relative;
 
-    .swiper-button-prev {
-      position: absolute;
-      bottom: 100px;
-      right: calc(50% - 50px);
-    }
 
-    .swiper-button-next {
-      &:after {
-        content: '';
-      }
-
-      position: absolute;
-      top: auto;
-      bottom: 0;
-      right: calc(50% - 50px);
-    }
 
     h4 {
       padding: 0 0 0 52px;
@@ -1552,7 +1566,6 @@ main {
 
   .swiper-slide {
     transform: translateY(-131px);
-    max-width: 320px;
     position: relative;
     height: auto;
     overflow: hidden;

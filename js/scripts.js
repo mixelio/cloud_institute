@@ -3,23 +3,25 @@
 const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   spaceBetween: 20,
-  slidesPerView: 3,
+
   centerInsufficientSlides: true,
-  centeredSlides: true,
-  initialSlide: 1,
-  grabCursor: true,
+  // centeredSlides: true,
+  initialSlide: 0,
+
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
   breakpoints: {
-    700: {
-      slidesPerView: 3,
-    },
     320: {
       slidesPerView: 1,
-
-    }
+    },
+    650: {
+      slidesPerView: 2,
+    },
+    1100: {
+      slidesPerView: 3,
+    },
   }
 });
 
@@ -44,11 +46,7 @@ window.addEventListener('scroll', () => {
   let header = document.querySelectorAll('.header');
   let fixedLogo = document.querySelectorAll('.fixed_logo');
 
-  console.log('firstScreen');
-  console.log(scrollDisatnce);
-  console.log(firstScreen.clientHeight);
-
-  if ((((scrollDisatnce / (screenHeight * 2)) >= 0.48) || (firstScreen.clientHeight < scrollDisatnce)) && screenWidth > 950) {
+  if ((((scrollDisatnce / (screenHeight * 2)) >= 0.48)) && screenWidth > 950) {
     header[0].classList.add('_close');
     fixedLogo[0].classList.add('_active');
   } else {
@@ -95,7 +93,6 @@ submenu();
 
 
 function accordion() {
-  const accordion = document.querySelectorAll('.reasons__mobile_list');
   const accord = document.querySelectorAll('.reasons__mobile_item');
   if (accord.length > 0) {
     for (let i = 0; i < accord.length; i++) {
