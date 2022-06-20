@@ -1115,7 +1115,7 @@ main {
 .reasons .reasons__mobile_list {
   display: none;
   background: #fff;
-  padding: 45px 50px;
+  padding: 45px 20px;
   counter-reset: num;
   margin: 0;
 }
