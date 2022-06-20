@@ -1390,6 +1390,17 @@ main {
 
 .sertified {
   position: relative;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+49,e9eaee+49,e9eaee+100 */
+  background: #ffffff;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #ffffff 0%, #ffffff 49%, #e9eaee 49%, #e9eaee 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 49%, #e9eaee 49%, #e9eaee 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ffffff 0%, #ffffff 49%, #e9eaee 49%, #e9eaee 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e9eaee', GradientType=0);
+  /* IE6-9 */
 
   .swiper-button-prev {
     opacity: 0;
