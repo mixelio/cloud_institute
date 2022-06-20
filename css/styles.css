@@ -480,8 +480,14 @@ main {
 .burger_menu .sublist li {
   margin-bottom: 8px;
 }
+.burger_menu .sub_menu:hover {
+  cursor: pointer;
+}
 .burger_menu .sub_menu._active {
   transition-duration: 300ms;
+}
+.burger_menu .sub_menu._active span:hover {
+  cursor: pointer;
 }
 .burger_menu .sub_menu._active span:first-of-type::after {
   transform: rotateZ(180deg);
@@ -603,6 +609,9 @@ main {
 }
 .header .header__row li.sub_menu .sublist li:not(:last-child) {
   margin: 0 0 8px;
+}
+.header .header__row li.sub_menu span:hover {
+  cursor: pointer;
 }
 .header .header__row li.sub_menu span:first-of-type {
   position: relative;

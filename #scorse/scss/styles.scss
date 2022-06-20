@@ -502,10 +502,18 @@ main {
   }
 
   .sub_menu {
+    &:hover {
+      cursor: pointer;
+    }
+
     &._active {
       transition-duration: 300ms;
 
       span {
+        &:hover {
+          cursor: pointer;
+        }
+
         &:first-of-type {
           &::after {
             transform: rotateZ(180deg);
@@ -641,6 +649,8 @@ main {
         transition-duration: 300ms;
 
         span {
+
+
           &:first-of-type {
             &::after {
               transform: rotateZ(180deg);
@@ -679,7 +689,9 @@ main {
         }
 
         span {
-
+          &:hover {
+            cursor: pointer;
+          }
 
           &:first-of-type {
             position: relative;
