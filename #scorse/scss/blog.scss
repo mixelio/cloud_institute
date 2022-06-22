@@ -40,3 +40,292 @@
     right: 0;
   }
 }
+
+.main_container {
+  position: relative;
+  background: #fff;
+  padding-left: 200px;
+
+  &.wrapper {
+    margin-top: 0;
+  }
+
+  &:before {
+    content: "";
+    width: 150px;
+    max-width: 150px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background: #f7f7f7;
+    z-index: 3;
+  }
+
+  .main_row {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1190px;
+    padding-top: 40px;
+  }
+
+  .main_item {
+    &:first-child {
+      width: 800px;
+    }
+
+    &:last-child {
+      flex: 0 1 25%;
+      max-width: 300px;
+    }
+  }
+
+  .main_search {
+    position: relative;
+    display: flex;
+    background: #FFFFFF;
+    border: 1px solid #E9EAEE;
+    margin-bottom: 70px;
+
+    input:first-child {
+      width: 16px;
+      height: 16px;
+      background: url('/img/icon/header-search.svg');
+      position: absolute;
+      top: calc(50% - 8px);
+      left: 20px;
+    }
+
+    input:last-child {
+      width: 100%;
+      padding-left: 56px;
+      border: none;
+      font-family: 'Futura PT';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      color: #CCCCCC;
+      line-height: 50px;
+    }
+  }
+
+
+  .main_post {
+    display: flex;
+    flex-grow: 1;
+    max-width: 800px;
+    margin-bottom: 50px;
+
+    .main_post__subitem {
+      &:first-child {
+        width: 250px;
+      }
+
+      &:last-child {
+        padding: 16px 25px 19px;
+        flex: 1 0 67%;
+        border: 1px solid #E9EAEE;
+        border-left: none;
+      }
+
+      img {
+        width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+
+
+  .main_post__title {
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 450;
+    font-size: 25px;
+    line-height: 32px;
+    color: #262A29;
+    margin-bottom: 20px;
+  }
+
+  .main_post__text {
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 21px;
+    color: #231F20;
+    margin-bottom: 43px;
+  }
+
+  .main_post__underInfo {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main_post__infoBloc {
+    &:first-child {
+      font-family: 'Futura PT';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      color: #231F20;
+
+      span:not(:last-child) {
+        padding-right: 10px;
+        margin-right: 10px;
+        border-right: 1px solid #CCCCCC;
+      }
+
+
+      a {
+        color: #3D46EC;
+      }
+    }
+
+    a {
+      transition-duration: 300ms;
+
+      svg {
+        transition-duration: 300ms;
+
+        path {
+          transition-duration: 300ms;
+        }
+      }
+
+      &:hover {
+        color: #3D46EC;
+
+        path {
+          fill: #3D46EC;
+        }
+      }
+    }
+  }
+
+  .sidebar {
+    margin: 0 20px 0 0px;
+
+    h2 {
+      font-family: 'Futura PT';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 28px;
+      color: #231F20;
+      margin-bottom: 13px;
+    }
+
+    h3 {
+      font-family: 'Futura PT';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 28px;
+      color: #3D46EC;
+      margin-bottom: 13px;
+    }
+
+    h4 {
+      font-family: 'Futura PT';
+      font-style: normal;
+      font-weight: 450;
+      font-size: 20px;
+      line-height: 26px;
+      color: #231F20;
+      margin-bottom: 6px;
+    }
+
+    .subscribe {
+      position: relative;
+      border: 1px solid #E9EAEE;
+      margin-bottom: 36px;
+
+      input[type=text] {
+        padding-left: 15px;
+        font-family: 'Futura PT';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 50px;
+        color: #CCCCCC;
+        border: none;
+      }
+
+      input[type=submit] {
+        position: absolute;
+        cursor: pointer;
+        right: 0;
+        top: 0;
+        width: 120px;
+        height: 100%;
+        background: #3D46EC;
+        line-height: 50px;
+        border-left: 1px solid #E9EAEE;
+        font-family: 'Futura PT';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        color: #FFFFFF;
+      }
+
+    }
+
+    ul {
+      padding-left: 18px;
+
+      li {
+        font-family: 'Futura PT book';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        color: #231F20;
+
+        &:not(:last-child) {
+          margin-bottom: 5px;
+        }
+      }
+    }
+
+    .blog__role {}
+
+    .blor__technology {}
+  }
+
+  .pagination__prev,
+  .pagination__next {
+    display: inline-block;
+    margin-bottom: 70px;
+    transform: translateY(-20px);
+    cursor: pointer;
+
+    svg {
+
+      path,
+      rect {
+        transition-duration: 300ms;
+      }
+    }
+
+    &:hover {
+      svg {
+
+
+        rect {
+          fill: #262a29;
+        }
+
+        path {
+          fill: #f7f7f7;
+        }
+      }
+    }
+  }
+
+  .pagination__next {
+    transform: translateY(-20px) rotateY(180deg);
+  }
+}

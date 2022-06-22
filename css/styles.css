@@ -132,6 +132,13 @@ option {
 
 /*--------------------*/
 @font-face {
+  font-family: "Cotham";
+  src: url("../fonts/Gotham-Book.woff2");
+  src: local("Gotham-Book"), local("Gotham-Book"), url("../fonts/Gotham-Book.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
   font-family: "Futura PT";
   src: url("../fonts/FuturaPT-Heavy.eot");
   src: local("Futura PT Heavy"), local("FuturaPT-Heavy"), url("../fonts/FuturaPT-Heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaPT-Heavy.woff") format("woff"), url("../fonts/FuturaPT-Heavy.ttf") format("truetype");
@@ -1580,6 +1587,237 @@ main {
   right: 0;
 }
 
+.main_container {
+  position: relative;
+  background: #fff;
+  padding-left: 200px;
+}
+.main_container.wrapper {
+  margin-top: 0;
+}
+.main_container:before {
+  content: "";
+  width: 150px;
+  max-width: 150px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  background: #f7f7f7;
+  z-index: 3;
+}
+.main_container .main_row {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1190px;
+  padding-top: 40px;
+}
+.main_container .main_item:first-child {
+  width: 800px;
+}
+.main_container .main_item:last-child {
+  flex: 0 1 25%;
+  max-width: 300px;
+}
+.main_container .main_search {
+  position: relative;
+  display: flex;
+  background: #FFFFFF;
+  border: 1px solid #E9EAEE;
+  margin-bottom: 70px;
+}
+.main_container .main_search input:first-child {
+  width: 16px;
+  height: 16px;
+  background: url("/img/icon/header-search.svg");
+  position: absolute;
+  top: calc(50% - 8px);
+  left: 20px;
+}
+.main_container .main_search input:last-child {
+  width: 100%;
+  padding-left: 56px;
+  border: none;
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #CCCCCC;
+  line-height: 50px;
+}
+.main_container .main_post {
+  display: flex;
+  flex-grow: 1;
+  max-width: 800px;
+  margin-bottom: 50px;
+}
+.main_container .main_post .main_post__subitem:first-child {
+  width: 250px;
+}
+.main_container .main_post .main_post__subitem:last-child {
+  padding: 16px 25px 19px;
+  flex: 1 0 67%;
+  border: 1px solid #E9EAEE;
+  border-left: none;
+}
+.main_container .main_post .main_post__subitem img {
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+.main_container .main_post__title {
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 450;
+  font-size: 25px;
+  line-height: 32px;
+  color: #262A29;
+  margin-bottom: 20px;
+}
+.main_container .main_post__text {
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 21px;
+  color: #231F20;
+  margin-bottom: 43px;
+}
+.main_container .main_post__underInfo {
+  display: flex;
+  justify-content: space-between;
+}
+.main_container .main_post__infoBloc:first-child {
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #231F20;
+}
+.main_container .main_post__infoBloc:first-child span:not(:last-child) {
+  padding-right: 10px;
+  margin-right: 10px;
+  border-right: 1px solid #CCCCCC;
+}
+.main_container .main_post__infoBloc:first-child a {
+  color: #3D46EC;
+}
+.main_container .main_post__infoBloc a {
+  transition-duration: 300ms;
+}
+.main_container .main_post__infoBloc a svg {
+  transition-duration: 300ms;
+}
+.main_container .main_post__infoBloc a svg path {
+  transition-duration: 300ms;
+}
+.main_container .main_post__infoBloc a:hover {
+  color: #3D46EC;
+}
+.main_container .main_post__infoBloc a:hover path {
+  fill: #3D46EC;
+}
+.main_container .sidebar {
+  margin: 0 20px 0 0px;
+}
+.main_container .sidebar h2 {
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 28px;
+  color: #231F20;
+  margin-bottom: 13px;
+}
+.main_container .sidebar h3 {
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 28px;
+  color: #3D46EC;
+  margin-bottom: 13px;
+}
+.main_container .sidebar h4 {
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 450;
+  font-size: 20px;
+  line-height: 26px;
+  color: #231F20;
+  margin-bottom: 6px;
+}
+.main_container .sidebar .subscribe {
+  position: relative;
+  border: 1px solid #E9EAEE;
+  margin-bottom: 36px;
+}
+.main_container .sidebar .subscribe input[type=text] {
+  padding-left: 15px;
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 50px;
+  color: #CCCCCC;
+  border: none;
+}
+.main_container .sidebar .subscribe input[type=submit] {
+  position: absolute;
+  cursor: pointer;
+  right: 0;
+  top: 0;
+  width: 120px;
+  height: 100%;
+  background: #3D46EC;
+  line-height: 50px;
+  border-left: 1px solid #E9EAEE;
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+.main_container .sidebar ul {
+  padding-left: 18px;
+}
+.main_container .sidebar ul li {
+  font-family: "Futura PT book";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #231F20;
+}
+.main_container .sidebar ul li:not(:last-child) {
+  margin-bottom: 5px;
+}
+.main_container .pagination__prev,
+.main_container .pagination__next {
+  display: inline-block;
+  margin-bottom: 70px;
+  transform: translateY(-20px);
+  cursor: pointer;
+}
+.main_container .pagination__prev svg path,
+.main_container .pagination__prev svg rect,
+.main_container .pagination__next svg path,
+.main_container .pagination__next svg rect {
+  transition-duration: 300ms;
+}
+.main_container .pagination__prev:hover svg rect,
+.main_container .pagination__next:hover svg rect {
+  fill: #262a29;
+}
+.main_container .pagination__prev:hover svg path,
+.main_container .pagination__next:hover svg path {
+  fill: #f7f7f7;
+}
+.main_container .pagination__next {
+  transform: translateY(-20px) rotateY(180deg);
+}
+
 footer {
   background: #231F20;
   color: #fff;
@@ -1641,6 +1879,27 @@ footer .copirate {
   font-weight: bold;
 }
 
+@media (max-width: 1320px) {
+  .main_container {
+    padding-left: 150px;
+  }
+  .main_container:before {
+    width: 120px;
+  }
+  .main_container .sidebar {
+    margin: 0 20px 0 90px;
+  }
+
+  .blog_fixed_logo {
+    position: absolute;
+    padding-left: 30px;
+  }
+}
+@media (max-width: 1250px) {
+  .main_container .sidebar {
+    margin: 0 20px 0 30px;
+  }
+}
 @media (max-width: 1200px) {
   .about .about_item:hover img {
     left: 95%;

@@ -2,6 +2,16 @@
 //@import "acordeon.scss";
 
 // подключение шрифтов
+@font-face {
+  font-family: 'Cotham';
+  src: url('../fonts/Gotham-Book.woff2');
+  src: local('Gotham-Book'), local('Gotham-Book'),
+    url('../fonts/Gotham-Book.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 
 @font-face {
   font-family: 'Futura PT';

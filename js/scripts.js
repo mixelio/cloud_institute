@@ -1,29 +1,33 @@
 "use strict";
 
-const swiper = new Swiper('.swiper', {
-  direction: 'horizontal',
-  spaceBetween: 20,
+const swiperExist = document.querySelectorAll(".swiper");
+if (swiperExist.length > 0) {
+  const swiper = new Swiper('.swiper', {
+    direction: 'horizontal',
+    spaceBetween: 20,
 
-  centerInsufficientSlides: true,
-  // centeredSlides: true,
-  initialSlide: 0,
+    centerInsufficientSlides: true,
+    // centeredSlides: true,
+    initialSlide: 0,
 
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  breakpoints: {
-    320: {
-      slidesPerView: 1,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     },
-    650: {
-      slidesPerView: 2,
-    },
-    1100: {
-      slidesPerView: 3,
-    },
-  }
-});
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+      },
+      650: {
+        slidesPerView: 2,
+      },
+      1100: {
+        slidesPerView: 3,
+      },
+    }
+  });
+}
+
 
 function intro() {
   let animateItems = document.querySelectorAll('._anim-items');
@@ -46,7 +50,7 @@ window.addEventListener('scroll', () => {
   let header = document.querySelectorAll('.header');
   let fixedLogo = document.querySelectorAll('.fixed_logo');
 
-  if ((((scrollDisatnce / (screenHeight * 2)) >= 0.48)) && screenWidth > 950) {
+  if ((((scrollDisatnce / (screenHeight * 2)) >= 0.48)) && screenWidth > 950 || scrollDisatnce > firstScreen.offsetHeight) {
     header[0].classList.add('_close');
     fixedLogo[0].classList.add('_active');
   } else {
