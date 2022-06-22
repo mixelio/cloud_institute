@@ -1653,6 +1653,7 @@ main {
 }
 .main_container .main_post .main_post__subitem:first-child {
   width: 250px;
+  overflow: hidden;
 }
 .main_container .main_post .main_post__subitem:last-child {
   padding: 16px 25px 19px;

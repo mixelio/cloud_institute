@@ -119,6 +119,7 @@
     .main_post__subitem {
       &:first-child {
         width: 250px;
+        overflow: hidden;
       }
 
       &:last-child {
