@@ -1686,6 +1686,7 @@ main {
 .main_container .main_post__underInfo {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .main_container .main_post__infoBloc:first-child {
   font-family: "Futura PT";
@@ -2314,6 +2315,20 @@ footer .copirate {
     width: 640px;
     max-width: 1042px;
   }
+
+  .main_container {
+    width: 100%;
+    padding-right: 20px;
+  }
+  .main_container .main_row {
+    flex-direction: column;
+  }
+  .main_container .main_item:first-child {
+    width: 100%;
+  }
+  .main_container .sidebar {
+    margin: 0;
+  }
 }
 @media (max-width: 650px) {
   .why p {
@@ -2399,5 +2414,13 @@ footer .copirate {
   .sertified .swiper_container {
     width: 100%;
     max-width: 1042px;
+  }
+
+  .main_container .main_post__underInfo {
+    flex-direction: column;
+  }
+
+  .main_container .main_post__infoBloc:first-child {
+    margin-bottom: 10px;
   }
 }

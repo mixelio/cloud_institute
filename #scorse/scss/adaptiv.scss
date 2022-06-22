@@ -556,6 +556,28 @@
     }
   }
 
+  .main_container {
+    width: 100%;
+    padding-right: 20px;
+
+    .main_row {
+      flex-direction: column;
+    }
+
+    .main_item {
+      &:first-child {
+        width: 100%;
+      }
+
+      &:last-child {}
+    }
+
+    .sidebar {
+      margin: 0;
+    }
+
+    .main_search {}
+  }
 }
 
 @media (max-width: 650px) {
@@ -674,6 +696,13 @@
     }
   }
 
+  .main_container .main_post__underInfo {
+    flex-direction: column;
+  }
+
+  .main_container .main_post__infoBloc:first-child {
+    margin-bottom: 10px;
+  }
 }
 
 @media (max-width: 320px) {}
