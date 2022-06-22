@@ -50,7 +50,7 @@ window.addEventListener('scroll', () => {
   let header = document.querySelectorAll('.header');
   let fixedLogo = document.querySelectorAll('.fixed_logo');
 
-  if ((((scrollDisatnce / (screenHeight * 2)) >= 0.48)) && screenWidth > 950 || scrollDisatnce > firstScreen.offsetHeight) {
+  if ((((scrollDisatnce / (screenHeight * 2)) >= 0.48)) && screenWidth > 950 || (scrollDisatnce > firstScreen.offsetHeight && screenWidth > 950)) {
     header[0].classList.add('_close');
     fixedLogo[0].classList.add('_active');
   } else {
