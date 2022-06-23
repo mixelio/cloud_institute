@@ -598,7 +598,7 @@
 
     .sidebar {
       position: relative;
-      margin: 0;
+      margin: 0 0 30px;
     }
 
     .blog_filter {
@@ -607,6 +607,14 @@
 
       h3 {
         cursor: pointer;
+
+        &:after {
+          content: 'open here';
+          font-size: 10px;
+          color: #ccc;
+          position: absolute;
+          right: 0;
+        }
       }
 
       .filter_container {
@@ -621,6 +629,11 @@
           transform: translateY(0) scaleY(1);
         }
 
+        h3 {
+          &:after {
+            content: 'close here';
+          }
+        }
       }
 
     }

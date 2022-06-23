@@ -90,10 +90,11 @@
     input:first-child {
       width: 16px;
       height: 16px;
-      background: url('img/icon/header-search.svg');
+      background: url('../img/icon/header-search.svg');
       position: absolute;
       top: calc(50% - 8px);
       left: 20px;
+      z-index: 3;
     }
 
     input:last-child {

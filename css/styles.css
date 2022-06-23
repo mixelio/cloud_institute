@@ -1629,10 +1629,11 @@ main {
 .main_container .main_search input:first-child {
   width: 16px;
   height: 16px;
-  background: url("img/icon/header-search.svg");
+  background: url("../img/icon/header-search.svg");
   position: absolute;
   top: calc(50% - 8px);
   left: 20px;
+  z-index: 3;
 }
 .main_container .main_search input:last-child {
   width: 100%;
@@ -2351,7 +2352,7 @@ footer .copirate {
   }
   .main_container .sidebar {
     position: relative;
-    margin: 0;
+    margin: 0 0 30px;
   }
   .main_container .blog_filter {
     position: relative;
@@ -2360,6 +2361,13 @@ footer .copirate {
   .main_container .blog_filter h3 {
     cursor: pointer;
   }
+  .main_container .blog_filter h3:after {
+    content: "open here";
+    font-size: 10px;
+    color: #ccc;
+    position: absolute;
+    right: 0;
+  }
   .main_container .blog_filter .filter_container {
     position: absolute;
     transition-duration: 300ms;
@@ -2367,6 +2375,9 @@ footer .copirate {
   }
   .main_container .blog_filter._active .filter_container {
     transform: translateY(0) scaleY(1);
+  }
+  .main_container .blog_filter._active h3:after {
+    content: "close here";
   }
 }
 @media (max-width: 650px) {
