@@ -2,6 +2,12 @@
   margin-top: 0;
 }
 
+.blog_header {
+  .container {
+    margin: 0 auto 0 0;
+  }
+}
+
 .blog__first_screen {
   padding: 109px 20px 109px;
   position: relative;
@@ -9,7 +15,7 @@
 
   .container {
     max-width: 1142px;
-    margin: 0 auto;
+    margin: 0 auto 0 0;
     padding: 9vh 0;
 
   }
