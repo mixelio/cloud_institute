@@ -49,13 +49,14 @@ window.addEventListener('scroll', () => {
   let firstScreen = document.getElementById('scroll_screen');
   let header = document.querySelectorAll('.header');
   let fixedLogo = document.querySelectorAll('.fixed_logo');
-
-  if ((((scrollDisatnce / (screenHeight * 2)) >= 0.48)) && screenWidth > 950 || (scrollDisatnce > firstScreen.offsetHeight && screenWidth > 950)) {
-    header[0].classList.add('_close');
-    fixedLogo[0].classList.add('_active');
-  } else {
-    header[0].classList.remove('_close');
-    fixedLogo[0].classList.remove('_active');
+  if (firstScreen) {
+    if ((((scrollDisatnce / (screenHeight * 2)) >= 0.48)) && screenWidth > 950 || (scrollDisatnce > firstScreen.offsetHeight && screenWidth > 950)) {
+      header[0].classList.add('_close');
+      fixedLogo[0].classList.add('_active');
+    } else {
+      header[0].classList.remove('_close');
+      fixedLogo[0].classList.remove('_active');
+    }
   }
 })
 
@@ -118,21 +119,22 @@ accordion();
 function filterBurger() {
   const blogFilter = document.getElementById('blog_filter');
   const filterTitle = document.getElementById('filter_title');
-  const container = document.getElementById('filter_container');
-  const blogFilterHeith = container.offsetHeight;
   if (filterTitle) {
-    filterTitle.addEventListener('click', function (e) {
-      blogFilter.classList.toggle('_active');
+    const container = document.getElementById('filter_container');
+    const blogFilterHeith = container.offsetHeight;
+    if (filterTitle) {
+      filterTitle.addEventListener('click', function (e) {
+        blogFilter.classList.toggle('_active');
 
-      if (blogFilter.classList.contains('_active')) {
-        blogFilter.style.paddingBottom = blogFilterHeith + 'px';
-        console.log(blogFilter.classList);
-      } else {
-        blogFilter.style.paddingBottom = 0 + "px";
-      }
-    })
+        if (blogFilter.classList.contains('_active')) {
+          blogFilter.style.paddingBottom = blogFilterHeith + 'px';
+          console.log(blogFilter.classList);
+        } else {
+          blogFilter.style.paddingBottom = 0 + "px";
+        }
+      })
+    }
   }
-
 }
 
 filterBurger();

@@ -465,7 +465,22 @@
       max-width: 1042px;
     }
   }
+
+  .blog_post__body {
+    .prev_post {
+      left: 20px;
+      transform: rotate(180deg);
+    }
+
+    .next_post {
+      right: 20px;
+    }
+
+  }
+
 }
+
+
 
 @media (max-width: 900px) {
   .sertified {
@@ -474,6 +489,8 @@
       max-width: 1042px;
     }
   }
+
+
 }
 
 @media (max-width: 850px) {
@@ -542,6 +559,13 @@
 
   .main_container .main_item:last-child {
     flex: 0 1 65%;
+  }
+
+  .blog_post {
+    h1 {
+      font-size: 35px;
+      line-height: 48px;
+    }
   }
 }
 
