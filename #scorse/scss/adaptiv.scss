@@ -500,6 +500,10 @@
   }
 
   .blog_post__body {
+    h1 {
+      width: 70%;
+    }
+
     .prev_post {
       left: 20px;
       transform: rotate(180deg);
@@ -805,6 +809,13 @@
       max-width: 1042px;
     }
   }
+
+  .blog_post {
+    h1 {
+      font-size: 25px;
+      line-height: 38px;
+    }
+  }
 }
 
 @media (max-width: 400px) {
@@ -821,6 +832,13 @@
 
   .main_container .main_post__infoBloc:first-child {
     margin-bottom: 10px;
+  }
+
+  .blog_post {
+    h1 {
+      font-size: 20px;
+      line-height: 33px;
+    }
   }
 }
 
