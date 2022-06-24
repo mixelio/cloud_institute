@@ -1632,9 +1632,9 @@ main {
   margin-bottom: 70px;
 }
 .main_container .main_search input:first-child {
-  width: 16px;
-  height: 16px;
-  background: url("../img/icon/header-search.svg");
+  width: 18px;
+  height: 18px;
+  background: url("../img/icon/header-search.svg") 0 0/contain no-repeat;
   position: absolute;
   top: calc(50% - 8px);
   left: 20px;
@@ -2550,6 +2550,23 @@ footer .copirate {
     height: 100%;
     object-fit: cover;
   }
+  .main_container .main_post:hover a {
+    color: #3D46EC;
+  }
+  .main_container .main_post:hover a h2 {
+    color: #3D46EC;
+    cursor: pointer;
+  }
+  .main_container .main_post:hover .main_post__subitem:last-child {
+    border: 1px solid #000;
+    border-top: none;
+  }
+  .main_container .main_post:hover .main_post__subitem img {
+    transform: scale(1.1);
+  }
+  .main_container .main_post:hover svg path {
+    fill: #3D46EC;
+  }
 
   .main_container .main_item:last-child {
     flex: 0 1 45%;
@@ -2584,6 +2601,16 @@ footer .copirate {
   .blog_post h1 {
     font-size: 35px;
     line-height: 48px;
+  }
+  .blog_post .prev_post,
+.blog_post .next_post {
+    position: absolute;
+    top: auto;
+    bottom: -50px;
+  }
+  .blog_post .prev_post._inactive svg path,
+.blog_post .next_post._inactive svg path {
+    fill: #E9EAEE;
   }
 }
 @media (max-width: 700px) {
@@ -2642,7 +2669,7 @@ footer .copirate {
   }
   .main_container .blog_filter h3:after {
     content: "open here";
-    font-size: 10px;
+    font-size: 18px;
     color: #ccc;
     position: absolute;
     right: 0;
