@@ -1657,6 +1657,12 @@ main {
   max-width: 800px;
   margin-bottom: 50px;
 }
+.main_container .main_post h2 {
+  transition-duration: 300ms;
+}
+.main_container .main_post .main_post__subitem {
+  transition-duration: 300ms;
+}
 .main_container .main_post .main_post__subitem:first-child {
   width: 250px;
   overflow: hidden;
@@ -1671,6 +1677,24 @@ main {
   width: 100%;
   min-height: 100%;
   object-fit: cover;
+  transition-duration: 500ms;
+}
+.main_container .main_post:hover a {
+  color: #3D46EC;
+}
+.main_container .main_post:hover a h2 {
+  color: #3D46EC;
+  cursor: pointer;
+}
+.main_container .main_post:hover .main_post__subitem:last-child {
+  border: 1px solid #000;
+  border-left: none;
+}
+.main_container .main_post:hover .main_post__subitem img {
+  transform: scale(1.1);
+}
+.main_container .main_post:hover svg path {
+  fill: #3D46EC;
 }
 .main_container .main_post__title {
   font-family: "Futura PT";
@@ -1786,6 +1810,10 @@ main {
   font-weight: 700;
   font-size: 14px;
   color: #FFFFFF;
+  transition-duration: 300ms;
+}
+.main_container .sidebar .subscribe input[type=submit]:hover {
+  background: #030FE1;
 }
 .main_container .sidebar ul {
   padding-left: 18px;
@@ -1800,6 +1828,12 @@ main {
 }
 .main_container .sidebar ul li:not(:last-child) {
   margin-bottom: 5px;
+}
+.main_container .sidebar .filter_container a {
+  transition-duration: 300ms;
+}
+.main_container .sidebar .filter_container a:hover {
+  color: #3D46EC;
 }
 .main_container .pagination__prev,
 .main_container .pagination__next {
@@ -1966,6 +2000,10 @@ main {
   background: #3D46EC;
   padding: 0 26px;
   display: inline-block;
+  transition-duration: 300ms;
+}
+.blog_post .blog_post__container .blog_post__promo a:hover {
+  background: #030FE1;
 }
 .blog_post .blog_post__form_container {
   max-width: 550px;
@@ -2013,6 +2051,10 @@ main {
   font-weight: 700;
   font-size: 14px;
   color: #FFFFFF;
+  transition-duration: 300ms;
+}
+.blog_post .subscribe input[type=submit]:hover {
+  background: #030FE1;
 }
 
 footer {

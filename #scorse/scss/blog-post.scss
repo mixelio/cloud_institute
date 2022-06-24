@@ -186,6 +186,12 @@
         background: #3D46EC;
         padding: 0 26px;
         display: inline-block;
+        transition-duration: 300ms;
+
+        &:hover {
+          background: #030FE1;
+
+        }
       }
     }
   }
@@ -239,6 +245,11 @@
       font-weight: 700;
       font-size: 14px;
       color: #FFFFFF;
+      transition-duration: 300ms;
+
+      &:hover {
+        background: #030FE1;
+      }
     }
   }
 }
