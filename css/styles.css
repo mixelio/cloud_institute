@@ -2057,6 +2057,196 @@ main {
   background: #030FE1;
 }
 
+.coaching_wrapper {
+  margin-top: 0;
+}
+
+.coaching_firstscreen {
+  padding: 190px 0 116px;
+  position: relative;
+  height: auto;
+  position: relative;
+}
+.coaching_firstscreen:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 0;
+  width: 100%;
+  height: 100%;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
+  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a6000000", endColorstr="#00000000", GradientType=1);
+  /* IE6-9 */
+}
+.coaching_firstscreen h1 {
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 450;
+  font-size: 45px;
+  line-height: 58px;
+  transform: translateX(0);
+  opacity: 1;
+  color: #FFFFFF;
+  margin-bottom: 23px;
+}
+.coaching_firstscreen p {
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+  transform: translateX(0);
+  opacity: 1;
+  margin-bottom: 28px;
+}
+.coaching_firstscreen a {
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+  transform: translateX(0);
+  opacity: 1;
+  background: #3D46EC;
+  position: relative;
+  display: inline-block;
+}
+
+.coacing_stay {
+  margin-bottom: 500px;
+}
+.coacing_stay .container {
+  padding: 38px 90px 0 200px;
+}
+.coacing_stay .coacing_stay__row {
+  display: flex;
+}
+.coacing_stay .subtitle {
+  margin-bottom: 34px;
+}
+.coacing_stay .coaching_stay__text p {
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 32px;
+  color: #231F20;
+}
+.coacing_stay .coaching_stay__img {
+  flex: 0 0 43%;
+}
+.coacing_stay .coaching_stay__img img {
+  width: 100%;
+}
+
+.coaching_wrapper .coach p {
+  max-width: 660px;
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 32px;
+  color: #231F20;
+  margin-bottom: 57px;
+}
+.coaching_wrapper .coach .container {
+  padding-left: 200px;
+}
+.coaching_wrapper .coach .coach__hover_list {
+  max-width: 880px;
+  margin-bottom: 290px;
+  position: relative;
+}
+.coaching_wrapper .coach .coach__hover_list .coach__hover_item {
+  margin-bottom: 15px;
+  padding-bottom: 0;
+  cursor: pointer;
+  transition-duration: 300ms;
+}
+.coaching_wrapper .coach .coach__hover_list .coach__hover_item._active h4 span {
+  font-weight: 450;
+}
+.coaching_wrapper .coach .coach__hover_list .coach__hover_item._active .img_container {
+  transform: translateY(0) scaleY(1);
+  opacity: 1;
+}
+.coaching_wrapper .coach .coach__hover_list .coach__hover_item._active p {
+  transform: translateY(0) scaleY(1);
+  opacity: 1;
+}
+.coaching_wrapper .coach .coach__hover_list .coach__hover_item h4 {
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 23px;
+  color: #231F20;
+}
+.coaching_wrapper .coach .coach__hover_list .coach__hover_item p {
+  max-width: 440px;
+  margin: 9px 0 18px;
+  padding: 35px 50px 40px;
+  transform: translateY(-50%) scaleY(0);
+  position: absolute;
+  opacity: 0;
+  transition-duration: 500ms;
+  border-left: 1px solid #E9EAEE;
+}
+.coaching_wrapper .coach .coach__hover_list .coach__hover_item .img_container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  transform: translateY(-50%) scaleY(0);
+  opacity: 0;
+  transition-duration: 500ms;
+}
+.coaching_wrapper .coach .coach__hover_list .coach__hover_item .img_container img {
+  width: 100%;
+}
+.coaching_wrapper .coach .coach__hover_list .coach__hover_item .img_container img:first-child {
+  margin-bottom: 10px;
+}
+.coaching_wrapper .coach__mobile_list {
+  display: none;
+}
+.coaching_wrapper .coach__mobile_list li {
+  position: relative;
+  padding-bottom: 0;
+  cursor: pointer;
+}
+.coaching_wrapper .coach__mobile_list li h4 {
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 23px;
+  color: #231F20;
+}
+.coaching_wrapper .coach__mobile_list li p {
+  max-width: 440px;
+  margin-bottom: 15px;
+  transform: translateY(-50%) scaleX(0);
+  height: 0;
+}
+.coaching_wrapper .coach__mobile_list li .img_container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+}
+.coaching_wrapper .coach__mobile_list li .img_container img {
+  width: 100%;
+}
+
 footer {
   background: #231F20;
   color: #fff;
@@ -2246,6 +2436,10 @@ footer .copirate {
   .sertified .swiper_container {
     padding-left: 150px;
     max-width: 790px;
+  }
+
+  .coaching_wrapper .coach .container {
+    padding: 0 20px 0 150px;
   }
 }
 @media (max-width: 950px) {
@@ -2523,6 +2717,10 @@ footer .copirate {
   .blog_post__body .next_post {
     right: 20px;
   }
+
+  .coaching_wrapper .coach .container {
+    padding: 0 20px 0 20px;
+  }
 }
 @media (max-width: 900px) {
   .sertified .swiper_container {
@@ -2726,10 +2924,6 @@ footer .copirate {
   }
 }
 @media (max-width: 500px) {
-  .first_screen h1 {
-    font-size: 30px;
-    line-height: 38px;
-  }
   .first_screen a {
     display: block;
     max-width: 170px;
@@ -2765,11 +2959,6 @@ footer .copirate {
     width: 340px;
     max-width: 1042px;
   }
-
-  .blog_post h1 {
-    font-size: 25px;
-    line-height: 38px;
-  }
 }
 @media (max-width: 400px) {
   .sertified .swiper_container {
@@ -2783,10 +2972,5 @@ footer .copirate {
 
   .main_container .main_post__infoBloc:first-child {
     margin-bottom: 10px;
-  }
-
-  .blog_post h1 {
-    font-size: 20px;
-    line-height: 33px;
   }
 }

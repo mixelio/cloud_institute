@@ -1404,7 +1404,6 @@ main {
           height: auto;
           transform: translateY(0) scaleY(1);
         }
-
       }
     }
   }
@@ -1868,6 +1867,8 @@ main {
 
 @import 'blog.scss';
 @import 'blog-post.scss';
+@import 'coaching.scss';
+
 
 footer {
   background: #231F20;

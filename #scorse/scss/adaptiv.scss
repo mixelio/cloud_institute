@@ -168,6 +168,14 @@
       max-width: 790px;
     }
   }
+
+  .coaching_wrapper {
+    .coach {
+      .container {
+        padding: 0 20px 0 150px;
+      }
+    }
+  }
 }
 
 @media (max-width: 950px) {
@@ -515,6 +523,13 @@
 
   }
 
+  .coaching_wrapper {
+    .coach {
+      .container {
+        padding: 0 20px 0 20px;
+      }
+    }
+  }
 }
 
 
@@ -869,3 +884,4 @@
   .blog_post {}
 
   @media (max-width: 320px) {}
+}
