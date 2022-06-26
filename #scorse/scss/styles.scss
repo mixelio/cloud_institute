@@ -1206,7 +1206,7 @@ main {
       padding: 0 0 0 35px;
       max-width: 800px;
       transition-duration: 300ms;
-      cursor: default;
+      cursor: pointer;
 
       &:hover {
         padding-bottom: 70px;
@@ -1333,7 +1333,7 @@ main {
       padding: 0 0 0 35px;
       max-width: 800px;
       transition-duration: 300ms;
-      cursor: default;
+      cursor: pointer;
 
       &:not(:last-child) {
         margin-bottom: 13px;
