@@ -332,7 +332,7 @@ main {
 
 .container {
   margin-right: auto;
-  padding: 38px 90px 0 200px;
+  padding: 0 90px 0 200px;
 }
 
 .wrapper {
@@ -2078,7 +2078,7 @@ main {
 }
 
 .coaching_firstscreen {
-  padding: 190px 0 116px;
+  padding: 100px 0;
   position: relative;
   height: auto;
   position: relative;
@@ -2216,36 +2216,225 @@ main {
 .coaching_wrapper .coach .coach__hover_list .coach__hover_item .img_container img:first-child {
   margin-bottom: 10px;
 }
-.coaching_wrapper .coach__mobile_list {
-  display: none;
+
+.coaching_info {
+  padding: 38px 0 25px;
 }
-.coaching_wrapper .coach__mobile_list li {
-  position: relative;
-  padding-bottom: 0;
-  cursor: pointer;
+.coaching_info .subtitle {
+  margin-bottom: 38px;
 }
-.coaching_wrapper .coach__mobile_list li h4 {
+.coaching_info p {
+  max-width: 660px;
   font-family: "Futura PT";
   font-style: normal;
   font-weight: 300;
-  font-size: 18px;
-  line-height: 23px;
+  font-size: 25px;
+  line-height: 32px;
   color: #231F20;
 }
-.coaching_wrapper .coach__mobile_list li p {
-  max-width: 440px;
-  margin-bottom: 15px;
-  transform: translateY(-50%) scaleX(0);
-  height: 0;
+
+.trained {
+  padding: 25px 0 0;
+  margin-bottom: 90px;
 }
-.coaching_wrapper .coach__mobile_list li .img_container {
+.trained .subtitle {
+  margin-bottom: 40px;
+}
+.trained .trained__row {
+  max-width: 990px;
+  margin: -5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.trained .trained__item {
+  position: relative;
+  padding: 20px;
+  flex: 0 1 30%;
+  min-height: 200px;
+  background: #F7F7F7;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition-duration: 300ms;
+}
+.trained .trained__item a {
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.trained .trained__item h4 {
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 32px;
+  color: #231F20;
+  flex-grow: 1;
+  transition-duration: 300ms;
+}
+.trained .trained__item p {
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 21px;
+  color: #231F20;
+  transition-duration: 300ms;
+}
+.trained .trained__item img {
+  position: absolute;
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  opacity: 0;
+  transition-duration: 300ms;
+}
+.trained .trained__item:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+.trained .trained__item:hover p,
+.trained .trained__item:hover h4 {
+  color: #fff;
+}
+.trained .trained__item:hover img {
+  opacity: 0.3;
+}
+
+.cases .subtitle {
+  margin-bottom: 20px;
+}
+.cases p {
+  max-width: 660px;
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 32px;
+  color: #231F20;
+  margin-bottom: 60px;
+}
+.cases img {
+  max-width: 980px;
+  margin-bottom: 30px;
+}
+
+.projectDelivery .subtitle {
+  margin-bottom: 20px;
+}
+.projectDelivery p {
+  max-width: 980px;
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 32px;
+  color: #231F20;
+  margin-bottom: 60px;
+}
+
+.engage {
+  padding: 85px 0;
+  position: relative;
+  margin-bottom: 100px;
+}
+.engage:before {
+  content: "";
   position: absolute;
   top: 0;
-  right: 0;
-  width: 40%;
-}
-.coaching_wrapper .coach__mobile_list li .img_container img {
+  width: 0;
   width: 100%;
+  height: 100%;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0e0e0e+0,000000+100&1+32,0.44+100 */
+  background: -moz-linear-gradient(-45deg, rgb(14, 14, 14) 0%, rgb(10, 10, 10) 32%, rgba(0, 0, 0, 0.44) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, rgb(14, 14, 14) 0%, rgb(10, 10, 10) 32%, rgba(0, 0, 0, 0.44) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, rgb(14, 14, 14) 0%, rgb(10, 10, 10) 32%, rgba(0, 0, 0, 0.44) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0e0e0e", endColorstr="#70000000", GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+}
+.engage h3 {
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 28px;
+  color: #FFFFFF;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 30px;
+}
+.engage p {
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 32px;
+  color: #FFFFFF;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 30px;
+  max-width: 500px;
+}
+.engage ol {
+  counter-reset: num;
+  padding-left: 0;
+  margin-bottom: 38px;
+}
+.engage ol li {
+  position: relative;
+  padding: 0 0 0 35px;
+  max-width: 900px;
+  cursor: default;
+}
+.engage ol li:not(:last-child) {
+  margin-bottom: 13px;
+}
+.engage ol li::before {
+  counter-increment: num;
+  content: "0" counter(num) ".";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 450;
+  font-size: 18px;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+.engage span {
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 450;
+  font-size: 18px;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+.engage .blue_button {
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 45px;
+  color: #FFFFFF;
+  background: #3D46EC;
+  padding: 0 26px;
+  display: inline-block;
+  transition-duration: 300ms;
+  opacity: 1;
+  transform: translateX(0);
+  border: none;
+}
+.engage .blue_button:hover {
+  background: #030FE1;
 }
 
 footer {
