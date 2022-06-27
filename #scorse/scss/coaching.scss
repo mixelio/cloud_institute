@@ -1,3 +1,13 @@
+.coaching_header {
+
+  .container {
+    margin: 0 auto 0 200px;
+    padding: 0 20px 0 0;
+  }
+}
+
+
+
 .coaching_wrapper {
   margin-top: 0;
 }
@@ -50,30 +60,10 @@
     opacity: 1;
     margin-bottom: 28px;
   }
-
-  a {
-    font-family: 'Futura PT';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 18px;
-    color: #FFFFFF;
-    transform: translateX(0);
-    opacity: 1;
-    background: #3D46EC;
-    position: relative;
-    display: inline-block;
-  }
 }
 
 .coacing_stay {
-  margin-bottom: 500px;
-
-  .container {
-    padding: 38px 90px 0 200px;
-  }
-
-
+  padding: 40px 0 50px;
 
   .coacing_stay__row {
     display: flex;
@@ -84,7 +74,6 @@
     margin-bottom: 34px;
   }
 
-  .coaching_stay__item {}
 
   .coaching_stay__text {
 
@@ -120,10 +109,6 @@
       line-height: 32px;
       color: #231F20;
       margin-bottom: 57px;
-    }
-
-    .container {
-      padding-left: 200px;
     }
 
     .coach__hover_list {

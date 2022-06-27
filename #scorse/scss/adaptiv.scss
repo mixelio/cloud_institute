@@ -1,6 +1,26 @@
 @media (max-width: 1320px) {
+  .header_left {
+    .container {
+      margin: 0;
+      padding: 0 20px 0 150px;
+    }
+  }
+
+  .container {
+    margin: 0;
+    padding: 0 20px 0 150px;
+  }
+
+  .blog__first_screen {
+    .container {
+      padding: 109px 20px 109px 150px;
+    }
+  }
+
+
   .main_container {
     padding-left: 150px;
+
 
     &:before {
       width: 120px;
@@ -11,22 +31,19 @@
     }
   }
 
-  .blog_fixed_logo {
+  .fixed_logo {
     position: absolute;
-
     padding-left: 30px;
-
   }
 
-  .header.blog_header {
-    .container {
-      margin: 0 auto 0 150px;
-      padding: 0 20px 0 0;
+  .wrapper {
+    &:before {
+      width: 120px;
     }
   }
 
-  .blog__first_screen {
-    padding: 109px 20px 109px 150px;
+  .sertified .swiper_container {
+    padding-left: 130px;
   }
 }
 
@@ -54,22 +71,37 @@
     }
   }
 
-  .header.blog_header {
+  .header_left {
     .container {
-      margin: 0 auto 0 100px;
-      padding: 0 20px 0 0;
+      margin: 0;
+      padding: 0 20px 0 100px;
     }
   }
 
-  .blog__first_screen {
-    padding: 109px 20px 109px 100px;
+  .container {
+    margin: 0;
+    padding: 0 20px 0 100px;
   }
 
-  .blog_fixed_logo {
+  .blog__first_screen {
+    .container {
+      padding: 109px 20px 109px 100px;
+    }
+  }
+
+  .sertified .swiper_container {
+    padding-left: 80px;
+  }
+
+  .fixed_logo {
     position: absolute;
-
     padding-left: 10px;
+  }
 
+  .wrapper {
+    &:before {
+      width: 80px;
+    }
   }
 
   .about {
@@ -80,16 +112,21 @@
         }
       }
     }
-  }
 
-  .reasons {
-    p {
-      left: 55%;
+
+    .reasons {
+      p {
+        left: 55%;
+      }
+    }
+
+    .coacing_stay .container {
+      padding: 38px 20px 0 150px;
     }
   }
 
-  .coacing_stay .container {
-    padding: 38px 20px 0 150px;
+  .why {
+    padding-left: 30px;
   }
 
   .coacing_stay {
@@ -112,86 +149,28 @@
     margin: 0 40px 0 0;
   }
 
-  .wrapper {
-    &:before {
-      width: 120px;
-    }
-  }
-
   .main_container .main_item:first-child {
     width: 600px;
   }
 
   .fixed_logo {
-    padding-left: 30px;
-  }
-
-  .blog_fixed_logo {
     position: absolute;
     padding-left: 10px;
   }
 
-  .about {
-    .container {
-      margin-left: 150px;
-    }
+
+  ol {
+    padding: 45px 30px;
   }
 
-  .why {
-    .container {
-      padding-left: 180px;
-    }
-  }
-
-  .reasons {
-    .container {
-      padding-left: 150px;
-    }
-
-    ol {
-      padding: 45px 30px;
-    }
-  }
-
-  .sertified {
-    .container {
-      padding-left: 150px;
-    }
-
-    .swiper {
-      padding-left: 0px;
-    }
+  .reasons .reasons__hover_list {
+    padding: 45px 35px;
   }
 
   .help {
-    .container {
-      padding-left: 150px;
-    }
-
     .help__item {
       width: 270px;
       height: 250px;
-    }
-  }
-
-  footer {
-    .container {
-      padding-left: 150px;
-    }
-  }
-
-  .sertified {
-    .swiper_container {
-      padding-left: 150px;
-      max-width: 790px;
-    }
-  }
-
-  .coaching_wrapper {
-    .coach {
-      .container {
-        padding: 0 20px 0 150px;
-      }
     }
   }
 }
@@ -221,15 +200,31 @@
     }
   }
 
-  .header.blog_header {
-    .container {
-      margin: 0 auto 0 0px;
-      padding: 0 20px 0 20px;
-    }
+  .header.left_header .container {
+    margin: 0;
+    padding: 0 20px 0;
   }
 
   .blog__first_screen {
-    padding: 109px 20px 109px;
+    .container {
+      padding: 109px 20px 109px;
+    }
+
+    &.coaching_firstscreen {
+      &:before {
+        z-index: 0;
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
+        background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6000000', endColorstr='#00000000', GradientType=1);
+        /* IE6-9 */
+
+      }
+    }
   }
 
   .wrapper {

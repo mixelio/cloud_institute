@@ -332,6 +332,7 @@ main {
 
 .container {
   margin-right: auto;
+  padding: 38px 90px 0 200px;
 }
 
 .wrapper {
@@ -568,12 +569,12 @@ main {
 }
 
 .header {
-  padding-top: 10px;
   background-color: #F3F4F5;
   position: fixed;
   z-index: 10;
   width: 100%;
   transition-duration: 500ms;
+  z-index: 11;
 }
 .header .container {
   max-width: 1220px;
@@ -613,6 +614,8 @@ main {
 }
 .header .header__row li.sub_menu .sublist {
   flex-direction: column;
+  background-color: #F3F4F5;
+  width: 100%;
 }
 .header .header__row li.sub_menu .sublist li:not(:last-child) {
   margin: 0 0 8px;
@@ -713,6 +716,11 @@ main {
   cursor: pointer;
 }
 
+.header_left .container {
+  margin: 0;
+  padding: 0 20px 0 200px;
+}
+
 .first_screen {
   background: #F3F4F5;
   position: fixed;
@@ -772,6 +780,24 @@ main {
   transform: translateX(0%);
   opacity: 1;
 }
+.first_screen .blue_button {
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 45px;
+  color: #FFFFFF;
+  background: #3D46EC;
+  padding: 0 26px;
+  display: inline-block;
+  transition-duration: 300ms;
+  opacity: 1;
+  transform: translateX(0);
+  border: none;
+}
+.first_screen .blue_button:hover {
+  background: #030FE1;
+}
 .first_screen a {
   margin-right: 10px;
   border: 2px solid #3D46EC;
@@ -801,13 +827,11 @@ main {
   background: #fff;
   margin-top: 100vh;
   position: relative;
-  padding-bottom: 100px;
+  padding: 80px 0 100px;
 }
 .about .container {
   background-color: #fff;
-  padding: 78px 0px 0;
   position: relative;
-  margin-left: 200px;
 }
 .about h2 {
   font-family: "Futura PT";
@@ -988,11 +1012,8 @@ main {
 }
 
 .why {
-  padding: 215px 0 125px;
+  padding: 215px 0 125px 50px;
   background: url("../img/pictures/why.jpg") 0 0/cover no-repeat;
-}
-.why .container {
-  padding-left: 250px;
 }
 .why h3 {
   font-family: "Futura PT";
@@ -1016,7 +1037,7 @@ main {
   background-color: #fff;
 }
 .reasons .container {
-  padding-left: 200px;
+  padding-right: 0;
 }
 .reasons .reasons__hover_list {
   display: block;
@@ -1247,9 +1268,6 @@ main {
 .sertified .swiper-button-next:hover svg path {
   fill: #3D46EC;
 }
-.sertified .container {
-  padding-left: 200px;
-}
 .sertified .swiper_container {
   max-width: 1142px;
   padding-left: 180px;
@@ -1453,9 +1471,6 @@ main {
   width: 20px;
 }
 
-.trusted .container {
-  padding-left: 200px;
-}
 .trusted .subtitle {
   margin-bottom: 5px;
 }
@@ -1488,9 +1503,6 @@ main {
 .help {
   background: url("../img/pictures/help-img.jpg") 0 0/cover no-repeat;
   padding-top: 54px;
-}
-.help .container {
-  padding-left: 200px;
 }
 .help .subtitle {
   margin-bottom: 34px;
@@ -1553,20 +1565,19 @@ main {
   margin-top: 0;
 }
 
-.header.blog_header .container {
-  margin: 0 auto 0 200px;
-  padding: 0 20px 0 0;
+.header.left_header .container {
+  margin: 0;
+  padding: 0 0 0 200px;
 }
 
 .blog__first_screen {
-  padding: 109px 20px 109px 200px;
   position: relative;
   height: auto;
 }
 .blog__first_screen .container {
   max-width: 1142px;
   margin: 0 auto 0 0;
-  padding: 9vh 0;
+  padding: 109px 20px 109px 200px;
 }
 .blog__first_screen h1 {
   font-family: "Futura PT";
@@ -2057,6 +2068,11 @@ main {
   background: #030FE1;
 }
 
+.coaching_header .container {
+  margin: 0 auto 0 200px;
+  padding: 0 20px 0 0;
+}
+
 .coaching_wrapper {
   margin-top: 0;
 }
@@ -2106,25 +2122,9 @@ main {
   opacity: 1;
   margin-bottom: 28px;
 }
-.coaching_firstscreen a {
-  font-family: "Futura PT";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 18px;
-  color: #FFFFFF;
-  transform: translateX(0);
-  opacity: 1;
-  background: #3D46EC;
-  position: relative;
-  display: inline-block;
-}
 
 .coacing_stay {
-  margin-bottom: 500px;
-}
-.coacing_stay .container {
-  padding: 38px 90px 0 200px;
+  padding: 40px 0 50px;
 }
 .coacing_stay .coacing_stay__row {
   display: flex;
@@ -2160,9 +2160,6 @@ main {
   line-height: 32px;
   color: #231F20;
   margin-bottom: 57px;
-}
-.coaching_wrapper .coach .container {
-  padding-left: 200px;
 }
 .coaching_wrapper .coach .coach__hover_list {
   max-width: 880px;
@@ -2258,9 +2255,6 @@ footer {
   position: relative;
   z-index: 5;
 }
-footer .container {
-  padding-left: 200px;
-}
 footer p {
   font-family: "Futura PT";
   font-style: normal;
@@ -2313,6 +2307,20 @@ footer .copirate {
 }
 
 @media (max-width: 1320px) {
+  .header_left .container {
+    margin: 0;
+    padding: 0 20px 0 150px;
+  }
+
+  .container {
+    margin: 0;
+    padding: 0 20px 0 150px;
+  }
+
+  .blog__first_screen .container {
+    padding: 109px 20px 109px 150px;
+  }
+
   .main_container {
     padding-left: 150px;
   }
@@ -2323,18 +2331,17 @@ footer .copirate {
     margin: 0 20px 0 90px;
   }
 
-  .blog_fixed_logo {
+  .fixed_logo {
     position: absolute;
     padding-left: 30px;
   }
 
-  .header.blog_header .container {
-    margin: 0 auto 0 150px;
-    padding: 0 20px 0 0;
+  .wrapper:before {
+    width: 120px;
   }
 
-  .blog__first_screen {
-    padding: 109px 20px 109px 150px;
+  .sertified .swiper_container {
+    padding-left: 130px;
   }
 }
 @media (max-width: 1250px) {
@@ -2359,30 +2366,45 @@ footer .copirate {
     width: 80px;
   }
 
-  .header.blog_header .container {
-    margin: 0 auto 0 100px;
-    padding: 0 20px 0 0;
+  .header_left .container {
+    margin: 0;
+    padding: 0 20px 0 100px;
   }
 
-  .blog__first_screen {
+  .container {
+    margin: 0;
+    padding: 0 20px 0 100px;
+  }
+
+  .blog__first_screen .container {
     padding: 109px 20px 109px 100px;
   }
 
-  .blog_fixed_logo {
+  .sertified .swiper_container {
+    padding-left: 80px;
+  }
+
+  .fixed_logo {
     position: absolute;
     padding-left: 10px;
+  }
+
+  .wrapper:before {
+    width: 80px;
   }
 
   .about .about_item:hover img {
     left: 95%;
   }
-
-  .reasons p {
+  .about .reasons p {
     left: 55%;
   }
-
-  .coacing_stay .container {
+  .about .coacing_stay .container {
     padding: 38px 20px 0 150px;
+  }
+
+  .why {
+    padding-left: 30px;
   }
 
   .coacing_stay .coacing_stay__row {
@@ -2398,64 +2420,26 @@ footer .copirate {
     margin: 0 40px 0 0;
   }
 
-  .wrapper:before {
-    width: 120px;
-  }
-
   .main_container .main_item:first-child {
     width: 600px;
   }
 
   .fixed_logo {
-    padding-left: 30px;
-  }
-
-  .blog_fixed_logo {
     position: absolute;
     padding-left: 10px;
   }
 
-  .about .container {
-    margin-left: 150px;
-  }
-
-  .why .container {
-    padding-left: 180px;
-  }
-
-  .reasons .container {
-    padding-left: 150px;
-  }
-  .reasons ol {
+  ol {
     padding: 45px 30px;
   }
 
-  .sertified .container {
-    padding-left: 150px;
-  }
-  .sertified .swiper {
-    padding-left: 0px;
+  .reasons .reasons__hover_list {
+    padding: 45px 35px;
   }
 
-  .help .container {
-    padding-left: 150px;
-  }
   .help .help__item {
     width: 270px;
     height: 250px;
-  }
-
-  footer .container {
-    padding-left: 150px;
-  }
-
-  .sertified .swiper_container {
-    padding-left: 150px;
-    max-width: 790px;
-  }
-
-  .coaching_wrapper .coach .container {
-    padding: 0 20px 0 150px;
   }
 }
 @media (max-width: 950px) {
@@ -2478,13 +2462,25 @@ footer .copirate {
     display: none;
   }
 
-  .header.blog_header .container {
-    margin: 0 auto 0 0px;
-    padding: 0 20px 0 20px;
+  .header.left_header .container {
+    margin: 0;
+    padding: 0 20px 0;
   }
 
-  .blog__first_screen {
+  .blog__first_screen .container {
     padding: 109px 20px 109px;
+  }
+  .blog__first_screen.coaching_firstscreen:before {
+    z-index: 0;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
+    background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a6000000", endColorstr="#00000000", GradientType=1);
+    /* IE6-9 */
   }
 
   .wrapper::before {
