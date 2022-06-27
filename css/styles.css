@@ -2249,7 +2249,7 @@ main {
 .trained .trained__item {
   position: relative;
   padding: 20px;
-  flex: 0 1 30%;
+  flex: 0 0 32%;
   min-height: 200px;
   background: #F7F7F7;
   margin: 5px;
@@ -2306,6 +2306,9 @@ main {
   opacity: 0.3;
 }
 
+.cases {
+  margin-bottom: 30px;
+}
 .cases .subtitle {
   margin-bottom: 20px;
 }
@@ -2319,9 +2322,51 @@ main {
   color: #231F20;
   margin-bottom: 60px;
 }
-.cases img {
+.cases .cases__row {
   max-width: 980px;
-  margin-bottom: 30px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  position: relative;
+}
+.cases .cases__row:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  height: 1.2px;
+  width: 100%;
+  background-color: #3D46EC;
+  left: 0;
+  bottom: 23.7px;
+}
+.cases .cases__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cases .cases__item:first-child {
+  align-items: flex-start;
+}
+.cases .cases__item span {
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 450;
+  font-size: 18px;
+  line-height: 23px;
+  color: #231F20;
+  transition-duration: 300ms;
+}
+.cases .cases__item svg path {
+  transition-duration: 300ms;
+}
+.cases .cases__item:hover {
+  cursor: pointer;
+}
+.cases .cases__item:hover svg path {
+  fill: #DBDDFF;
+}
+.cases .cases__item:hover span {
+  color: #3D46EC;
 }
 
 .projectDelivery .subtitle {
@@ -2632,6 +2677,10 @@ footer .copirate {
   }
 }
 @media (max-width: 950px) {
+  .container {
+    padding: 0 20px;
+  }
+
   .sertified .swiper_container {
     padding-left: 0px;
     max-width: 640px;
@@ -2931,6 +2980,18 @@ footer .copirate {
     width: 640px;
     max-width: 1042px;
   }
+
+  .cases .cases__row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .cases .cases__row:after {
+    display: none;
+  }
+  .cases .cases__item {
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
 }
 @media (max-width: 850px) {
   .main_container .main_post {
@@ -3098,6 +3159,10 @@ footer .copirate {
   .coaching_wrapper .coach .coach__hover_list .coach__hover_item .img_container img {
     opacity: 0;
   }
+
+  .trained .trained__item {
+    flex: 0 0 48%;
+  }
 }
 @media (max-width: 650px) {
   .why p {
@@ -3136,6 +3201,14 @@ footer .copirate {
   .sertified .swiper_container {
     width: 340px;
     max-width: 1042px;
+  }
+
+  .trained .trained__item {
+    flex: 0 0 90%;
+  }
+
+  .cases .cases__item svg {
+    width: 100%;
   }
 }
 @media (max-width: 500px) {
