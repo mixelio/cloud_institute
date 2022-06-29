@@ -71,7 +71,9 @@ ul {
   padding: 0;
 }
 
-ul, ol, li {
+ul,
+ol,
+li {
   list-style: none;
 }
 
@@ -2237,6 +2239,20 @@ main {
   padding: 25px 0 0;
   margin-bottom: 90px;
 }
+.trained.cloud_labs_trained .trained__item p {
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 32px;
+  color: #231F20;
+}
+.trained.cloud_labs_trained .trained__item:hover {
+  background: #E9EAEE;
+}
+.trained.cloud_labs_trained .trained__item:hover p {
+  color: #231F20;
+}
 .trained .subtitle {
   margin-bottom: 40px;
 }
@@ -2480,6 +2496,453 @@ main {
 }
 .engage .blue_button:hover {
   background: #030FE1;
+}
+
+.free_firstscreen {
+  background: #F3EAEB;
+  z-index: 0;
+  padding-top: 125px;
+}
+.free_firstscreen .container {
+  position: relative;
+}
+.free_firstscreen h1 {
+  transform: translateX(0);
+  opacity: 1;
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 450;
+  font-size: 45px;
+  line-height: 58px;
+  color: #262A29;
+}
+.free_firstscreen p {
+  transform: translateX(0);
+  opacity: 1;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #262A29;
+}
+.free_firstscreen img {
+  position: absolute;
+  height: 85%;
+  width: auto;
+  right: 0;
+}
+
+.free_body {
+  background-color: #fff;
+}
+
+.free_info {
+  padding-top: 120px;
+  padding-bottom: 65px;
+}
+.free_info p {
+  font-family: "Futura PT";
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 32px;
+  color: #231F20;
+  max-width: 550px;
+}
+
+.free_sertified {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+16,e9eaee+16,e9eaee+16,e9eaee+100 */
+  background: rgb(255, 255, 255);
+  /* Old browsers */
+  background: -moz-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 16%, rgb(233, 234, 238) 16%, rgb(233, 234, 238) 16%, rgb(233, 234, 238) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 16%, rgb(233, 234, 238) 16%, rgb(233, 234, 238) 16%, rgb(233, 234, 238) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 16%, rgb(233, 234, 238) 16%, rgb(233, 234, 238) 16%, rgb(233, 234, 238) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#e9eaee", GradientType=0);
+  /* IE6-9 */
+}
+.free_sertified svg {
+  position: absolute;
+}
+.free_sertified a {
+  text-align: right;
+  position: relative;
+  padding-right: 70px;
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 450;
+  font-size: 20px;
+  line-height: 26px;
+  color: #231F20;
+}
+.free_sertified a:last-child svg {
+  top: 10px;
+  margin-left: 10px;
+}
+.free_sertified .sertified__price {
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+.free_sertified .sertified__price span {
+  position: relative;
+  font-family: "Futura PT book";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #231F20;
+  padding-left: 25px;
+}
+.free_sertified .sertified__price span svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+.free_sertified .sertified__price .old_price {
+  position: relative;
+  color: #848484;
+  padding: 0;
+  margin: 0 10px;
+}
+.free_sertified .sertified__price .old_price:before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  background: #000000;
+  width: 110%;
+  height: 1px;
+  top: 50%;
+  left: -5%;
+}
+.free_sertified .sertified__price svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+.free_sertified .sertified__price svg:last-child {
+  top: 10px;
+}
+.free_sertified .free_sertified__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -20px 40px;
+  padding-bottom: 47px;
+}
+.free_sertified .free_sertified__row .free_sertified__item {
+  margin: 20px;
+  max-width: 320px;
+  flex: 0 0 32%;
+  position: relative;
+  height: auto;
+  overflow: hidden;
+  background: rgb(247, 247, 247);
+  padding: 30px 20px;
+  transition-duration: 300ms;
+}
+.free_sertified .free_sertified__row .free_sertified__item .slide_container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.free_sertified .free_sertified__row .free_sertified__item .sertified__link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+.free_sertified .free_sertified__row .free_sertified__item h4 {
+  padding: 0 0 0 52px;
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 450;
+  font-size: 25px;
+  line-height: 32px;
+  color: #231F20;
+  position: relative;
+}
+.free_sertified .free_sertified__row .free_sertified__item:hover {
+  color: #fff;
+}
+.free_sertified .free_sertified__row .free_sertified__item:hover li,
+.free_sertified .free_sertified__row .free_sertified__item:hover h4,
+.free_sertified .free_sertified__row .free_sertified__item:hover a,
+.free_sertified .free_sertified__row .free_sertified__item:hover span {
+  color: inherit;
+}
+.free_sertified .free_sertified__row .free_sertified__item:hover ul {
+  border-bottom: 1px solid #fff;
+}
+.free_sertified .free_sertified__row .free_sertified__item:hover .hover_backghound {
+  opacity: 1;
+}
+.free_sertified .free_sertified__row .free_sertified__item:hover .old_price {
+  color: #848484;
+}
+.free_sertified .free_sertified__row .free_sertified__item:hover .old_price:before {
+  background: #fff;
+}
+.free_sertified .free_sertified__row .free_sertified__item:hover svg path {
+  fill: #fff;
+}
+.free_sertified .free_sertified__row .free_sertified__item:hover .title__container svg path {
+  fill: none;
+  stroke: #fff;
+}
+.free_sertified .free_sertified__row .free_sertified__item:hover .slide__item_3 svg path {
+  fill: none;
+  stroke: #fff;
+}
+.free_sertified .free_sertified__row .free_sertified__item:hover .sertified__price svg path {
+  fill: none;
+  stroke: #fff;
+}
+.free_sertified .free_sertified__row .free_sertified__item .hover_backghound {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition-duration: 200ms;
+}
+.free_sertified .free_sertified__row .free_sertified__item .title__container {
+  position: relative;
+  flex: 1 1 auto;
+}
+.free_sertified .free_sertified__row .free_sertified__item .slide_container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.free_sertified .free_sertified__row .free_sertified__item ul {
+  padding: 0 30px 20px;
+  border-bottom: 1px solid #E9EAEE;
+  z-index: 2;
+}
+.free_sertified .free_sertified__row .free_sertified__item ul li {
+  margin-bottom: 15px;
+  font-family: "Futura PT book";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #231F20;
+  padding-left: 26px;
+  position: relative;
+}
+.free_sertified .free_sertified__row .free_sertified__item ul li:last-child {
+  margin-bottom: 0;
+}
+.free_sertified .free_sertified__row .free_sertified__item ul li svg {
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.free_sertified .free_sertified__row .free_sertified__item ul li:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 23px;
+  width: 20px;
+}
+
+.training_container .training__main_row {
+  flex-direction: row-reverse;
+}
+
+.training_firstscreen {
+  position: relative;
+}
+.training_firstscreen h1 {
+  transform: translateX(0);
+  opacity: 1;
+}
+.training_firstscreen p {
+  transform: translateX(0);
+  opacity: 1;
+}
+.training_firstscreen .container {
+  padding-top: 0;
+}
+.training_firstscreen:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 0;
+  width: 100%;
+  height: 100%;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+52,000000+100&1+7,0.17+100 */
+  background: -moz-linear-gradient(-45deg, rgb(255, 255, 255) 7%, rgba(255, 255, 255, 0.6) 52%, rgba(0, 0, 0, 0.17) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, rgb(255, 255, 255) 7%, rgba(255, 255, 255, 0.6) 52%, rgba(0, 0, 0, 0.17) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, rgb(255, 255, 255) 7%, rgba(255, 255, 255, 0.6) 52%, rgba(0, 0, 0, 0.17) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#2b000000", GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+}
+
+.wrapper.training_wrapper {
+  min-height: auto;
+  margin-top: 0;
+}
+
+.training__main_row .main_item .main_post {
+  position: relative;
+  display: block;
+  border: 1px solid #E9EAEE;
+  border-right: 3px solid #3D46EC;
+  padding: 20px;
+}
+.training__main_row .main_item .main_post a:first-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.training__main_row .main_item .main_post a:last-child svg path {
+  fill: #231F20;
+}
+.training__main_row .main_item .main_post .old_price {
+  position: relative;
+  color: #848484;
+  padding: 0;
+  margin: 0 10px;
+}
+.training__main_row .main_item .main_post .old_price:before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  background: #000000;
+  width: 110%;
+  height: 1px;
+  top: 50%;
+  left: -5%;
+}
+.training__main_row .main_item .main_post svg path {
+  stroke: #231F20;
+  fill: none;
+}
+.training__main_row .main_item .main_post .level {
+  margin-bottom: 12px;
+}
+.training__main_row .main_item .main_post .level svg {
+  margin-right: 15px;
+}
+.training__main_row .main_item .main_post .level svg path {
+  stroke: #231F20;
+  fill: #231F20;
+}
+.training__main_row .main_item .main_post:hover h3 {
+  color: #3D46EC;
+}
+.training__main_row .main_item .main_post:hover svg path {
+  stroke: #231F20;
+  fill: none;
+}
+.training__main_row .main_item .main_post:hover .level svg path {
+  stroke: #231F20;
+  fill: #231F20;
+}
+.training__main_row .main_item .main_post:hover .sertified__price a:last-child svg path {
+  stroke: #3D46EC;
+  fill: #3D46EC;
+}
+.training__main_row .main_item h3 {
+  font-family: "Futura PT book";
+  max-width: 370px;
+  font-style: normal;
+  font-weight: 450;
+  font-size: 25px;
+  line-height: 32px;
+  margin-bottom: 5px;
+  color: #262A29;
+}
+.training__main_row .main_item p {
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 21px;
+  margin-bottom: 17px;
+  color: #231F20;
+}
+.training__main_row .main_item .sertified__price {
+  display: flex;
+  justify-content: space-between;
+}
+.training__main_row .main_item .sertified__price span {
+  display: flex;
+  align-items: center;
+}
+.training__main_row .main_item .sertified__price span svg {
+  margin-right: 13px;
+}
+.training__main_row .main_item .sertified__price a svg {
+  margin-left: 13px;
+}
+.training__main_row .main_item.sort {
+  flex: 0 0 25%;
+  display: flex;
+  padding: 0 20px;
+}
+.training__main_row .main_item.sort span {
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 450;
+  font-size: 20px;
+  line-height: 50px;
+  color: #231F20;
+  margin-right: 7px;
+}
+.training__main_row .main_item.sort form {
+  border: 1px solid #E9EAEE;
+  height: 50px;
+  flex: 1 1 auto;
+  position: relative;
+}
+.training__main_row .main_item.sort form:after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  top: calc(50% - 2.5px);
+  right: 20px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 5px 0 5px;
+  border-color: #231f20 transparent transparent transparent;
+}
+.training__main_row .main_item.sort form select {
+  width: 100%;
+  height: 100%;
+  padding: 0 15px;
+  font-family: "Futura PT book";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  background: none;
+  color: #231F20;
+  position: relative;
+}
+.training__main_row .main_item.sort form select option {
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  background: none;
+  color: #231F20;
+}
+
+.trained.cloud_labs_trained .trained__item:hover {
+  background: #E9EAEE;
 }
 
 footer {

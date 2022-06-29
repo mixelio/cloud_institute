@@ -6,6 +6,7 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 :focus,
 :active {
   outline: none;
@@ -25,46 +26,60 @@ a:focus,
 a:active {
   outline: none;
 }
+
 nav,
 footer,
 header,
 aside {
   display: block;
 }
+
 input,
 button,
 textarea {
   font-family: inherit;
 }
+
 input::-ms-clear {
   display: none;
 }
+
 button {
   cursor: pointer;
 }
+
 button::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
+
 a,
 a:visited {
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: none;
 }
+
 span:hover {
   cursor: default;
 }
+
 ul {
   padding: 0;
 }
-ul, ol, li {
+
+ul,
+ol,
+li {
   list-style: none;
 }
+
 img {
   vertical-align: top;
 }
+
 h1,
 h2,
 h3,
@@ -75,24 +90,29 @@ h6 {
   font-weight: inherit;
   margin: 0;
 }
+
 p {
   margin: 0;
 }
+
 input[type="submit"] {
   background: none;
   font-size: 0;
   border: none;
 }
+
 input[type="text"]::-ms-clear {
   display: none;
   width: 0;
   height: 0;
 }
+
 input[type="text"]::-ms-reveal {
   display: none;
   width: 0;
   height: 0;
 }
+
 input::-webkit-search-decoration,
 input::-webkit-search-cancel-button,
 input::-webkit-search-results-button,
@@ -110,4 +130,5 @@ select {
 option {
   appearance: none;
 }
+
 /*--------------------*/

@@ -1,0 +1,273 @@
+.training_container {
+  .training__main_row {
+    flex-direction: row-reverse;
+  }
+}
+
+.training_firstscreen {
+  h1 {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  p {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .container {
+    padding-top: 0;
+  }
+
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    width: 100%;
+    height: 100%;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+52,000000+100&1+7,0.17+100 */
+    background: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 1) 7%, rgba(255, 255, 255, 0.6) 52%, rgba(0, 0, 0, 0.17) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 1) 7%, rgba(255, 255, 255, 0.6) 52%, rgba(0, 0, 0, 0.17) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(255, 255, 255, 1) 7%, rgba(255, 255, 255, 0.6) 52%, rgba(0, 0, 0, 0.17) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#2b000000', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+
+
+
+
+  }
+}
+
+.wrapper.training_wrapper {
+  min-height: auto;
+  margin-top: 0;
+}
+
+.training__main_row {
+  .main_item {
+    .main_post {
+      position: relative;
+
+      a {
+        &:first-child {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+
+        &:last-child {
+          svg {
+            path {
+              fill: #231F20;
+            }
+          }
+        }
+      }
+
+
+
+      display: block;
+      border: 1px solid #E9EAEE;
+      border-right: 3px solid #3D46EC;
+      padding: 20px;
+
+      .old_price {
+        position: relative;
+        color: #848484;
+        padding: 0;
+        margin: 0 10px;
+
+        &:before {
+          content: '';
+          position: absolute;
+          display: inline-block;
+          background: #000000;
+          width: 110%;
+          height: 1px;
+          top: 50%;
+          left: -5%;
+        }
+      }
+
+      svg {
+        path {
+          stroke: #231F20;
+          fill: none;
+        }
+      }
+
+      .level {
+        margin-bottom: 12px;
+
+        svg {
+          margin-right: 15px;
+
+
+          path {
+            stroke: #231F20;
+            fill: #231F20;
+          }
+        }
+      }
+
+      &:hover {
+
+        h3 {
+          color: #3D46EC;
+        }
+
+        svg {
+          path {
+            stroke: #231F20;
+            fill: none;
+          }
+        }
+
+        .level {
+          svg {
+            path {
+              stroke: #231F20;
+              fill: #231F20;
+            }
+          }
+        }
+
+        .sertified__price {
+          a {
+            &:last-child {
+              svg {
+                path {
+                  stroke: #3D46EC;
+                  fill: #3D46EC;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    h3 {
+      font-family: 'Futura PT book';
+      max-width: 370px;
+      font-style: normal;
+      font-weight: 450;
+      font-size: 25px;
+      line-height: 32px;
+      margin-bottom: 5px;
+      color: #262A29;
+    }
+
+    p {
+      font-family: 'Futura PT';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 21px;
+      margin-bottom: 17px;
+      color: #231F20;
+    }
+
+    .sertified__price {
+      display: flex;
+      justify-content: space-between;
+
+      span {
+        display: flex;
+        align-items: center;
+
+        svg {
+          margin-right: 13px;
+        }
+      }
+
+      a {
+        svg {
+          margin-left: 13px;
+        }
+      }
+    }
+
+    &.sort {
+      flex: 0 0 25%;
+      display: flex;
+      padding: 0 20px;
+
+      span {
+        font-family: 'Futura PT';
+        font-style: normal;
+        font-weight: 450;
+        font-size: 20px;
+        line-height: 50px;
+        color: #231F20;
+        margin-right: 7px;
+      }
+
+      form {
+        border: 1px solid #E9EAEE;
+        height: 50px;
+        flex: 1 1 auto;
+        position: relative;
+
+        &:after {
+          content: '';
+          position: absolute;
+          display: inline-block;
+          top: calc(50% - 2.5px);
+          right: 20px;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 5px 5px 0 5px;
+          border-color: #231f20 transparent transparent transparent;
+        }
+
+        select {
+          width: 100%;
+          height: 100%;
+          padding: 0 15px;
+          font-family: 'Futura PT book';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 23px;
+          background: none;
+          color: #231F20;
+          position: relative;
+
+          // &:after {
+          //   content: '';
+          //   position: absolute;
+          //   display: inline-block;
+          //   top: 0;
+          //   right: 0;
+          //   width: 0;
+          //   height: 0;
+          //   border-style: solid;
+          //   border-width: 5px 5px 0 5px;
+          //   border-color: #231f20 transparent transparent transparent;
+          // }
+
+          option {
+            font-family: 'Futura PT';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 23px;
+            background: none;
+            color: #231F20;
+          }
+        }
+      }
+    }
+  }
+
+}

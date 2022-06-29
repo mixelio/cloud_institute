@@ -205,6 +205,31 @@
 }
 
 .trained {
+
+  // for cloud_labs
+  &.cloud_labs_trained {
+
+    .trained__item {
+      p {
+        font-family: 'Futura PT';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 25px;
+        line-height: 32px;
+        color: #231F20;
+      }
+
+      &:hover {
+        background: #E9EAEE;
+
+        p {
+          color: #231F20;
+        }
+      }
+    }
+  }
+
+
   padding: 25px 0 0;
   margin-bottom: 90px;
 
