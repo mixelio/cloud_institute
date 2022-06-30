@@ -320,6 +320,8 @@
 .cases {
   margin-bottom: 30px;
 
+
+
   .container {}
 
   .subtitle {
@@ -344,6 +346,8 @@
     justify-content: space-between;
     position: relative;
 
+
+
     &:after {
       content: '';
       display: inline-block;
@@ -356,6 +360,10 @@
     }
 
 
+  }
+
+  .cases_mobile {
+    display: none;
   }
 
   .cases__item {
@@ -372,7 +380,7 @@
       transform: translateY(50%) scaleY(0);
       opacity: 0;
       transition-duration: 300ms;
-      height: fit-content;
+      height: auto;
       top: 30px;
       min-width: 300px;
       max-width: 320px;

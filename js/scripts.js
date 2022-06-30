@@ -137,11 +137,12 @@ function accordionCaces() {
   const accord = document.querySelectorAll('.cases__item');
   const blockWidth = window.innerWidth;
 
-  if (accord.length > 0 && blockWidth < 900) {
+  if (accord.length > 0 && blockWidth <= 900) {
     for (let i = 0; i < accord.length; i++) {
       if (accord[i].classList.contains('_active')) {
         let hideElements = accord[i].children;
-        let heightElement = hideElements[2].offsetHeight;
+        let heightElement = hideElements[1].offsetHeight;
+        console.log(heightElement);
         accord[i].style.paddingBottom = heightElement + 'px';
       }
       accord[i].addEventListener('click', function (e) {
@@ -154,7 +155,7 @@ function accordionCaces() {
         accord[i].classList.toggle('_active');
         if (accord[i].classList.contains('_active')) {
           let hideElements = accord[i].children;
-          let heightElement = hideElements[2].offsetHeight;
+          let heightElement = hideElements[1].offsetHeight;
           accord[i].style.paddingBottom = heightElement + 'px';
         }
       })

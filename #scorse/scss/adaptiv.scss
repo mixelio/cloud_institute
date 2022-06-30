@@ -641,6 +641,14 @@
       }
     }
 
+    .cases_wide {
+      display: none;
+    }
+
+    .cases_mobile {
+      display: flex;
+    }
+
     .cases__item {
       align-items: flex-start;
       margin-bottom: 20px;

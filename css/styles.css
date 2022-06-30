@@ -604,6 +604,7 @@ main {
   height: auto;
   transform: translateY(0) scaleY(1);
   position: absolute;
+  background: #fff;
 }
 .header .header__row li {
   margin-bottom: 10px;
@@ -719,6 +720,12 @@ main {
   cursor: pointer;
 }
 
+.header_left {
+  background: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: 0 0px 6px rgba(0, 0, 0, 0.2);
+}
 .header_left .container {
   margin: 0;
   padding: 0 20px 0 200px;
@@ -2357,6 +2364,9 @@ main {
   left: 0;
   bottom: 23.7px;
 }
+.cases .cases_mobile {
+  display: none;
+}
 .cases .cases__item {
   display: flex;
   flex-direction: column;
@@ -2370,7 +2380,7 @@ main {
   transform: translateY(50%) scaleY(0);
   opacity: 0;
   transition-duration: 300ms;
-  height: fit-content;
+  height: auto;
   top: 30px;
   min-width: 300px;
   max-width: 320px;
@@ -3637,6 +3647,12 @@ footer .copirate {
   }
   .cases .cases__row:after {
     display: none;
+  }
+  .cases .cases_wide {
+    display: none;
+  }
+  .cases .cases_mobile {
+    display: flex;
   }
   .cases .cases__item {
     align-items: flex-start;

@@ -675,7 +675,7 @@ main {
           height: auto;
           transform: translateY(0) scaleY(1);
           position: absolute;
-
+          background: #fff;
         }
 
       }
@@ -845,6 +845,11 @@ main {
 }
 
 .header_left {
+  background: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: 0 0px 6px #0003;
+
   .container {
     margin: 0;
     padding: 0 20px 0 200px;
