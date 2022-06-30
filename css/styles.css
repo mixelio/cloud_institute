@@ -579,7 +579,7 @@ main {
   z-index: 11;
 }
 .header .container {
-  max-width: 1220px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 0 10px;
   transition-duration: 300ms;
@@ -729,6 +729,16 @@ main {
 .header_left .container {
   margin: 0;
   padding: 0 20px 0 200px;
+}
+.header_left .header__row {
+  justify-content: flex-start;
+}
+.header_left .header__row .header__item:nth-child(2) {
+  flex: 0 1 auto;
+  margin-right: 200px;
+}
+.header_left .header__row .header__item:first-child {
+  margin: 0 200px 0 0;
 }
 
 .first_screen {
