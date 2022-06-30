@@ -628,7 +628,8 @@ main {
 //Секции веб страницы           
 
 .header {
-  // padding-top: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: #F3F4F5;
   position: fixed;
   z-index: 10;
@@ -860,11 +861,11 @@ main {
 
     .header__item:nth-child(2) {
       flex: 0 1 auto;
-      margin-right: 200px;
+      margin-right: 160px;
     }
 
     .header__item:first-child {
-      margin: 0 200px 0 0;
+      margin: 0 160px 0 0;
     }
   }
 }
