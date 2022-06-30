@@ -3798,6 +3798,16 @@ footer .copirate {
     max-width: 1042px;
   }
 }
+@media (max-width: 450px) {
+  .training__main_row .main_item .sertified__price {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .training__main_row .main_item .sertified__price span {
+    margin-bottom: 12px;
+  }
+}
 @media (max-width: 400px) {
   .sertified .swiper_container {
     width: 100%;
