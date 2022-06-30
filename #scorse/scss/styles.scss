@@ -685,7 +685,7 @@ main {
       margin-bottom: 10px;
 
       &.sub_menu {
-        margin: 0 15px 8px 0px;
+        margin: 0;
         padding: 0 15px 0 0;
         position: relative;
         cursor: pointer;
@@ -757,6 +757,7 @@ main {
 
     &:nth-child(2) {
       flex: 1 1 auto;
+
     }
 
     &:last-child {
@@ -788,6 +789,7 @@ main {
 
     ul {
       display: flex;
+      justify-content: center;
     }
 
     li {

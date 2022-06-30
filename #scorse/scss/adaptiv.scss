@@ -74,7 +74,7 @@
   .header_left {
     .container {
       margin: 0;
-      padding: 0 20px 0 100px;
+      padding: 0 20px 0 20px;
     }
   }
 
@@ -251,6 +251,13 @@
   }
 
   .blog__first_screen {
+
+    &.free_firstscreen {
+      &:before {
+        display: none;
+      }
+    }
+
     .container {
       padding: 109px 20px 109px;
     }
@@ -598,6 +605,11 @@
 }
 
 @media (max-width: 900px) {
+  .free_sertified .free_sertified__row .free_sertified__item {
+    max-width: 100%;
+    flex: 0 0 40%;
+  }
+
   .sertified {
     .swiper_container {
       width: 640px;
@@ -747,6 +759,10 @@
 }
 
 @media (max-width: 700px) {
+
+  .free_sertified .free_sertified__row .free_sertified__item {
+    flex: 1 0 44%;
+  }
 
   .trusted .trusted__item {
     -webkit-box-flex: 0;
