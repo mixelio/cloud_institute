@@ -196,7 +196,10 @@
       }
     }
 
-    &.sort {
+
+
+    &.sort,
+    .sort {
       flex: 0 0 25%;
       display: flex;
       padding: 0 20px;
@@ -267,6 +270,10 @@
           }
         }
       }
+    }
+
+    .sort {
+      display: none;
     }
   }
 
