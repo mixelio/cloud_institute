@@ -1,0 +1,15 @@
+.aws_help {
+  background: url("../img/pictures/aws-help-bg.jpg") 0 0/cover no-repeat;
+
+  h4 {
+    margin-bottom: 33px;
+  }
+
+  .help__item {
+    &:hover {
+      h4 {
+        color: #fff;
+      }
+    }
+  }
+}

@@ -3076,6 +3076,16 @@ main {
   color: #FFFFFF;
 }
 
+.aws_help {
+  background: url("../img/pictures/aws-help-bg.jpg") 0 0/cover no-repeat;
+}
+.aws_help h4 {
+  margin-bottom: 33px;
+}
+.aws_help .help__item:hover h4 {
+  color: #fff;
+}
+
 footer {
   background: #231F20;
   color: #fff;

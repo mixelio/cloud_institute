@@ -142,7 +142,6 @@ function accordionCaces() {
       if (accord[i].classList.contains('_active')) {
         let hideElements = accord[i].children;
         let heightElement = hideElements[2].offsetHeight;
-        console.log(heightElement);
         accord[i].style.paddingBottom = heightElement + 'px';
       }
       accord[i].addEventListener('click', function (e) {
