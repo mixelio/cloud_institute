@@ -354,12 +354,62 @@
       left: 0;
       bottom: 23.7px;
     }
+
+
   }
 
   .cases__item {
+
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
+    transition-duration: 300ms;
+    position: relative;
+
+    .case_container {
+      position: absolute;
+      transform: translateY(50%) scaleY(0);
+      opacity: 0;
+      transition-duration: 300ms;
+      height: fit-content;
+      top: 30px;
+      min-width: 300px;
+      max-width: 320px;
+    }
+
+
+
+    p {
+      margin-bottom: 10px;
+      top: 40px;
+    }
+
+    &._active {
+
+      svg {
+        path {
+          fill: #DBDDFF;
+        }
+      }
+
+      span {
+        color: #3D46EC;
+      }
+
+      .case_container {
+        transform: translateY(0) scaleY(1);
+        opacity: 1;
+
+      }
+
+      p,
+      h5 {
+        transform: translateY(0) scaleY(1);
+        opacity: 1;
+        // transition-duration: 300ms;
+      }
+    }
 
     &:first-child {
       align-items: flex-start;
@@ -382,19 +432,7 @@
     }
 
 
-    &:hover {
-      cursor: pointer;
 
-      svg {
-        path {
-          fill: #DBDDFF;
-        }
-      }
-
-      span {
-        color: #3D46EC;
-      }
-    }
   }
 }
 

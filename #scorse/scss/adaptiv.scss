@@ -190,9 +190,50 @@
       padding-left: 0;
     }
 
-    .swiper-button-prev,
+    .swiper-button-prev {
+
+      &:after {
+        content: '';
+      }
+
+      height: 10px;
+      width: 49px;
+      position: absolute;
+      top: auto;
+      bottom:30px;
+      left: calc(50% - 60px);
+      right: auto;
+      transform: rotate(180deg);
+
+      &:hover {
+        svg {
+          path {
+            fill: #3D46EC;
+          }
+        }
+      }
+    }
+
     .swiper-button-next {
-      opacity: 1;
+
+      &:after {
+        content: '';
+      }
+
+      height: 10px;
+      width: 49px;
+      position: absolute;
+      top: auto;
+      bottom: 30px;
+      right: calc(50% - 60px);
+
+      &:hover {
+        svg {
+          path {
+            fill: #3D46EC;
+          }
+        }
+      }
     }
   }
 
@@ -577,6 +618,10 @@
     .cases__item {
       align-items: flex-start;
       margin-bottom: 20px;
+
+      svg {
+        display: none;
+      }
     }
   }
 

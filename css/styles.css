@@ -1239,14 +1239,14 @@ main {
   /* IE6-9 */
 }
 .sertified .swiper-button-prev {
-  opacity: 0;
+  opacity: 1;
   height: 10px;
   width: 49px;
   position: absolute;
-  top: auto;
-  bottom: 30px;
-  left: calc(50% - 60px);
-  right: auto;
+  top: 100px;
+  bottom: auto;
+  left: auto;
+  right: 260px;
   transform: rotate(180deg);
 }
 .sertified .swiper-button-prev:after {
@@ -1256,13 +1256,14 @@ main {
   fill: #3D46EC;
 }
 .sertified .swiper-button-next {
-  opacity: 0;
+  opacity: 1;
   height: 10px;
   width: 49px;
   position: absolute;
-  top: auto;
-  bottom: 30px;
-  right: calc(50% - 60px);
+  top: 100px;
+  bottom: auto;
+  left: auto;
+  right: 200px;
 }
 .sertified .swiper-button-next:after {
   content: "";
@@ -2359,6 +2360,38 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  cursor: pointer;
+  transition-duration: 300ms;
+  position: relative;
+}
+.cases .cases__item .case_container {
+  position: absolute;
+  transform: translateY(50%) scaleY(0);
+  opacity: 0;
+  transition-duration: 300ms;
+  height: fit-content;
+  top: 30px;
+  min-width: 300px;
+  max-width: 320px;
+}
+.cases .cases__item p {
+  margin-bottom: 10px;
+  top: 40px;
+}
+.cases .cases__item._active svg path {
+  fill: #DBDDFF;
+}
+.cases .cases__item._active span {
+  color: #3D46EC;
+}
+.cases .cases__item._active .case_container {
+  transform: translateY(0) scaleY(1);
+  opacity: 1;
+}
+.cases .cases__item._active p,
+.cases .cases__item._active h5 {
+  transform: translateY(0) scaleY(1);
+  opacity: 1;
 }
 .cases .cases__item:first-child {
   align-items: flex-start;
@@ -2374,15 +2407,6 @@ main {
 }
 .cases .cases__item svg path {
   transition-duration: 300ms;
-}
-.cases .cases__item:hover {
-  cursor: pointer;
-}
-.cases .cases__item:hover svg path {
-  fill: #DBDDFF;
-}
-.cases .cases__item:hover span {
-  color: #3D46EC;
 }
 
 .projectDelivery .subtitle {
@@ -3151,9 +3175,35 @@ footer .copirate {
   .sertified .swiper {
     padding-left: 0;
   }
-  .sertified .swiper-button-prev,
-.sertified .swiper-button-next {
-    opacity: 1;
+  .sertified .swiper-button-prev {
+    height: 10px;
+    width: 49px;
+    position: absolute;
+    top: auto;
+    bottom: 30px;
+    left: calc(50% - 60px);
+    right: auto;
+    transform: rotate(180deg);
+  }
+  .sertified .swiper-button-prev:after {
+    content: "";
+  }
+  .sertified .swiper-button-prev:hover svg path {
+    fill: #3D46EC;
+  }
+  .sertified .swiper-button-next {
+    height: 10px;
+    width: 49px;
+    position: absolute;
+    top: auto;
+    bottom: 30px;
+    right: calc(50% - 60px);
+  }
+  .sertified .swiper-button-next:after {
+    content: "";
+  }
+  .sertified .swiper-button-next:hover svg path {
+    fill: #3D46EC;
   }
 
   .main_container {
@@ -3454,6 +3504,9 @@ footer .copirate {
   .cases .cases__item {
     align-items: flex-start;
     margin-bottom: 20px;
+  }
+  .cases .cases__item svg {
+    display: none;
   }
 }
 @media (max-width: 850px) {

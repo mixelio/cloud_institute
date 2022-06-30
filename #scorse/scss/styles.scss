@@ -1448,7 +1448,7 @@ main {
   /* IE6-9 */
 
   .swiper-button-prev {
-    opacity: 0;
+    opacity: 1;
 
     &:after {
       content: '';
@@ -1457,10 +1457,10 @@ main {
     height: 10px;
     width: 49px;
     position: absolute;
-    top: auto;
-    bottom:30px;
-    left: calc(50% - 60px);
-    right: auto;
+    top: 100px;
+    bottom:auto;
+    left:auto;
+    right: calc(200px + 60px);
     transform: rotate(180deg);
 
     &:hover {
@@ -1473,7 +1473,7 @@ main {
   }
 
   .swiper-button-next {
-    opacity: 0;
+    opacity: 1;
 
     &:after {
       content: '';
@@ -1482,9 +1482,10 @@ main {
     height: 10px;
     width: 49px;
     position: absolute;
-    top: auto;
-    bottom: 30px;
-    right: calc(50% - 60px);
+    top: 100px;
+    bottom:auto;
+    left: auto;
+    right: 200px;
 
     &:hover {
       svg {

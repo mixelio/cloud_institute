@@ -84,19 +84,6 @@ function submenu() {
 
 submenu();
 
-// $(function () {
-//   // открываем вкладку по умолчанию
-//   $(".active__item .spoller__text").slideDown();
-
-//   $("#accordion .spoller__title").on("click", function () {
-//     $("#accordion .spoller__text").not($(this).next()).slideUp(299);
-
-//     $(".reasons__spoller_item").removeClass("active__item");
-//     $(this).next().slideDown(299).parent().addClass("active__item");
-//   });
-// });
-
-
 function accordionReasons() {
   const accord = document.querySelectorAll('.reasons__mobile_item');
   if (accord.length > 0) {
@@ -145,6 +132,49 @@ function accordionCoach() {
 }
 
 accordionCoach();
+
+function accordionCaces() {
+  const accord = document.querySelectorAll('.cases__item');
+  const blockWidth = window.innerWidth;
+
+  if (accord.length > 0 && blockWidth < 900) {
+    for (let i = 0; i < accord.length; i++) {
+      if (accord[i].classList.contains('_active')) {
+        let hideElements = accord[i].children;
+        let heightElement = hideElements[2].offsetHeight;
+        console.log(heightElement);
+        accord[i].style.paddingBottom = heightElement + 'px';
+      }
+      accord[i].addEventListener('click', function (e) {
+        for (let j = 0; j < accord.length; j++) {
+          if (accord[j].classList.contains('_active')) {
+            accord[j].classList.remove('_active');
+            accord[j].style.paddingBottom = 0 + 'px';
+          }
+        }
+        accord[i].classList.toggle('_active');
+        if (accord[i].classList.contains('_active')) {
+          let hideElements = accord[i].children;
+          let heightElement = hideElements[2].offsetHeight;
+          accord[i].style.paddingBottom = heightElement + 'px';
+        }
+      })
+    }
+  } else {
+    for (let i = 0; i < accord.length; i++) {
+      accord[i].addEventListener('click', function (e) {
+        for (let j = 0; j < accord.length; j++) {
+          if (accord[j].classList.contains('_active')) {
+            accord[j].classList.remove('_active');
+          }
+        }
+        accord[i].classList.toggle('_active');
+      })
+    }
+  }
+}
+
+accordionCaces();
 
 
 function filterBurger() {
