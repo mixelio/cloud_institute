@@ -853,11 +853,11 @@ main {
 
   .container {
     margin: 0;
-    padding: 0 20px 0 200px;
+    padding: 0 20px 0 80px;
   }
 
   .header__row {
-    justify-content: flex-start;
+    //justify-content: flex-start;
 
     .header__item:nth-child(2) {
       flex: 0 1 auto;
@@ -866,6 +866,14 @@ main {
 
     .header__item:first-child {
       margin: 0 160px 0 0;
+    }
+  }
+
+  .search {
+    input {
+      &:first-child {
+        background-color: #Fff;
+      }
     }
   }
 }
