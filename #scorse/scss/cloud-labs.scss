@@ -115,3 +115,53 @@
     color: #FFFFFF;
   }
 }
+
+.cloud_labs_firstscreen {
+
+  h1,
+  p,
+  a {
+    position: relative;
+    z-index: 2;
+  }
+
+  img {
+    z-index: 0;
+    right: auto;
+    left: 0;
+  }
+}
+
+.cloud_labs_trained {
+  .trained__item {
+    img {
+      position: relative;
+      opacity: 1;
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+    }
+
+    &:hover {
+      img {
+        opacity: 1;
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+.cloud_video {
+  padding: 50px 0;
+  background: #E9EAEE;
+}
+
+.coaching_info__hover_list li:hover .not-hover {
+  opacity: 1;
+  transform: scale(1);
+  font-weight: 450;
+}
+
+.coaching_info__hover_list li .not-hover {
+  transition-duration: 0ms;
+}
