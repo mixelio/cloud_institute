@@ -3143,7 +3143,7 @@ main {
 }
 .cloud_video iframe {
   max-width: 100%;
-  height: auto;
+  height: 50vw;
 }
 
 .coaching_info__hover_list li:hover .not-hover {
