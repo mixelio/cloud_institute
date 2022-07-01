@@ -176,6 +176,49 @@ function accordionCaces() {
 
 accordionCaces();
 
+function accordionAws() {
+  const accord = document.querySelectorAll('.aws_question__item');
+  const blockWidth = window.innerWidth;
+
+  if (accord.length > 0) {
+    for (let i = 0; i < accord.length; i++) {
+      if (accord[i].classList.contains('_active')) {
+        let hideElements = accord[i].children;
+        let heightElement = hideElements[1].offsetHeight;
+        console.log(heightElement);
+        accord[i].style.paddingBottom = heightElement + 'px';
+      }
+      accord[i].addEventListener('click', function (e) {
+        for (let j = 0; j < accord.length; j++) {
+          if (accord[j].classList.contains('_active')) {
+            accord[j].classList.remove('_active');
+            accord[j].style.paddingBottom = 0 + 'px';
+          }
+        }
+        accord[i].classList.toggle('_active');
+        if (accord[i].classList.contains('_active')) {
+          let hideElements = accord[i].children;
+          let heightElement = hideElements[1].offsetHeight;
+          accord[i].style.paddingBottom = heightElement + 'px';
+        }
+      })
+    }
+  } else {
+    for (let i = 0; i < accord.length; i++) {
+      accord[i].addEventListener('click', function (e) {
+        for (let j = 0; j < accord.length; j++) {
+          if (accord[j].classList.contains('_active')) {
+            accord[j].classList.remove('_active');
+          }
+        }
+        accord[i].classList.toggle('_active');
+      })
+    }
+  }
+}
+
+accordionAws();
+
 
 function filterBurger() {
   const blogFilter = document.getElementById('blog_filter');
