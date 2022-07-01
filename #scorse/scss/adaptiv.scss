@@ -25,6 +25,14 @@
     }
   }
 
+  .training_firstscreen {
+    padding-top: 200px;
+
+    .container {
+      padding-top: 0;
+    }
+  }
+
 
   .main_container {
     padding-left: 150px;
@@ -36,6 +44,13 @@
 
     .sidebar {
       margin: 0 20px 0 90px;
+    }
+  }
+
+  .training__main_row {
+    .sidebar {
+      margin-left: 0;
+      margin-right: 30px;
     }
   }
 
@@ -59,9 +74,21 @@
   .main_container .sidebar {
     margin: 0 20px 0 30px;
   }
+
+  .training__main_row {
+    .sidebar {
+      margin-left: 0;
+      margin-right: 30px;
+    }
+  }
 }
 
 @media (max-width: 1200px) {
+
+  .training__main_row .main_item.sort {
+    padding-right: 0;
+  }
+
   .main_container .main_item:first-child {
     width: 600px;
   }
@@ -94,6 +121,14 @@
   .blog__first_screen {
     .container {
       padding: 109px 20px 109px 100px;
+    }
+  }
+
+  .training_firstscreen {
+    padding-top: 200px;
+
+    .container {
+      padding-top: 0;
     }
   }
 
@@ -306,6 +341,14 @@
         /* IE6-9 */
 
       }
+    }
+  }
+
+  .training_firstscreen {
+    padding-top: 200px;
+
+    .container {
+      padding-top: 0;
     }
   }
 

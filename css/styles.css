@@ -2838,6 +2838,10 @@ main {
   margin-top: 0;
 }
 
+.training__main_row .sidebar {
+  margin-left: 0;
+  margin-right: 40px;
+}
 .training__main_row .main_item .main_post {
   position: relative;
   display: block;
@@ -2910,6 +2914,17 @@ main {
   margin-bottom: 5px;
   color: #262A29;
 }
+.training__main_row .main_item h3.filter_title {
+  color: #3D46EC;
+  padding-bottom: 24px;
+  margin-bottom: 9px;
+  border-bottom: 1px solid #E9EAEE;
+}
+.training__main_row .main_item .cloud_providers {
+  padding-bottom: 14px;
+  margin-bottom: 14px;
+  border-bottom: 1px solid #E9EAEE;
+}
 .training__main_row .main_item p {
   font-family: "Futura PT";
   font-style: normal;
@@ -2937,7 +2952,7 @@ main {
 .training__main_row .main_item .sort {
   flex: 0 0 25%;
   display: flex;
-  padding: 0 20px;
+  padding: 0 40px;
 }
 .training__main_row .main_item.sort span,
 .training__main_row .main_item .sort span {
@@ -3189,6 +3204,13 @@ footer .copirate {
     padding: 109px 20px 109px 150px;
   }
 
+  .training_firstscreen {
+    padding-top: 200px;
+  }
+  .training_firstscreen .container {
+    padding-top: 0;
+  }
+
   .main_container {
     padding-left: 150px;
   }
@@ -3197,6 +3219,11 @@ footer .copirate {
   }
   .main_container .sidebar {
     margin: 0 20px 0 90px;
+  }
+
+  .training__main_row .sidebar {
+    margin-left: 0;
+    margin-right: 30px;
   }
 
   .fixed_logo {
@@ -3216,8 +3243,17 @@ footer .copirate {
   .main_container .sidebar {
     margin: 0 20px 0 30px;
   }
+
+  .training__main_row .sidebar {
+    margin-left: 0;
+    margin-right: 30px;
+  }
 }
 @media (max-width: 1200px) {
+  .training__main_row .main_item.sort {
+    padding-right: 0;
+  }
+
   .main_container .main_item:first-child {
     width: 600px;
   }
@@ -3246,6 +3282,13 @@ footer .copirate {
 
   .blog__first_screen .container {
     padding: 109px 20px 109px 100px;
+  }
+
+  .training_firstscreen {
+    padding-top: 200px;
+  }
+  .training_firstscreen .container {
+    padding-top: 0;
   }
 
   .sertified .swiper_container {
@@ -3402,6 +3445,13 @@ footer .copirate {
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a6000000", endColorstr="#00000000", GradientType=1);
     /* IE6-9 */
+  }
+
+  .training_firstscreen {
+    padding-top: 200px;
+  }
+  .training_firstscreen .container {
+    padding-top: 0;
   }
 
   .wrapper::before {
