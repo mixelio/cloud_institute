@@ -1536,8 +1536,11 @@ main {
 .help .help__item {
   background: #F7F7F7;
   padding: 35px 35px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin-right: 2px;
-  height: 300px;
+  min-height: 300px;
   width: 320px;
   position: relative;
   transition-duration: 200ms;
@@ -1547,6 +1550,8 @@ main {
   width: 100%;
   height: 100%;
   z-index: 3;
+  top: 0;
+  left: 0;
 }
 .help .help__item .help__link::after {
   display: none;
@@ -1572,11 +1577,12 @@ main {
   color: #231F20;
   position: relative;
   z-index: 3;
+  flex-grow: 1;
 }
 .help .help__item a {
-  position: absolute;
-  bottom: 25px;
-  right: 40px;
+  position: relative;
+  bottom: auto;
+  right: auto;
   transition-duration: 200ms;
 }
 .help .help__item a svg {
@@ -3166,6 +3172,9 @@ main {
 .aws_help h4 {
   margin-bottom: 33px;
 }
+.aws_help .help__item {
+  flex-grow: 1;
+}
 .aws_help .help__item:hover h4 {
   color: #fff;
 }
@@ -3208,6 +3217,19 @@ main {
   left: 20px;
 }
 
+.aws_wrapper .aws_trained {
+  padding-top: 60px;
+}
+.aws_wrapper .aws_trained p {
+  max-width: 560px;
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 32px;
+  color: #231F20;
+  margin-bottom: 73px;
+}
 .aws_wrapper .aws_trained .trained__item p {
   font-family: "Futura PT";
   font-style: normal;
@@ -3215,6 +3237,7 @@ main {
   font-size: 18px;
   line-height: 23px;
   color: #231F20;
+  margin-bottom: 0;
 }
 
 .aws_questions {
@@ -3240,7 +3263,7 @@ main {
 }
 .aws_questions .aws_question__item p {
   position: absolute;
-  transform: translateY(-50%) scaleY(0);
+  transform: translateY(-30%) rotateX(90deg);
   max-width: 80%;
   padding: 18px 0;
   font-family: "Futura PT";
@@ -3249,14 +3272,56 @@ main {
   font-size: 16px;
   line-height: 21px;
   color: #231F20;
+  transition: ease-in-out 500ms;
 }
 .aws_questions .aws_question__item._active h4 {
-  font-weight: 400;
+  text-shadow: 1px 0 0 #231F20;
   border-bottom: 1px solid #E9EAEE;
 }
 .aws_questions .aws_question__item._active p {
-  transform: translateY(0) scaleY(1);
+  transform: translateY(0) rotateX(0deg);
 }
+
+.azure_firstscreen img {
+  height: 85%;
+  width: 100%;
+  object-fit: cover;
+}
+.azure_firstscreen h1 {
+  z-index: 2;
+  position: relative;
+}
+.azure_firstscreen p {
+  z-index: 2;
+  position: relative;
+}
+.azure_firstscreen a {
+  z-index: 2;
+  position: relative;
+}
+
+.azure_help {
+  padding-top: 120px;
+  background: url("../img/pictures/azure-help-bg.jpg") 0 0/cover no-repeat;
+}
+.azure_help .help__row {
+  max-width: 650px;
+  flex-wrap: wrap;
+}
+.azure_help .help__row .help__item {
+  margin: 1px;
+  flex-grow: 1;
+}
+.azure_help .help__row .help__item h4 {
+  margin-bottom: 33px;
+}
+.azure_help .help__row .help__item:hover h4 {
+  color: #fff;
+}
+.azure_trained {
+  padding-top: 60px;
+}
+
 footer {
   background: #231F20;
   color: #fff;
@@ -3819,7 +3884,6 @@ footer .copirate {
 
   .help .help__item {
     width: 250px;
-    height: 180px;
   }
 
   .help .container {
@@ -3851,6 +3915,10 @@ footer .copirate {
   }
   .coaching_wrapper .coacing_stay .container {
     padding: 38px 20px 0 20px;
+  }
+
+  .azure_firstscreen img {
+    display: none;
   }
 }
 @media (max-width: 900px) {
@@ -4070,9 +4138,8 @@ footer .copirate {
   }
 
   .help .help__item {
-    width: 270px;
+    width: 70%;
     height: 300px;
-    padding: 20px 10px;
     margin: 0 0 5px;
   }
 
@@ -4152,6 +4219,10 @@ footer .copirate {
 
   .training__main_row .main_item .sertified__price span {
     margin-bottom: 12px;
+  }
+
+  .help .help__item {
+    width: 100%;
   }
 }
 @media (max-width: 400px) {

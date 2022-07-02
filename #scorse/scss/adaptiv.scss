@@ -633,7 +633,7 @@
 
   .help .help__item {
     width: 250px;
-    height: 180px;
+    // height: 180px;
   }
 
   .help {
@@ -685,6 +685,14 @@
     }
 
   }
+
+
+  .azure_firstscreen {
+
+    img {
+      display: none;
+    }
+  }
 }
 
 @media (max-width: 900px) {
@@ -727,6 +735,7 @@
       }
     }
   }
+
 
 }
 
@@ -989,9 +998,8 @@
   }
 
   .help .help__item {
-    width: 270px;
+    width: 70%;
     height: 300px;
-    padding: 20px 10px;
     margin: 0 0 5px;
   }
 
@@ -1106,6 +1114,11 @@
   .training__main_row .main_item .sertified__price span {
     margin-bottom: 12px;
   }
+
+  .help .help__item {
+    width: 100%;
+  }
+
 }
 
 @media (max-width: 400px) {

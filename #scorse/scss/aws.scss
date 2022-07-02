@@ -8,6 +8,8 @@
   }
 
   .help__item {
+    flex-grow: 1;
+
     &:hover {
       h4 {
         color: #fff;
@@ -69,6 +71,19 @@
 
 .aws_wrapper {
   .aws_trained {
+    padding-top: 60px;
+
+    p {
+      max-width: 560px;
+      font-family: 'Futura PT';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 25px;
+      line-height: 32px;
+      color: #231F20;
+      margin-bottom: 73px;
+    }
+
     .trained__item {
       p {
         font-family: 'Futura PT';
@@ -76,8 +91,8 @@
         font-weight: 300;
         font-size: 18px;
         line-height: 23px;
-
         color: #231F20;
+        margin-bottom: 0;
       }
     }
   }
@@ -119,7 +134,8 @@
 
     p {
       position: absolute;
-      transform: translateY(-50%) scaleY(0);
+      transform: translateY(-30%) rotateX(90deg);
+      //opacity: 0;
       max-width: 80%;
       padding: 18px 0;
       font-family: 'Futura PT';
@@ -128,23 +144,80 @@
       font-size: 16px;
       line-height: 21px;
       color: #231F20;
+      transition: ease-in-out 500ms;
     }
 
     &._active {
 
       h4 {
-        font-weight: 400;
+        text-shadow: 1px 0 0 #231F20;
         border-bottom: 1px solid #E9EAEE;
       }
 
       p {
-        transform: translateY(0) scaleY(1);
-
+        // opacity: 1;
+        transform: translateY(0) rotateX(0deg);
+        //transition: ease-in-out 500ms;
       }
     }
   }
+}
 
+.azure_firstscreen {
 
+  img {
+    height: 85%;
+    width: 100%;
+    object-fit: cover;
 
-  ._active {}
+  }
+
+  h1 {
+    z-index: 2;
+    position: relative;
+  }
+
+  p {
+    z-index: 2;
+    position: relative;
+  }
+
+  a {
+    z-index: 2;
+    position: relative;
+  }
+}
+
+.azure_help {
+
+  padding-top: 120px;
+  background: url("../img/pictures/azure-help-bg.jpg") 0 0/cover no-repeat;
+
+  .help__row {
+    max-width: 650px;
+    flex-wrap: wrap;
+
+    .help__item {
+      margin: 1px;
+      flex-grow: 1;
+
+      h4 {
+        margin-bottom: 33px;
+      }
+
+      p {}
+
+      &:hover {
+        h4 {
+          color: #fff;
+        }
+      }
+
+      a {}
+    }
+  }
+}
+
+.azure_trained {
+  padding-top: 60px;
 }
