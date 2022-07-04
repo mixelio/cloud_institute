@@ -3392,7 +3392,7 @@ main {
   top: 7px;
   height: 10.5px;
   width: 11.3px;
-  background: url("../img/icon/intermediate.png") 0 0/contain no-repeat;
+  background: url("../img/icon/intermediate.svg") 0 0/contain no-repeat;
 }
 .amazon_courses_item .level.advanced:before,
 .microsoft_courses_item .level.advanced:before,
