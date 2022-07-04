@@ -1,0 +1,242 @@
+.vilt_firstscreen {
+  .blue_button {
+    background: none;
+    border: 2px solid #3D46EC;
+    color: #3D46EC;
+
+    &:hover {
+      border-color: #030FE1;
+    }
+  }
+}
+
+
+
+.amazon_courses,
+.microsoft_courses,
+.devops_courses {
+  display: block;
+  background: #fff;
+  padding: 45px 50px;
+  counter-reset: num;
+  margin: 0;
+  transform: translateY(-100px);
+}
+
+.amazon_courses_item,
+.microsoft_courses_item,
+.devops_courses_item {
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 13px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid #F7F7F7;
+
+  h4 {
+    flex: 0 1 70%;
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 23px;
+    color: #231F20;
+    padding-right: 50px;
+  }
+
+  .level {
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: calc(50% - 7px);
+      display: inline-block;
+      height: 14px;
+    }
+
+    &.beginner {
+      &:before {
+        top: 10px;
+        height: 7px;
+        width: 6.4px;
+        background: url('/img/icon/beginner.svg') 0 0 / contain no-repeat;
+      }
+    }
+
+    &.intermediate {
+      &:before {
+        top: 7px;
+        height: 10.5px;
+        width: 11.33px;
+        background: url('/img/icon/intermediate.svg') 0 0 / contain no-repeat;
+      }
+    }
+
+    &.advanced {
+      &:before {
+        top: 4px;
+        height: 14px;
+        width: 17px;
+        background: url('/img/icon/advanced.svg') 0 0 / contain no-repeat;
+      }
+    }
+  }
+
+  span {
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 23px;
+    color: #231F20;
+  }
+
+  &:first-child {
+    padding-bottom: 18px;
+    margin-bottom: 14px;
+    border-bottom: 1px solid #F7F7F7;
+
+    h4,
+    span {
+      font-weight: 450;
+    }
+
+    .level {
+      &:before {
+        width: 17px;
+        background: url('/img/icon/grow-icon.svg') 0 0 / contain no-repeat;
+      }
+    }
+  }
+}
+
+.level {
+  flex: 1 0 15%;
+  padding-left: 27px;
+}
+
+.duration {
+  flex: 1;
+  text-align: center;
+}
+
+
+
+.vilt_wrapper {
+  .coaching_info {
+    margin-bottom: 50px;
+  }
+
+  .programs_cover {
+    margin-bottom: 120px;
+  }
+
+  .programs_cover__row {
+    display: flex;
+    max-width: 1000px;
+  }
+
+  .program_covers__item {
+    flex: 1 1 45%;
+
+    ol {
+      counter-reset: num;
+      padding: 0;
+
+      li {
+        position: relative;
+        padding: 0 0 0 35px;
+        cursor: default;
+        font-family: 'Futura PT';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 23px;
+        color: #231F20;
+
+        &:not(:last-child) {
+          margin-bottom: 15px;
+        }
+
+        &:before {
+          counter-increment: num;
+          content: "0" counter(num)".";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          display: inline-block;
+          font-family: 'Futura PT';
+          font-style: normal;
+          font-weight: 300;
+          font-size: 18px;
+          line-height: 23px;
+          color: #231F20;
+        }
+      }
+    }
+
+    h4 {
+      font-family: 'Futura PT';
+      font-style: normal;
+      font-weight: 450;
+      font-size: 18px;
+      line-height: 23px;
+      color: #231F20;
+    }
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      height: 95%;
+    }
+  }
+
+
+  .vilt_trained {
+    .vilt_trained__info {
+      margin-bottom: 35px;
+    }
+  }
+
+  .vilt_engaged {
+    margin-bottom: 0;
+
+    h3 {
+      font-family: 'Futura PT';
+      font-style: normal;
+      font-weight: 450;
+      font-size: 35px;
+      line-height: 45px;
+      color: #FFFFFF;
+      max-width: 770px;
+    }
+
+    p {
+      max-width: 770px;
+      font-family: 'Futura PT';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 25px;
+      line-height: 32px;
+
+      color: #FFFFFF;
+    }
+  }
+
+  .vilt__grey_block {
+    padding-top: 54px;
+    padding-bottom: 32px;
+    background: #E9EAEE;
+    margin-bottom: 0;
+
+    .subtitle {
+      margin-bottom: 20px;
+    }
+  }
+
+
+}

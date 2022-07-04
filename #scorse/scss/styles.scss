@@ -11,8 +11,6 @@
   font-style: normal;
 }
 
-
-
 @font-face {
   font-family: 'Futura PT';
   src: url('../fonts/FuturaPT-Heavy.eot');
@@ -1920,6 +1918,7 @@ main {
 @import 'training-search.scss';
 @import 'cloud-labs.scss';
 @import 'aws.scss';
+@import 'vilt.scss';
 
 
 footer {
