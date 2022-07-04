@@ -707,7 +707,16 @@
     padding: 45px 20px;
   }
 
+  .cloud_video iframe {
 
+    height: 50vw;
+  }
+
+  .cloud_labs_firstscreen {
+    img {
+      display: none;
+    }
+  }
 }
 
 @media (max-width: 900px) {

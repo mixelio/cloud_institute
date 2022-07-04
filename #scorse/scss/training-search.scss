@@ -61,6 +61,7 @@
 
     .main_post {
       position: relative;
+      transition-duration: 300ms;
 
       a {
         &:first-child {
@@ -127,6 +128,9 @@
       }
 
       &:hover {
+        border-top: 1px solid #231F20;
+        border-left: 1px solid #231F20;
+        border-bottom: 1px solid #231F20;
 
         h3 {
           color: #3D46EC;
@@ -266,19 +270,6 @@
           background: none;
           color: #231F20;
           position: relative;
-
-          // &:after {
-          //   content: '';
-          //   position: absolute;
-          //   display: inline-block;
-          //   top: 0;
-          //   right: 0;
-          //   width: 0;
-          //   height: 0;
-          //   border-style: solid;
-          //   border-width: 5px 5px 0 5px;
-          //   border-color: #231f20 transparent transparent transparent;
-          // }
 
           option {
             font-family: 'Futura PT';
