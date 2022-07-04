@@ -61,7 +61,7 @@
         top: 10px;
         height: 7px;
         width: 6.4px;
-        background: url('/img/icon/beginner.svg') 0 0 / contain no-repeat;
+        background: url('../img/icon/beginner.svg') 0 0 / contain no-repeat;
       }
     }
 
@@ -70,7 +70,7 @@
         top: 7px;
         height: 10.5px;
         width: 11.33px;
-        background: url('/img/icon/intermediate.svg') 0 0 / contain no-repeat;
+        background: url('../img/icon/intermediate.svg') 0 0 / contain no-repeat;
       }
     }
 
@@ -79,7 +79,7 @@
         top: 4px;
         height: 14px;
         width: 17px;
-        background: url('/img/icon/advanced.svg') 0 0 / contain no-repeat;
+        background: url('../img/icon/advanced.svg') 0 0 / contain no-repeat;
       }
     }
   }
@@ -106,7 +106,7 @@
     .level {
       &:before {
         width: 17px;
-        background: url('/img/icon/grow-icon.svg') 0 0 / contain no-repeat;
+        background: url('../img/icon/grow-icon.svg') 0 0 / contain no-repeat;
       }
     }
   }
