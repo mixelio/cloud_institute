@@ -3375,7 +3375,6 @@ main {
   content: "";
   position: absolute;
   left: 0;
-  top: calc(50% - 7px);
   display: inline-block;
   height: 14px;
 }
